@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250630150039
+  m_EditorClassIdentifier: 
+  groupName: Snowflakes
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 98102c22f8f9dba45b41f3d05c5a4ae2, type: 2}
+  - {fileID: 11400000, guid: 130ed0a29e43bad4ba88d8301e90c40d, type: 2}
+  - {fileID: 11400000, guid: fbe7c20027c126a42b12d1f5f98aceaa, type: 2}
+  - {fileID: 11400000, guid: 047767c6c32debb4782f730291d5d620, type: 2}
+  - {fileID: 11400000, guid: 1e8f8ab2494edf245bc1116545489bf9, type: 2}
+  - {fileID: 11400000, guid: f2b185a478ef44346b41228fa662d672, type: 2}
+  - {fileID: 11400000, guid: 2782ec0004adffa45aa40b782d0cd881, type: 2}
+  - {fileID: 11400000, guid: 8ffb8bf336813134eb44d303d024e391, type: 2}
+  - {fileID: 11400000, guid: e3ffc6c8f7ce1bc48b12783560e5c8a5, type: 2}
+  - {fileID: 11400000, guid: 0b67265488b7a1f42b90dd3a5610eed9, type: 2}
+  background: {fileID: 21300000, guid: 08321e748a0bc435a9bbb706bfb815da, type: 3}
+  localizedTexts:
+  - language: en
+    title: Snowflakes
+    text: Every snowflake is unique, and no two snowflakes have ever been found to
+      be exactly the same!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  targetExtraWords: 15

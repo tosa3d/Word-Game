@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/WordConnectGameToolkit/UIBuilder/LevelGroupEditor.uss?fileID=7433441132597879392&amp;guid=004923c02d2fe47ebba9f113d957710c&amp;type=3#LevelGroupEditor" />
+    <ui:VisualElement name="root-container" style="flex-grow: 1; padding-left: 4px; padding-right: 4px; padding-top: 4px; padding-bottom: 4px;">
+        <ui:VisualElement name="header-container" style="flex-direction: row; margin-bottom: 8px; align-items: flex-start;">
+            <ui:VisualElement name="fields-container" style="flex-grow: 1; margin-right: 8px;">
+                <uie:PropertyField name="group-name-field" binding-path="groupName" />
+                <uie:PropertyField name="background-field" binding-path="background" />
+                <uie:PropertyField name="colors-tile-field" binding-path="colorsTile" />
+            </ui:VisualElement>
+            <ui:VisualElement name="preview-container" class="preview-container" style="width: 64px; height: 64px; border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; align-items: center; justify-content: center;">
+                <ui:VisualElement name="background-preview" class="background-preview" style="width: 60px; height: 60px; background-color: rgb(50, 50, 50);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="localized-texts-container" style="margin-top: 16px; flex-grow: 1;">
+            <ui:Label text="Interesting facts" display-tooltip-when-elided="true" style="-unity-font-style: bold; margin-bottom: 8px;" />
+            <ui:ScrollView name="localized-texts-scroll" style="border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; margin-bottom: 8px; background-color: rgb(64, 64, 64);">
+                <ui:VisualElement name="localized-texts-list" style="padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px;">
+                    <ui:Label name="no-languages-message" text="No language-specific texts added. Click &apos;Add New Language&apos; to add one." style="color: rgb(200, 200, 200); display: none;" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button text="Add New Language" display-tooltip-when-elided="true" name="add-language-button" style="height: 30px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,176 @@
+.left-panel {
+    border-right-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+    width: 150px;
+}
+
+.right-panel {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.header-label {
+    font-size: 18px;
+    -unity-font-style: bold;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inspector-container {
+    flex-grow: 1;
+}
+
+.center-message {
+    align-self: center;
+    -unity-text-align: middle-center;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.action-buttons-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.action-button {
+    margin-right: 8px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 100px;
+    height: 30px;
+}
+
+.stats-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.folder-path {
+    margin-bottom: 10px;
+    -unity-font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.unity-list-view {
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+.unity-list-view__item {
+    padding: 2px;
+}
+
+.unity-list-view__item--selected {
+    background-color: #2196F3;
+}
+
+.delete-button {
+    background-color: rgba(200, 50, 50, 0.15);
+    border-color: rgba(200, 50, 50, 0.3);
+}
+
+.delete-button:hover {
+    background-color: rgba(200, 50, 50, 0.3);
+}
+
+/* Control panel styles */
+.header-panel {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding-top: 10px;
+    margin-bottom: 1px;
+}
+
+.nav-button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 0;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.nav-button:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+/* Control panel language selector */
+.language-selector {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.language-dropdown {
+    min-width: 150px;
+    margin-top: 4px;
+}
+
+.language-label {
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Toolbar styles */
+.toolbar {
+    height: 25px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toolbar-button {
+    width: 100px;
+    min-width: 80px;
+    -unity-text-align: middle-center;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0;
+}
+
+.toolbar-button:hover {
+    background-color: rgb(77, 77, 77);
+}
+
+.toolbar-menu {
+    width: 100px;
+    min-width: 80px;
+    flex-grow: 1;
+    color: white;
+}
+
+.toolbar-menu:hover {
+    background-color: rgb(77, 77, 77);
+}

@@ -1,0 +1,34 @@
+.tutorial-fields-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.property-label {
+    width: 36%;
+}
+
+.fields-container {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.unity-enum-field {
+    min-width: 80px;
+    flex-shrink: 1;
+}
+
+.unity-integer-field {
+    min-width: 40px;
+    flex-shrink: 1;
+}
+
+.unity-base-field__label {
+    display: none;
+}
+
+.unity-base-field__input {
+    margin: 0;
+}

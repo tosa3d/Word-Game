@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250620202506
+  m_EditorClassIdentifier: 
+  groupName: 'Everest '
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: c9df61a2fb920c14ab71992646a9da77, type: 2}
+  - {fileID: 11400000, guid: 179714787a8cdaf4d969d56a23beb6ac, type: 2}
+  - {fileID: 11400000, guid: 820256651dafb954fbf36b8bb7c2a834, type: 2}
+  - {fileID: 11400000, guid: 4b1735813772e564fa30e34248131bd9, type: 2}
+  - {fileID: 11400000, guid: 04ece7820938b3746b66fe210e27bd17, type: 2}
+  - {fileID: 11400000, guid: 0205f6b3b74d57e45a6257c8c7a672d0, type: 2}
+  - {fileID: 11400000, guid: 300c5fe99ab275d4db8c5576f7d60338, type: 2}
+  - {fileID: 11400000, guid: 83fe54051f38027448c2c2bf23d68f20, type: 2}
+  - {fileID: 11400000, guid: 0058a631f201ea24f9d999db01b3d6f2, type: 2}
+  - {fileID: 11400000, guid: eba3b4a1b4d919a4dbb0e8983df864d7, type: 2}
+  background: {fileID: 21300000, guid: 0ac7d3f7e0bf94d51b8e9e74a5667603, type: 3}
+  localizedTexts:
+  - language: en
+    title: 'Everest '
+    text: Mount Everest grows about 4 millimeters each year due to tectonic plate
+      movement, and its summit is often bare rock because strong winds blow away
+      the snow.
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  targetExtraWords: 10

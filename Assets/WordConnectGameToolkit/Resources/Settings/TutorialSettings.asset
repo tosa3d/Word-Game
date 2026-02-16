@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3d5fd58fe34d76828dc6ba77a3ceae, type: 3}
+  m_Name: TutorialSettings
+  m_EditorClassIdentifier: 
+  tutorialSettings:
+  - kind: 2
+    showCondition:
+      showCondition: 1
+      level: 0
+    popup: {fileID: 7108676520027679249, guid: 09b846186daa841168fecfe5c40b6e7e, type: 3}
+    tagsToShow:
+    - ExtraWordsButton
+  - kind: 6
+    showCondition:
+      showCondition: 0
+      level: 1
+    popup: {fileID: 3600865394268462216, guid: 72122cae071e4416da806f8cccc3b7ae, type: 3}
+    tagsToShow: []
+  - kind: 5
+    showCondition:
+      showCondition: 2
+      level: 1
+    popup: {fileID: 5015445783941243253, guid: 2f2dc1b24669b4a0ebdcbe1def8a58d9, type: 3}
+    tagsToShow:
+    - SpecialItem
+  - kind: 3
+    showCondition:
+      showCondition: 1
+      level: 0
+    popup: {fileID: 6517384586316424441, guid: f61fbd78623844cf8ad9af21456f636d, type: 3}
+    tagsToShow:
+    - GiftButton
+  - kind: 4
+    showCondition:
+      showCondition: 0
+      level: 2
+    popup: {fileID: 6517384586316424441, guid: eb1c361dddaeb4f88aca31c9aa9b99ba, type: 3}
+    tagsToShow:
+    - ShuffleButton
+  - kind: 1
+    showCondition:
+      showCondition: 2
+      level: 0
+    popup: {fileID: 6517384586316424441, guid: f61fbd78623844cf8ad9af21456f636d, type: 3}
+    tagsToShow:
+    - HammerBoosterButton
+  - kind: 0
+    showCondition:
+      showCondition: 2
+      level: 0
+    popup: {fileID: 6517384586316424441, guid: f61fbd78623844cf8ad9af21456f636d, type: 3}
+    tagsToShow:
+    - TipBoosterButton
+  - kind: 7
+    showCondition:
+      showCondition: 2
+      level: 0
+    popup: {fileID: 979334149490370810, guid: 47a531b233fab4380b2fa3b7cf46f805, type: 3}
+    tagsToShow:
+    - Timer

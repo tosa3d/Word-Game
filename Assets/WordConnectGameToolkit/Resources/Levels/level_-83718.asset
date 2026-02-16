@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-83718
+  m_EditorClassIdentifier: 
+  number: 480
+  background: {fileID: 21300000, guid: a2c8ac3834b964fb397a40617db684b8, type: 3}
+  languages:
+  - language: en
+    letters: manifest
+    wordsAmount: 5
+    words:
+    - feint
+    - east
+    - safe
+    - infest
+    - fiesta
+    - man
+    - time
+    - fest
+    - faint
+    - sim
+    - mist
+    - steam
+    - tine
+    crosswordData:
+      columns: 11
+      rows: 8
+      placements:
+      - word: FEINT
+        wordNumber: 1
+        startPosition: {x: 0, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: east
+        wordNumber: 2
+        startPosition: {x: 6, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: safe
+        wordNumber: 3
+        startPosition: {x: 0, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: infest
+        wordNumber: 4
+        startPosition: {x: 5, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: fiesta
+        wordNumber: 5
+        startPosition: {x: 1, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: mAN
+        wordNumber: 6
+        startPosition: {x: 8, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: time
+        wordNumber: 7
+        startPosition: {x: 2, y: 7}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: FEsT
+        wordNumber: 8
+        startPosition: {x: 0, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: faint
+        wordNumber: 9
+        startPosition: {x: 2, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: sIm
+        wordNumber: 10
+        startPosition: {x: 4, y: 5}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: mist
+        wordNumber: 11
+        startPosition: {x: 5, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: steam
+        wordNumber: 12
+        startPosition: {x: 8, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: tINE
+        wordNumber: 13
+        startPosition: {x: 10, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems:
+      - position: {x: 4, y: 7}
+        itemPath: special_item
+      - position: {x: 3, y: 3}
+        itemPath: special_item
+      - position: {x: 8, y: 1}
+        itemPath: special_item
+      minBounds: {x: 0, y: 1}
+      maxBounds: {x: 10, y: 7}
+      serializedGrid: '           |FEINT east |E    m  t  |safe infest|T a  s  a
+        I| fiesta mAN|  n I     E|  time     '
+  colorsTile: {fileID: 11400000, guid: e8a60425bb67f42618a943883b553d29, type: 2}
+  words: 5
+  letters: 8
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 1

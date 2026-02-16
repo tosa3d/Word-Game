@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250710202453
+  m_EditorClassIdentifier: 
+  groupName: Desert Bloom
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 088f41be4f2ce5846bad08ae3a90bfa9, type: 2}
+  - {fileID: 11400000, guid: 4a9215759519c5140b12387531e88174, type: 2}
+  - {fileID: 11400000, guid: 6705c2e3726466743b6fe7fd689c6d24, type: 2}
+  - {fileID: 11400000, guid: b9343a63b15472f46afe075cafa001ac, type: 2}
+  - {fileID: 11400000, guid: 76b80eda8cb72b64395ea1869ea56fd5, type: 2}
+  - {fileID: 11400000, guid: 7ae200951058e404a90c744e475a03e5, type: 2}
+  - {fileID: 11400000, guid: 3b5414b8a4c6a5b478d489058637cf6e, type: 2}
+  - {fileID: 11400000, guid: a8c2347e2d12e1d448027ac933ffe0e8, type: 2}
+  - {fileID: 11400000, guid: 1dcb512dbab9c404381ac2dfc97b6c4c, type: 2}
+  - {fileID: 11400000, guid: 10f86b4a0fd3cba42a4ff96b90fe546d, type: 2}
+  background: {fileID: 21300000, guid: 279e2d33119764c0692cf8c214fdedcd, type: 3}
+  localizedTexts:
+  - language: en
+    title: Desert Bloom
+    text: Some deserts, like the Atacama Desert, can suddenly burst into colorful
+      flowers after rare rainfall, creating a breathtaking sight!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  targetExtraWords: 20

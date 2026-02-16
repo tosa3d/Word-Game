@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250715202737
+  m_EditorClassIdentifier: 
+  groupName: Fairy Rings
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: af08ab346c2b38c4bb431358262d50a3, type: 2}
+  - {fileID: 11400000, guid: 356803291fb9b884f8974a8b65002975, type: 2}
+  - {fileID: 11400000, guid: c41d2f80b3f6d424fa8071ab2e19ff93, type: 2}
+  - {fileID: 11400000, guid: 365427a2bd81a3b429de218bb0601bc3, type: 2}
+  - {fileID: 11400000, guid: b0bf5ddc25a9c0143991585d55bd526e, type: 2}
+  - {fileID: 11400000, guid: fc1a4884c946ba142a05f96266286b05, type: 2}
+  - {fileID: 11400000, guid: abe41928cee9d4e49b7eb0d4ab7341cb, type: 2}
+  - {fileID: 11400000, guid: 7b98dd290c186f54e9e6ed2fdb21633f, type: 2}
+  - {fileID: 11400000, guid: 57fcd02e81d64404f8d05cbf5db8e0ae, type: 2}
+  - {fileID: 11400000, guid: 817fb041d69a53745ac3888d0c28185b, type: 2}
+  background: {fileID: 21300000, guid: 72e73c6fe89dc49cd890013c451b566e, type: 3}
+  localizedTexts:
+  - language: en
+    title: Fairy Rings
+    text: Fairy ring mushrooms grow in circles because the fungus spreads outward
+      evenly, while nutrients in the center run out.
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: c196518ac79cb9e40a9cbf03edcae82e, type: 2}
+  targetExtraWords: 25

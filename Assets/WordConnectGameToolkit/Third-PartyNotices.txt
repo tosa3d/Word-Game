@@ -1,0 +1,13 @@
+WordConnectGameToolkit is governed by the Asset Store EULA; however, the following components are governed by the licenses indicated below:
+
+A. DOTween
+    - MIT license 
+    - License details available in http://dotween.demigiant.com/license.php
+
+B. Fredoka font (/Fonts folder)
+    - SIL OPEN FONT LICENSE Version 1.1
+    - License details available here: https://www.1001fonts.com/fredoka-one-font.html#license
+
+C. VContainer
+     - MIT license
+     - License details available here: https://github.com/hadashiA/VContainer?tab=MIT-1-ov-file

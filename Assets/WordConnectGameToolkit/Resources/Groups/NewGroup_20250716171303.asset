@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250716171303
+  m_EditorClassIdentifier: 
+  groupName: Flamingos
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 136801ebfb29a164ea68295668ec0378, type: 2}
+  - {fileID: 11400000, guid: e2d3e09c6f7220e4d8e4eceb8e9bdf3c, type: 2}
+  - {fileID: 11400000, guid: 20e7749a79bf48a45aa48a8bdad0b6c3, type: 2}
+  - {fileID: 11400000, guid: aacaa727eab345048833bd02545eccc5, type: 2}
+  - {fileID: 11400000, guid: bff351054150fbc4788d7d3936138bba, type: 2}
+  - {fileID: 11400000, guid: 0a716acd6b3327242b7546e4270e1f12, type: 2}
+  - {fileID: 11400000, guid: aeacb0fbd28a9b949b2d341f49aeb54b, type: 2}
+  - {fileID: 11400000, guid: 734db0705a4e6154cbf856860dc6cf42, type: 2}
+  - {fileID: 11400000, guid: ca78f1ec7e7d88e4cb8a5cd9a3faf51c, type: 2}
+  - {fileID: 11400000, guid: 68315d3b008e75143a676fceaa0c3a92, type: 2}
+  background: {fileID: 21300000, guid: e7c0b6daa2e404d32b2afe8aa265735a, type: 3}
+  localizedTexts:
+  - language: en
+    title: Flamingos
+    text: "Flamingos get their pink color from the food they eat\u2014mainly algae
+      and shrimp rich in carotenoids. Without these, they'd be gray or white! "
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
+  targetExtraWords: 25

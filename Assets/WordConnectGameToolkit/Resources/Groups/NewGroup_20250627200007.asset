@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250627200007
+  m_EditorClassIdentifier: 
+  groupName: Tornado
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 31a7a3c7044adab42acab6fb16979ee7, type: 2}
+  - {fileID: 11400000, guid: 567ee375b2736134db54bde4bc811846, type: 2}
+  - {fileID: 11400000, guid: 3198d34798cfb3f46a63680d7aae72ac, type: 2}
+  - {fileID: 11400000, guid: 06c73763eb9423445bb655bb30089d72, type: 2}
+  - {fileID: 11400000, guid: c38a9ffa34543034a856a1a7807ac0e7, type: 2}
+  - {fileID: 11400000, guid: 3484aa26dc76cae4d81f06db535288eb, type: 2}
+  - {fileID: 11400000, guid: b2efad3b7482b304a859d6cbb9181727, type: 2}
+  - {fileID: 11400000, guid: 7f07176623e35b54fb5c7bd34be78a24, type: 2}
+  - {fileID: 11400000, guid: 18879023350c16f43b7fde5e967f94d8, type: 2}
+  - {fileID: 11400000, guid: e82ca24655d80224b9d476a3e7948580, type: 2}
+  background: {fileID: 21300000, guid: a93b7dd2666604b0bb8d1a6e592bfa96, type: 3}
+  localizedTexts:
+  - language: en
+    title: Tornado
+    text: 'Tornadoes can spin at speeds of over 300 miles per hour (480 km/h), making
+      them one of the fastest-moving natural phenomena on Earth! '
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 530ee400bda75ad44bcc4067e5f57ab8, type: 2}
+  targetExtraWords: 10

@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-68166
+  m_EditorClassIdentifier: 
+  number: 4
+  background: {fileID: 21300000, guid: c668b55eb0cc74093bce5fc94a13d741, type: 3}
+  languages:
+  - language: en
+    letters: trepi
+    wordsAmount: 5
+    words:
+    - pie
+    - tip
+    - pet
+    - pit
+    - tie
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: pet
+        wordNumber: 3
+        startPosition: {x: 2, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: pie
+        wordNumber: 1
+        startPosition: {x: 4, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: pit
+        wordNumber: 4
+        startPosition: {x: 2, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: tip
+        wordNumber: 2
+        startPosition: {x: 4, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: tie
+        wordNumber: 5
+        startPosition: {x: 6, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 2, y: 1}
+      maxBounds: {x: 6, y: 3}
+      serializedGrid: '          |  pet t   |  i i i   |  t pie   |          |         
+        |          '
+  - language: ru
+    letters: "\u0438\u0441\u043A\u0440\u0430"
+    wordsAmount: 5
+    words:
+    - "\u0438\u043A\u0440\u0430"
+    - "\u0438\u0441\u043A\u0440\u0430"
+    - "\u0441\u0430\u0440\u0438"
+    - "\u0440\u0438\u0441\u043A"
+    - "\u043A\u0438\u0441\u0430"
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: "\u0438\u043A\u0440\u0430"
+        wordNumber: 1
+        startPosition: {x: 5, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0438\u0441\u043A\u0440\u0430"
+        wordNumber: 2
+        startPosition: {x: 3, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0441\u0430\u0440\u0438"
+        wordNumber: 3
+        startPosition: {x: 3, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0440\u0438\u0441\u043A"
+        wordNumber: 4
+        startPosition: {x: 0, y: 4}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u043A\u0438\u0441\u0430"
+        wordNumber: 5
+        startPosition: {x: 0, y: 6}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 0, y: 1}
+      maxBounds: {x: 6, y: 6}
+      serializedGrid: "          |     \u0438    |   \u0438 \u043A    |   \u0441\u0430\u0440\u0438  
+        |\u0440\u0438\u0441\u043A \u0430    |   \u0440      |\u043A\u0438\u0441\u0430      "
+  - language: es
+    letters: radio
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 5, y: 3}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: '          |          |          |          |          |         
+        |          '
+  - language: fr
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 0
+      rows: 0
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 0, y: 0}
+      serializedGrid: 
+  - language: tr
+    letters: geri
+    wordsAmount: 5
+    words:
+    - geri
+    - gir
+    - eri
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: geri
+        wordNumber: 1
+        startPosition: {x: 3, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: gir
+        wordNumber: 3
+        startPosition: {x: 3, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: eri
+        wordNumber: 2
+        startPosition: {x: 4, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 3, y: 3}
+      maxBounds: {x: 6, y: 5}
+      serializedGrid: '          |          |          |   geri   |    r     |  
+        gir    |          '
+  colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
+  words: 5
+  letters: 4
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0

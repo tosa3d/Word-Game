@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250620105103
+  m_EditorClassIdentifier: 
+  groupName: Great Wall of China
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: d9ae55047417caa4ab10a05bfad93e12, type: 2}
+  - {fileID: 11400000, guid: 655a3d4a8988da44c9bc74b9b50890a5, type: 2}
+  - {fileID: 11400000, guid: 52cc975af39156140aed11e1fc56d969, type: 2}
+  - {fileID: 11400000, guid: 769646ccd5f8fcb499242f2ee748d05c, type: 2}
+  - {fileID: 11400000, guid: 7e1d55b05db49884a965e00a16366725, type: 2}
+  background: {fileID: 21300000, guid: 057b90254f8d74599b001c6916490d5b, type: 3}
+  localizedTexts:
+  - language: en
+    title: Great Wall of China
+    text: The Great Wall of China is one of the longest structures in the world,
+      stretching over 21,000 km!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: e8a60425bb67f42618a943883b553d29, type: 2}

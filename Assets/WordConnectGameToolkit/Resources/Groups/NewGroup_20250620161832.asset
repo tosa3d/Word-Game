@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250620161832
+  m_EditorClassIdentifier: 
+  groupName: Niagara Falls
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 419628ae784fdf14abfc8bfc3f25defa, type: 2}
+  - {fileID: 11400000, guid: 82f57df46feb66c4da597c1475974cd5, type: 2}
+  - {fileID: 11400000, guid: 05afd4c6a1f9fb948b435e51a9f48a20, type: 2}
+  - {fileID: 11400000, guid: 2cb73150b1066534a8cd6e0ccffadf32, type: 2}
+  - {fileID: 11400000, guid: 2e1d830c2876427428a461582f196b09, type: 2}
+  background: {fileID: 21300000, guid: dfe52162b7ae64248bca24b9d784dc03, type: 3}
+  localizedTexts:
+  - language: en
+    title: Niagara Falls
+    text: Niagara Falls never completely freezes, but in extremely cold winters,
+      parts of it can be covered in ice, creating a magical landscape!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}

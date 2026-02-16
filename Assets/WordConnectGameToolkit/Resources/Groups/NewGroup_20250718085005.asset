@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250718085005
+  m_EditorClassIdentifier: 
+  groupName: Whirlpool
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: cb9f89665bc85674ca596636e9d95c75, type: 2}
+  - {fileID: 11400000, guid: b36009ab6e9bc17498eb09a429220349, type: 2}
+  - {fileID: 11400000, guid: b58ecfb1a6c67374d9b4e6b7a51f9294, type: 2}
+  - {fileID: 11400000, guid: 1f39224d4d856724481d89c62914bd1c, type: 2}
+  - {fileID: 11400000, guid: 0586fe3ab2e112244a593e8be770b3d7, type: 2}
+  - {fileID: 11400000, guid: 2ddd5d8ed0468b04e994d4c5617e8128, type: 2}
+  - {fileID: 11400000, guid: 3aec6ce841af19d44a24965507590140, type: 2}
+  - {fileID: 11400000, guid: d042ed218eeb0f64d886a4718cd2f12a, type: 2}
+  - {fileID: 11400000, guid: 863bda278c2a10e46b893f5b2fa260c3, type: 2}
+  - {fileID: 11400000, guid: c67d6a3739d35d44cb97796fb396821a, type: 2}
+  background: {fileID: 21300000, guid: 796a9f0d0c8f249b3a6a2f0032caa89d, type: 3}
+  localizedTexts:
+  - language: en
+    title: Whirlpool
+    text: "Myths often exaggerate whirlpools, but only the strongest \u2014 like
+      oceanic maelstroms \u2014 pose any real threat, and even then, mostly to small
+      vessels, not large ships. "
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: e8a60425bb67f42618a943883b553d29, type: 2}
+  targetExtraWords: 25

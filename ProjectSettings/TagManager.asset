@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coins
+  - LanguageSelection
+  - Gems
+  - TipBoosterButton
+  - HammerBoosterButton
+  - ExtraWordsButton
+  - GiftButton
+  - CircleSelectionWords
+  - Field
+  - SelectedLetters
+  - ShuffleButton
+  - SpecialItem
+  - Timer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Screen1
+  - Screen2
+  - StageObject
+  - FX
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3366032707
+    locked: 0
+  - name: FX
+    uniqueID: 2436876831
+    locked: 0

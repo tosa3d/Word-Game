@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250704140905
+  m_EditorClassIdentifier: 
+  groupName: Cheetah
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 7afaa5cd7dffd7444a0de4ce4c35de9e, type: 2}
+  - {fileID: 11400000, guid: 6744ee15c9aa6834f903f3aab7422816, type: 2}
+  - {fileID: 11400000, guid: 83c22646d47994944a2e28b11c8720a9, type: 2}
+  - {fileID: 11400000, guid: 2f9e927e9dfa2434b8c6c08269da8ada, type: 2}
+  - {fileID: 11400000, guid: 4725a1291245d774aa122a0f2786762d, type: 2}
+  - {fileID: 11400000, guid: 1952a40469d307a49aef6b4fac949497, type: 2}
+  - {fileID: 11400000, guid: bdfce89a69c308b4c9dc400b0dce8f07, type: 2}
+  - {fileID: 11400000, guid: 16816b0ed90e92444a052fccd783c093, type: 2}
+  - {fileID: 11400000, guid: e89691632c8a0564793d3a5d5e9aadf7, type: 2}
+  - {fileID: 11400000, guid: 4ee879e35f5fe0e4c8af93f09bbd3b8d, type: 2}
+  background: {fileID: 21300000, guid: 08ec47b8d7a0a4d688730065b65b5b6e, type: 3}
+  localizedTexts:
+  - language: en
+    title: Cheetah
+    text: Cheetahs are the fastest land animals, capable of reaching speeds up to
+      75 mph (120 km/h) in short bursts!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: be2ab2563b766494793b64a93af3090a, type: 2}
+  targetExtraWords: 15

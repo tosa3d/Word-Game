@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250714202114
+  m_EditorClassIdentifier: 
+  groupName: Lake Hillier
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 1fffa49aaed163b458cf07e20706b88a, type: 2}
+  - {fileID: 11400000, guid: 2f941d7153f13dd4daaf94dd409f48ed, type: 2}
+  - {fileID: 11400000, guid: 49f2d986ed829514cb606f8c558cabde, type: 2}
+  - {fileID: 11400000, guid: f3d64eeeff032a94fa6ec18cb90bd49b, type: 2}
+  - {fileID: 11400000, guid: 1ff0f2df5a1a74748b2517a987e8488e, type: 2}
+  - {fileID: 11400000, guid: b15b737ebbae5954a987b34271564898, type: 2}
+  - {fileID: 11400000, guid: 214c2a737fe2bfb4da56f0848ccf53ce, type: 2}
+  - {fileID: 11400000, guid: 43f3761ec63bddb4189a685ed4025e8c, type: 2}
+  - {fileID: 11400000, guid: 07fc1c6bda44be14d9800df9731598e5, type: 2}
+  - {fileID: 11400000, guid: a571d61a9c8d1cd48a38d237b7aa33f2, type: 2}
+  background: {fileID: 21300000, guid: ac7f25fb72930471d92ee0325e42b76b, type: 3}
+  localizedTexts:
+  - language: en
+    title: Lake Hillier
+    text: 'Lake Hillier in Australia stays bright pink even when its water is placed
+      in a clear container. The color comes from salt-loving microalgae and bacteria,
+      making it a stunning natural wonder visible even from the air! '
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
+  targetExtraWords: 25

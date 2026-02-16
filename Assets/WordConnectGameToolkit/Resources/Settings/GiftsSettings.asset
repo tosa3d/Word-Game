@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd026f71fe24058b8204312b9d30010, type: 3}
+  m_Name: GiftsSettings
+  m_EditorClassIdentifier: 
+  gifts:
+  - giftPrefab: {fileID: 178498125581260517, guid: 7308624c5a087453bb0e4dcc86609764, type: 3}
+    giftCount: 150
+    giftChance: 100
+    resourceObject: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    tagUIElement: Coins
+  - giftPrefab: {fileID: 1372505819417524862, guid: 55347f55eada84ada83d20079ff2bc85, type: 3}
+    giftCount: 1
+    giftChance: 100
+    resourceObject: {fileID: 11400000, guid: c4a1c3cbefbda489fbb246fba92aee67, type: 2}
+    tagUIElement: TipBoosterButton
+  - giftPrefab: {fileID: 621517203718331802, guid: 1b31c6d5f1935405b900be5a95a08e25, type: 3}
+    giftCount: 1
+    giftChance: 50
+    resourceObject: {fileID: 11400000, guid: 0d4dcbbd38e63406da126836d603ea8f, type: 2}
+    tagUIElement: HammerBoosterButton

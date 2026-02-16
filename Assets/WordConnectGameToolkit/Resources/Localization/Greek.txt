@@ -1,0 +1,77 @@
+COINSSHOP : Κατάστημα Νομισμάτων
+FREE : ΔΩΡΕΑΝ
+BUYTIPS : Αγόρασε Βοήθειες (Tips)
+GETFREE : Λάβε Δωρεάν
+DAILYREWARD : Καθημερινές Ανταμοιβές
+DAY : Ημέρα
+THANKS : Ευχαριστούμε!
+LOADING : Φορτώνει...
+LUCKYSPIN : Τυχερή Περιστροφή
+NOADSLABEL1 : Παίξε χωρίς διαφημίσεις!
+NOADSLABEL2 : Τα βίντεο ανταμοιβής είναι προαιρετικά και διαθέσιμα για προβολή μετά την αγορά
+BUY : ΑΓΟΡΑ
+OUTOFLIVES : ΕΞΑΝΤΛΗΘΗΚΑΝ ΟΙ ΖΩΕΣ
+REFILLTHELIVES : Αναπλήρωση των ζωών;
+OUTOFTIME : ΕΞΑΝΤΛΗΘΗΚΕ Ο ΧΡΟΝΟΣ
+REFILLTHETIME : Αναπλήρωση του χρόνου;
+GIFT : Δώρο
+LEVELCLEARED : ΕΠΙΠΕΔΟ ΟΛΟΚΛΗΡΩΘΗΚΕ!
+SETTINGS : Ρυθμίσεις
+SHOP : ΚΑΤΑΣΤΗΜΑ
+PRIVACY : Απόρρητο
+QUITTHEGAME : Έξοδος από το παιχνίδι
+DOYOUWANTTOQUIT : Θέλετε πραγματικά να βγείτε;
+YES : ΝΑΙ
+NO : ΟΧΙ
+COMINGSOON : Νέα επίπεδα έρχονται σύντομα. <br>Μείνετε συντονισμένοι για την επόμενη ενημέρωση.
+WIN : ΝΙΚΗ
+NEXTLEVEL : Επόμενο Επίπεδο
+SCORE : Σκορ
+POINTS : Πόντοι
+REVIVEWITHNEWSHAPES : Αναβίωση με νέα σχήματα;
+WHATCHADS : Παρακολούθηση Διαφημίσεων
+CONTINUE : Συνέχεια
+YOULOSE : Χάσατε...
+RETRY : Ξαναπροσπάθησε
+ALMOST : Σχεδόν τα καταφέρατε...
+ARCADEMODE : ΛΕΙΤΟΥΡΓΙΑ ARCADE
+STAGE : ΣΤΑΔΙΟ {stage}
+LEVEL : Επίπεδο {level}
+MOSTPOPULAR : Πιο Δημοφιλές
+BESTOFFER : ΚΑΛΥΤΕΡΗ ΠΡΟΣΦΟΡΑ
+NOADS : Κατάργηση Διαφημίσεων
+FREESPIN : ΔΩΡΕΑΝ Περιστροφή
+SOUNDS : Ήχοι
+MUSIC : Μουσική
+VIBRATION : Δόνηση
+GAMEOVER : Τέλος Παιχνιδιού
+YOURSCORE : Το Σκορ σας
+BESTSCORE : ΚΑΛΥΤΕΡΟ Σκορ
+NEWRECORD : Νέο Ρεκόρ!
+EXITGAME : Έξοδος από το Παιχνίδι
+ADVENTURE : ΠΕΡΙΠΕΤΕΙΑ
+CLASSIC : ΚΛΑΣΙΚΟ
+TUTORIAL : Εκμάθηση
+RESTORE_PURCHASES : Επαναφορά Αγορών
+EXTRAWORDS : Επιπλέον Λέξεις
+WORDSNOTINTCLUDEDINTHISLEVEL : Λέξεις που δεν περιλαμβάνονται σε αυτό το επίπεδο
+CLAIM : Διεκδίκηση
+COINS : ΝΟΜΙΣΜΑΤΑ
+GEMS : ΠΕΤΡΑΔΙΑ
+TAPTOCOLLECT : ΠΑΤΗΣΤΕ ΓΙΑ ΣΥΛΛΟΓΗ
+DAILYREWARDS : ΚΑΘΗΜΕΡΙΝΕΣ ΑΝΤΑΜΟΙΒΕΣ
+SPIN : ΠΕΡΙΣΤΡΟΦΗ
+SELECTLANGUAGE : ΕΠΙΛΟΓΗ ΓΛΩΣΣΑΣ
+AGAIN : ΞΑΝΑ
+UNLOCK : Συλλέξτε κάρτες για να ξεκλειδώσετε ενδιαφέροντα στοιχεία (facts)
+TipBoosterButton : Εάν κολλήσετε, μπορείτε να χρησιμοποιήσετε μια ΥΠΟΔΕΙΞΗ (HINT)
+HammerBoosterButton : Το ΣΦΥΡΙ αποκαλύπτει οποιοδήποτε γράμμα της επιλογής σας
+ExtraWordsButton : Βρήκατε μια ΕΠΙΠΛΕΟΝ ΛΕΞΗ!
+Extra words are displayed here : Οι επιπλέον λέξεις εμφανίζονται εδώ
+GiftButton : Έχετε ξεκλειδώσει ένα ΔΩΡΟ! <br><br> ΞΟΔΕΨΤΕ ΠΕΤΡΑΔΙΑ για να λάβετε μια πολύτιμη ΑΝΤΑΜΟΙΒΗ
+ShuffleButton : Το κουμπί ΑΝΑΚΑΤΕΜΑ (SHUFFLE) μπορεί να σας βοηθήσει να βρείτε λέξεις πιο γρήγορα
+RedGem : Συνδέστε τη λέξη {word} για να λάβετε ένα ΚΟΚΚΙΝΟ ΠΕΤΡΑΔΙ
+GameTutorial : Σύρετε για να συνδέσετε τη λέξη {word} με μία κίνηση
+Home : Αρχική
+HARD : ΔΥΣΚΟΛΟ
+TIMETUT : Λύστε όλες τις λέξεις έγκαιρα για να ΚΕΡΔΙΣΕΤΕ

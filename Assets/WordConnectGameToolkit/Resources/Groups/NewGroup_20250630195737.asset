@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250630195737
+  m_EditorClassIdentifier: 
+  groupName: Space
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 3abab2c4e20bb84429054df1bd41206c, type: 2}
+  - {fileID: 11400000, guid: 46fe823e4f161af4499cce36f311000b, type: 2}
+  - {fileID: 11400000, guid: 89d7d2aacf55d32468c79669658608d1, type: 2}
+  - {fileID: 11400000, guid: e956b8828ef310a4aad788e6e254df3a, type: 2}
+  - {fileID: 11400000, guid: a40194b0290628b45a6dd08af4f3fe4e, type: 2}
+  - {fileID: 11400000, guid: e37054fd3c16602449b247ee154b5082, type: 2}
+  - {fileID: 11400000, guid: 481db4f6c636be94c9dc545e99449422, type: 2}
+  - {fileID: 11400000, guid: febfd52440e8f1b4e9f674c6df806113, type: 2}
+  - {fileID: 11400000, guid: 530259bcabb650e4180e3f02102fbddf, type: 2}
+  - {fileID: 11400000, guid: f496355778d366348b697dade4bccd9e, type: 2}
+  background: {fileID: 21300000, guid: 9b21c74cc6a94425186198529e8d0c1f, type: 3}
+  localizedTexts:
+  - language: en
+    title: Space
+    text: "In space, metal objects can fuse together permanently if they touch, because
+      there\u2019s no air to form a barrier between them! "
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 530ee400bda75ad44bcc4067e5f57ab8, type: 2}
+  targetExtraWords: 15

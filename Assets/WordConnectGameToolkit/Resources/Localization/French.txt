@@ -1,0 +1,76 @@
+COINSSHOP : Boutique de Pi�ces
+FREE : GRATUIT
+BUYTIPS : Acheter des Indices
+GETFREE : Obtenir Gratuitement
+DAILYREWARD : R�compenses Quotidiennes
+DAY : Jour
+THANKS : Merci !
+LOADING : Chargement...
+LUCKYSPIN : Roue de la Fortune
+NOADSLABEL1 : Jouez sans publicit�s !
+NOADSLABEL2 : Les vid�os de r�compense sont optionnelles et disponibles apr�s l'achat
+BUY : ACHETER
+OUTOFLIVES : PLUS DE VIES
+REFILLTHELIVES : Recharger les vies ?
+OUTOFTIME : TEMPS �COUL�
+REFILLTHETIME : Recharger le temps ?
+GIFT : Cadeau
+LEVELCLEARED : NIVEAU TERMIN� !
+SETTINGS : Param�tres
+SHOP : BOUTIQUE
+PRIVACY : CONFIDENTIALIT�
+QUITTHEGAME : Quitter le jeu
+DOYOUWANTTOQUIT : Voulez-vous vraiment quitter ?
+YES : Oui
+NO : NON
+COMINGSOON : Red�marrez le jeu pour rejouer ou attendez la prochaine mise � jour
+WIN : VICTOIRE
+NEXTLEVEL : Niveau Suivant
+SCORE : Score
+POINTS : Points
+REVIVEWITHNEWSHAPES : Revivre avec de nouvelles formes ?
+WHATCHADS : Regarder des Pubs
+CONTINUE : Continuer
+YOULOSE : Vous Perdez...
+RETRY : R�essayer
+ALMOST : Presque l�...
+ARCADEMODE : MODE ARCADE
+STAGE : �TAPE {stage}
+LEVEL : Niveau {level}
+MOSTPOPULAR : Le Plus Populaire
+BESTOFFER : MEILLEURE Offre
+NOADS : Supprimer les PUBS
+FREESPIN : Tour GRATUIT
+SOUNDS : Sons
+MUSIC : Musique
+VIBRATION : Vibration
+GAMEOVER : Fin de Partie
+YOURSCORE : Votre Score
+BESTSCORE : MEILLEUR Score
+NEWRECORD : Nouveau Record !
+EXITGAME : Quitter le Jeu
+ADVENTURE : AVENTURE
+CLASSIC : CLASSIQUE
+TUTORIAL : Tutoriel
+RESTORE_PURCHASES : Restaurer les Achats
+EXTRAWORDS : Mots Suppl�mentaires
+WORDSNOTINTCLUDEDINTHISLEVEL : Mots non inclus dans ce niveau
+CLAIM : R�clamer
+COINS : PI�CES
+GEMS : GEMMES
+TAPTOCOLLECT : TOUCHEZ POUR COLLECTER
+DAILYREWARDS : R�COMPENSES QUOTIDIENNES
+SPIN : TOURNER
+SELECTLANGUAGE : S�LECTIONNER LA LANGUE
+AGAIN : ENCORE
+UNLOCK : Collectez des cartes pour d�bloquer des faits int�ressants
+TipBoosterButton : Si vous �tes bloqu�, vous pouvez utiliser un INDICE
+HammerBoosterButton : Le MARTEAU r�v�le n'importe quelle lettre de votre choix
+ExtraWordsButton : Vous avez trouv� un MOT SUPPL�MENTAIRE ! Les mots suppl�mentaires sont affich�s ici
+GiftButton : Vous avez d�bloqu� un CADEAU !<br><br> D�PENSEZ des GEMMES pour recevoir une R�COMPENSE pr�cieuse
+ShuffleButton : Le bouton M�LANGER peut vous aider � trouver des mots plus rapidement
+RedGem : Connectez le mot {word} pour obtenir une GEMME ROUGE
+GameTutorial : Balayez pour connecter le mot {word} en un seul mouvement
+Home : Accueil
+HARD : DIFFICILE
+TIMETUT : R�soudre tous les mots dans le temps imparti pour GAGNER

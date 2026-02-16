@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250621154949
+  m_EditorClassIdentifier: 
+  groupName: Camels
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 3b55d4a76a5345b4bafca2cc063e7512, type: 2}
+  - {fileID: 11400000, guid: 03ac4b7c210b51246aa969b066f314bc, type: 2}
+  - {fileID: 11400000, guid: d57ee0844c123784f9ad311d3deceee3, type: 2}
+  - {fileID: 11400000, guid: d466429dc7fbc614aa4cfc330210a7dd, type: 2}
+  - {fileID: 11400000, guid: 6009f88788e85d24ca0b7f6188b37ccb, type: 2}
+  - {fileID: 11400000, guid: ae616db4ac6358e4cb241c9ec6fa22c7, type: 2}
+  - {fileID: 11400000, guid: 0dff2323ab6545b43b3306429620dd0b, type: 2}
+  - {fileID: 11400000, guid: 352c325616676a44d8a2b69b0e31622f, type: 2}
+  - {fileID: 11400000, guid: 8918e95df6c25964f9df6b05951533ab, type: 2}
+  - {fileID: 11400000, guid: aa92ec3ecef322c448813d65c2d8f3f0, type: 2}
+  background: {fileID: 21300000, guid: 59a688777165743b187b4eb5632d6d84, type: 3}
+  localizedTexts:
+  - language: en
+    title: Camels
+    text: Camels can drink up to 200 liters of water in just a few minutes and store
+      it in their bloodstream, not in their humps!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
+  targetExtraWords: 10

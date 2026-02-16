@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250717110015
+  m_EditorClassIdentifier: 
+  groupName: Amazon Rainforest
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: dcf701c0241d86845a41aa02e2bbd6a6, type: 2}
+  - {fileID: 11400000, guid: 7c86ef66f484e84488f061071ddd9fb4, type: 2}
+  - {fileID: 11400000, guid: 1cf7b4a128d7a6048b3704a769e562cb, type: 2}
+  - {fileID: 11400000, guid: a967d319b2ab7074ea3e5a3812e6a092, type: 2}
+  - {fileID: 11400000, guid: 273a57183bd49de45801de7eb73be216, type: 2}
+  - {fileID: 11400000, guid: 7052f5ec90fb2b543b54500bb0693901, type: 2}
+  - {fileID: 11400000, guid: 8bb0f5dcfa8fa2d4f9735663fa68a322, type: 2}
+  - {fileID: 11400000, guid: 735deff9e4d1e49478f74c7a6c57a5e7, type: 2}
+  - {fileID: 11400000, guid: ffdfbf4ea5af74641bc401773b38f709, type: 2}
+  - {fileID: 11400000, guid: 52d25ba988aa4bc40928425097b3701c, type: 2}
+  background: {fileID: 21300000, guid: 580e70a23d78448168e15b6a71f4e7be, type: 3}
+  localizedTexts:
+  - language: en
+    title: Amazon Rainforest
+    text: 'The Amazon Rainforest produces about 20% of the world''s oxygen and is
+      home to millions of animal and plant species! '
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: e8a60425bb67f42618a943883b553d29, type: 2}
+  targetExtraWords: 25

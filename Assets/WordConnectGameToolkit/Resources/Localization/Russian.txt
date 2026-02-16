@@ -1,0 +1,76 @@
+COINSSHOP : Магазин монет
+FREE : БЕСПЛАТНО
+BUYTIPS : Купить подсказки
+GETFREE : Получить бесплатно
+DAILYREWARD : Ежедневные награды
+DAY : День
+THANKS : Спасибо!
+LOADING : Загрузка...
+LUCKYSPIN : Колесо удачи
+NOADSLABEL1 : Сделайте эту покупку, чтобы навсегда убрать рекламу
+NOADSLABEL2 : Рекламные видео остаются доступными для просмотра по желанию после покупки
+BUY : КУПИТЬ
+OUTOFLIVES : ЖИЗНИ ЗАКОНЧИЛИСЬ
+REFILLTHELIVES : Пополнить жизни?
+OUTOFTIME : ВРЕМЯ ВЫШЛО
+REFILLTHETIME : Пополнить время?
+GIFT : Подарок
+LEVELCLEARED : УРОВЕНЬ ПРОЙДЕН!
+SETTINGS : Настройки
+SHOP : МАГАЗИН
+PRIVACY : ПРИВАТНОСТЬ
+QUITTHEGAME : Выйти из игры
+DOYOUWANTTOQUIT : Вы действительно хотите выйти?
+YES : Да
+NO : НЕТ
+COMINGSOON : Перезапустите игру, чтобы играть снова, или дождитесь следующего обновления
+WIN : ПОБЕДА
+NEXTLEVEL : Следующий уровень
+SCORE : Счёт
+POINTS : Очки
+REVIVEWITHNEWSHAPES : Возродиться с новыми фигурами?
+WHATCHADS : Смотреть рекламу
+CONTINUE : Продолжить
+YOULOSE : Вы проиграли...
+RETRY : Повторить
+ALMOST : Почти готово...
+ARCADEMODE : АРКАДНЫЙ РЕЖИМ
+STAGE : ЭТАП {stage}
+LEVEL : Уровень {level}
+MOSTPOPULAR : Самые популярные
+BESTOFFER : ЛУЧШЕЕ предложение
+NOADS : Убрать РЕКЛАМУ
+FREESPIN : БЕСПЛАТНОЕ вращение
+SOUNDS : Звуки
+MUSIC : Музыка
+VIBRATION : Вибрация
+GAMEOVER : Игра окончена
+YOURSCORE : Ваш счёт
+BESTSCORE : ЛУЧШИЙ счёт
+NEWRECORD : Новый рекорд!
+EXITGAME : Выйти из игры
+ADVENTURE : ПРИКЛЮЧЕНИЕ
+CLASSIC : КЛАССИКА
+TUTORIAL : Обучение
+RESTORE_PURCHASES : Восст. покупки
+EXTRAWORDS : Дополнительные слова
+WORDSNOTINTCLUDEDINTHISLEVEL : Слова, не включенные в этот уровень
+CLAIM : Получить
+COINS : МОНЕТЫ
+GEMS : КРИСТАЛЛЫ
+TAPTOCOLLECT : НАЖМИТЕ, ЧТОБЫ СОБРАТЬ
+DAILYREWARDS : ЕЖЕДНЕВНЫЕ НАГРАДЫ
+SPIN : КРУТИТЬ
+SELECTLANGUAGE : ВЫБЕРИТЕ ЯЗЫК
+AGAIN : ЕЩЁ РАЗ
+UNLOCK : Соберите карты, чтобы разблокировать интересный факт
+TipBoosterButton : Если вы застряли, используйте ПОДСКАЗКУ
+HammerBoosterButton : МОЛОТОК открывает любую выбранную букву
+ExtraWordsButton : Вы нашли ДОПОЛНИТЕЛЬНОЕ СЛОВО! Дополнительные слова отображаются здесь
+GiftButton : Вы разблокировали ПОДАРОК!<br><br> Потратьте КРИСТАЛЛЫ, чтобы получить ценную НАГРАДУ
+ShuffleButton : Кнопка ПЕРЕМЕШАТЬ поможет вам быстрее находить слова
+RedGem : Соедините слово {word}, чтобы получить КРАСНЫЙ КРИСТАЛЛ
+GameTutorial : Проведите пальцем, чтобы соединить слово {word} одним движением
+Home : Главная
+HARD: СЛОЖНО
+TIMETUT : Решите все слова вовремя, чтобы ПОБЕДИТЬ

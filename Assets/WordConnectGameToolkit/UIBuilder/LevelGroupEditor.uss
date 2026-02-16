@@ -1,0 +1,140 @@
+.localized-text-item {
+    margin-bottom: 12px;
+    padding: 8px;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.5);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-height: auto;
+}
+
+.localized-text-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.localized-text-content {
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: stretch;
+    min-height: auto;
+}
+
+.localized-text-fields {
+    flex-grow: 1;
+    margin-right: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.language-dropdown {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+    min-height: 28px;
+}
+
+.language-dropdown > Label {
+    min-width: 60px;
+    margin-right: 8px;
+}
+
+.language-dropdown .unity-dropdown-field {
+    max-width: 170px;
+    min-width: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.language-dropdown-field {
+    max-width: 180px;
+    min-width: 80px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.text-field-label {
+    margin-bottom: 2px;
+    margin-top: 4px;
+    -unity-font-style: normal;
+    font-size: 11px;
+}
+
+.title-field {
+    margin-bottom: 4px;
+    min-height: 20px;
+    padding-bottom: 2px;
+}
+
+.text-area {
+    min-height: 60px;
+    max-height: 200px;
+    width: 120%;
+    white-space: normal;
+    flex-grow: 1;
+}
+
+.remove-button {
+    width: 70px;
+    height: 35px;
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.separator {
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.no-languages-message {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 8px;
+    text-align: center;
+}
+
+.preview-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.background-preview {
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#localized-texts-scroll {
+    flex-shrink: 1;
+    height: 100%;
+    max-height: auto;
+}
+
+#localized-texts-list {
+    min-height: auto;
+}
+
+/* Colors tile property field styling */
+#colors-tile-field {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+#colors-tile-field > Label {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 80px;
+    margin-right: 16px;
+}
+
+#colors-tile-field .unity-object-field {
+    flex-grow: 1;
+    min-width: 120px;
+}

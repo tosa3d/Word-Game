@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20250702182805
+  m_EditorClassIdentifier: 
+  groupName: Fireflies
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: a7fd3c70cea55f64a8428472e59c9783, type: 2}
+  - {fileID: 11400000, guid: 212375ac854da09468f1251858c11212, type: 2}
+  - {fileID: 11400000, guid: 89a4495e8285e5c488c2eef3bb9234b6, type: 2}
+  - {fileID: 11400000, guid: 065f0de27fcc1024e80b92254161ff7e, type: 2}
+  - {fileID: 11400000, guid: fd029e33723d2de4f9e21ee0e6926251, type: 2}
+  - {fileID: 11400000, guid: 4707e5ab393893440b7f971526b3e804, type: 2}
+  - {fileID: 11400000, guid: f0e658bf1ac2938438c60d4664744897, type: 2}
+  - {fileID: 11400000, guid: 04728bc160712e74c895c2fa9b93052b, type: 2}
+  - {fileID: 11400000, guid: 1e048effb248d774d883094714153a6a, type: 2}
+  - {fileID: 11400000, guid: 5c36fca807a910c44a35053999b62c83, type: 2}
+  background: {fileID: 21300000, guid: 5c4376e4a711a448aa8d7843a9593739, type: 3}
+  localizedTexts:
+  - language: en
+    title: Fireflies
+    text: Fireflies produce light through a chemical reaction in their bodies, and
+      they use their glow to communicate with each other!
+  - language: ru
+    title: 
+    text: 
+  - language: es
+    title: 
+    text: 
+  - language: fr
+    title: 
+    text: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  targetExtraWords: 15

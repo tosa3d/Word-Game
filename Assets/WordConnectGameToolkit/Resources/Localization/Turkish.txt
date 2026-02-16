@@ -1,0 +1,76 @@
+COINSSHOP : Jeton Mağazası
+FREE : ÜCRETSİZ
+BUYTIPS : İpucu Satın Al
+GETFREE : Ücretsiz Al
+DAILYREWARD : Günlük Ödüller
+DAY : Gün
+THANKS : Teşekkürler!
+LOADING : Yükleniyor...
+LUCKYSPIN : Şanslı Çark
+NOADSLABEL1 : Reklamsız oyna!
+NOADSLABEL2 : Ödül videoları isteğe bağlıdır ve satın alma sonrası izlenebilir
+BUY : SATIN AL
+OUTOFLIVES : CAN BİTTİ
+REFILLTHELIVES : Canları yenile?
+OUTOFTIME : SÜRE BİTTİ
+REFILLTHETIME : Süreyi yenile?
+GIFT : Hediye
+LEVELCLEARED : LEVEL TAMAMLANDI!
+SETTINGS : Ayarlar
+SHOP : MAĞAZA
+PRIVACY : Gizlilik
+QUITTHEGAME : Oyundan çık
+DOYOUWANTTOQUIT : Gerçekten çıkmak istiyor musun?
+YES : Evet
+NO : HAYIR
+COMINGSOON : Yeni levellar yakında. <br>Bir sonraki güncelleme için takipte kalın.
+WIN : KAZAN
+NEXTLEVEL : Sonraki Level
+SCORE : Skor
+POINTS : Puan
+REVIVEWITHNEWSHAPES : Yeni şekillerle canlan?
+WHATCHADS : Reklam İzle
+CONTINUE : Devam Et
+YOULOSE : Kaybettin...
+RETRY : Tekrar Dene
+ALMOST : Neredeyse bitti...
+ARCADEMODE : ARCADE MODU
+STAGE : AŞAMA {stage}
+LEVEL : Seviye {level}
+MOSTPOPULAR : En Popüler
+BESTOFFER : EN İYİ Teklif
+NOADS : Reklamları Kaldır
+FREESPIN : ÜCRETSİZ Çark
+SOUNDS : Sesler
+MUSIC : Müzik
+VIBRATION : Titreşim
+GAMEOVER : Oyun Bitti
+YOURSCORE : Skorun
+BESTSCORE : EN İYİ Skor
+NEWRECORD : Yeni Rekor!
+EXITGAME : Oyundan Çık
+ADVENTURE : MACERA
+CLASSIC : KLASİK
+TUTORIAL : Öğretici
+RESTORE_PURCHASES : Satın Alımları Geri Yükle
+EXTRAWORDS : Ekstra Kelimeler
+WORDSNOTINTCLUDEDINTHISLEVEL : Bu levelde bulunmayan kelimeler
+CLAIM : Al
+COINS : JETONLAR
+GEMS : MÜCEVHERLER
+TAPTOCOLLECT : ALMAK İÇİN DOKUN
+DAILYREWARDS : GÜNLÜK ÖDÜLLER
+SPIN : ÇARK
+SELECTLANGUAGE : DİL SEÇ
+AGAIN : TEKRAR
+UNLOCK : İlginç gerçekleri açmak için kartları topla
+TipBoosterButton : Takılırsan, İPUCU kullanabilirsin
+HammerBoosterButton : ÇEKİÇ seçtiğin herhangi bir harfi açar
+ExtraWordsButton : EKSTRA KELİME buldun! Ekstra kelimeler burada gösterilir
+GiftButton : Bir HEDİYE açtın!<br><br> Değerli bir ÖDÜL almak için MÜCEVHER HARCA
+ShuffleButton : KARIŞTIR butonu kelimeleri daha hızlı bulmanı sağlar
+RedGem : {word} kelimesini birleştirerek KIRMIZI MÜCEVHER kazan
+GameTutorial : {word} kelimesini tek harekette birleştirmek için kaydır
+Home : Ana Sayfa
+HARD : ZOR
+TIMETUT : Tüm kelimeleri zamanında çözerek KAZAN

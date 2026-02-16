@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-117646
+  m_EditorClassIdentifier: 
+  number: 492
+  background: {fileID: 21300000, guid: af4763a947a47461c8129def1f6cc647, type: 3}
+  languages:
+  - language: en
+    letters: favourite
+    wordsAmount: 5
+    words:
+    - favour
+    - voter
+    - true
+    - frit
+    - favor
+    - fat
+    - virtue
+    - rivet
+    crosswordData:
+      columns: 11
+      rows: 8
+      placements:
+      - word: favour
+        wordNumber: 1
+        startPosition: {x: 5, y: 2}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: voter
+        wordNumber: 2
+        startPosition: {x: 3, y: 4}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: tRUE
+        wordNumber: 3
+        startPosition: {x: 7, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: FrIT
+        wordNumber: 4
+        startPosition: {x: 2, y: 6}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: favor
+        wordNumber: 5
+        startPosition: {x: 3, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: fAt
+        wordNumber: 6
+        startPosition: {x: 5, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: virtue
+        wordNumber: 7
+        startPosition: {x: 7, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: rIVET
+        wordNumber: 8
+        startPosition: {x: 10, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 2, y: 2}
+      maxBounds: {x: 10, y: 7}
+      serializedGrid: '           |           |   f favour|   a A i  I|   voter 
+        V|   o   tRUE|  FrIT u  T|       e   '
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  words: 5
+  letters: 9
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0

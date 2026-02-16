@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/WordConnectGameToolkit/UIBuilder/CrosswordLetterPalette.uss?fileID=7433441132597879392&amp;guid=2372dc25d35454022a42521a1f8e354b&amp;type=3#CrosswordLetterPalette" />
+    <ui:VisualElement name="letter-palette" class="letter-palette" style="flex-direction: row; justify-content: space-between; align-items: auto; align-self: stretch; background-color: rgb(72, 72, 72); flex-grow: 0; margin-left: 0; padding-left: 0; padding-right: 0; height: auto; padding-bottom: 0; padding-top: 0; max-height: 100px; min-height: 100px;">
+        <ui:VisualElement name="Container1" class="container" style="flex-grow: 1; justify-content: space-around; width: 219px; align-items: stretch; align-self: stretch;">
+            <ui:VisualElement style="flex-grow: 0; flex-direction: row; flex-shrink: 0; flex-wrap: nowrap; height: 20px;">
+                <ui:TextField name="letters-field" label="Letters:" is-delayed="false" class="letters-field" style="display: flex; flex-grow: 1; flex-shrink: 1; flex-direction: row;" />
+                <ui:TextField name="letters-length" class="letters-length" />
+                <ui:Toggle label="&#10;" tooltip="Generates letters (checked) or words (unchecked)" name="generate-letters-check" />
+            </ui:VisualElement>
+            <ui:VisualElement name="test-level-row" class="property-row" style="display: flex; flex-grow: 1; flex-direction: column; flex-shrink: 1; max-width: 100%; max-height: 100%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 10px;">
+                <ui:Button name="test-level-button" text="Test Level" tooltip="Test the current level" class="test-level-button" style="flex-shrink: 1; flex-grow: 1; background-color: rgb(70, 122, 102); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Container2" class="container" style="flex-grow: 1; align-self: stretch; justify-content: space-between; align-items: stretch; flex-wrap: nowrap; flex-direction: column;">
+            <ui:Button name="generate-button" text="Generate" tooltip="Generate random letters and words for this language" class="generate-button" style="display: flex; flex-grow: 1; flex-shrink: 1; background-color: rgb(39, 97, 156); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; min-height: 30px;" />
+            <ui:VisualElement name="hard-level-row" class="property-row" style="flex-grow: 1; flex-shrink: 1; flex-direction: column; align-self: flex-end; padding-top: 10px; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:Toggle name="hard-level-field" label="Hard Level" tooltip="Warns user the level is difficult" binding-path="isHardLevel" class="property-field" />
+            </ui:VisualElement>
+            <ui:VisualElement name="enable-timer-row" class="property-row" style="align-self: stretch; padding-top: 10px; flex-direction: row; flex-grow: 0; flex-shrink: 1; justify-content: flex-end;">
+                <ui:Toggle name="enable-timer-field" label="Timer" tooltip="Check to enable a timer for this level" binding-path="enableTimer" class="property-field" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                <ui:FloatField value="0" name="Duration" readonly="false" binding-path="timerDuration" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 5px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Container3" class="container" style="flex-grow: 1; justify-content: space-between;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-around;">
+                <ui:Label name="grid-size-label" text="Grid Size:" class="grid-size-label" style="display: flex; flex-grow: 0; flex-shrink: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 20px; margin-bottom: 0; margin-left: 0;" />
+                <ui:TextField name="columns-field" tooltip="Grid columns" class="grid-size-field" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; max-width: 50px;" />
+                <ui:Label name="x-label" text="×" class="x-label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:TextField name="rows-field" tooltip="Grid rows" class="grid-size-field" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; max-width: 50px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="background-row" class="property-row" style="flex-grow: 1; padding-top: 10px;">
+                <uie:ObjectField name="background-field" label="Background:" binding-path="background" class="property-field" />
+            </ui:VisualElement>
+            <ui:VisualElement name="colors-tile-row" class="property-row" style="flex-grow: 1; min-height: 10px; display: flex; padding-top: 10px;">
+                <uie:PropertyField name="colors-tile-field" label="Colors Tile:" binding-path="colorsTile" class="property-field" style="flex-grow: 0; display: flex; flex-shrink: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

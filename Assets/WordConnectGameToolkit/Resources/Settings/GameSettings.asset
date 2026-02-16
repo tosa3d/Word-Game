@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bde591f474e4a46b1e3e9ae39e552ca, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  coins: 200
+  gems: 10
+  coinsForAd: 2
+  enableAds: 1
+  enableInApps: 1
+  enableLuckySpin: 1
+  enablePreFailedPopup: 1
+  privacyPolicyUrl: https://docs.google.com/document/d/1xyvV9Fne3u58PU3yj9xirP4T9tmQBDQDiiFI_FhhgJc/edit?usp=sharing
+  continuePrice: 250
+  continueTime: 60
+  targetExtraWords: 8
+  gemsForExtraWords: 5
+  gemsForGift: 10
+  hammerBoostPrice: 200
+  hintBoostPrice: 200
+  countOfBoostsToBuy: 3
+  boostLevels:
+  - tag: HammerBoosterButton
+    level: 4
+  - tag: TipBoosterButton
+    level: 3

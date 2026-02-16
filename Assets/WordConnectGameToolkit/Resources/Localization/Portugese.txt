@@ -1,0 +1,76 @@
+COINSSHOP : Loja de Moedas
+FREE : GRÁTIS
+BUYTIPS : Comprar Dicas
+GETFREE : Obter Grátis
+DAILYREWARD : Recompensas Diárias
+DAY : Dia
+THANKS : Obrigado!
+LOADING : Carregando...
+LUCKYSPIN : Giro da Sorte
+NOADSLABEL1 : Jogue sem anúncios!
+NOADSLABEL2 : Vídeos de recompensa são opcionais e disponíveis para visualização após a compra
+BUY : COMPRAR
+OUTOFLIVES : SEM VIDAS
+REFILLTHELIVES : Recarregar as vidas?
+OUTOFTIME : SEM TEMPO
+REFILLTHETIME : Recarregar o tempo?
+GIFT : Presente
+LEVELCLEARED : NÍVEL CONCLUÍDO!
+SETTINGS : Configurações
+SHOP : LOJA
+PRIVACY : Privacidade
+QUITTHEGAME : Sair do jogo
+DOYOUWANTTOQUIT : Você realmente quer sair?
+YES : Sim
+NO : NÃO
+COMINGSOON : Novos níveis em breve. <br>Fique atento à próxima atualização.
+WIN : VITÓRIA
+NEXTLEVEL : Próximo Nível
+SCORE : Pontuação
+POINTS : Pontos
+REVIVEWITHNEWSHAPES : Reviver com novas formas?
+WHATCHADS : Assistir Anúncios
+CONTINUE : Continuar
+YOULOSE : Você Perdeu...
+RETRY : Tentar Novamente
+ALMOST : Quase lá...
+ARCADEMODE : MODO ARCADE
+STAGE : ESTÁGIO {stage}
+LEVEL : Nível {level}
+MOSTPOPULAR : Mais Popular
+BESTOFFER : MELHOR Oferta
+NOADS : Remover ADS
+FREESPIN : Giro GRÁTIS
+SOUNDS : Sons
+MUSIC : Música
+VIBRATION : Vibração
+GAMEOVER : Fim de Jogo
+YOURSCORE : Sua Pontuação
+BESTSCORE : MELHOR Pontuação
+NEWRECORD : Novo Recorde!
+EXITGAME : Sair do Jogo
+ADVENTURE : AVENTURA
+CLASSIC : CLÁSSICO
+TUTORIAL : Tutorial
+RESTORE_PURCHASES : Restaurar Compras
+EXTRAWORDS : Palavras Extras
+WORDSNOTINTCLUDEDINTHISLEVEL : Palavras não incluídas neste nível
+CLAIM : Reivindicar
+COINS : MOEDAS
+GEMS : GEMAS
+TAPTOCOLLECT : TOQUE PARA COLETAR
+DAILYREWARDS : RECOMPENSAS DIÁRIAS
+SPIN :GIRO
+SELECTLANGUAGE : SELECIONAR LÍNGUA
+AGAIN : NOVAMENTE
+UNLOCK : Colete cartas para desbloquear fatos interessantes
+TipBoosterButton : Se você ficar preso, pode usar uma DICA
+HammerBoosterButton : O MARTELO revela qualquer letra da sua escolha
+ExtraWordsButton : Você encontrou uma PALAVRA EXTRA! Palavras extras são exibidas aqui
+GiftButton : Você desbloqueou um PRESENTE!<br><br> GASTE GEMAS para receber uma RECOMPENSA valiosa
+ShuffleButton : O botão EMBARALHAR pode ajudá-lo a encontrar palavras mais rápido
+RedGem : Conecte a palavra {word} para obter uma GEMAS VERMELHA
+GameTutorial : Deslize para conectar a palavra {word} em um único movimento
+Home : Início
+HARD : DIFÍCIL
+TIMETUT : Resolva todas as palavras a tempo para VENCER

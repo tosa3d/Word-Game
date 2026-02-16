@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-165270
+  m_EditorClassIdentifier: 
+  number: 217
+  background: {fileID: 21300000, guid: 5c4376e4a711a448aa8d7843a9593739, type: 3}
+  languages:
+  - language: en
+    letters: clamor
+    wordsAmount: 5
+    words:
+    - coral
+    - cola
+    - orca
+    - macro
+    - molar
+    - carol
+    - coal
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: coral
+        wordNumber: 1
+        startPosition: {x: 2, y: 2}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: cola
+        wordNumber: 2
+        startPosition: {x: 0, y: 4}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: orca
+        wordNumber: 3
+        startPosition: {x: 5, y: 4}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: MAcRO
+        wordNumber: 4
+        startPosition: {x: 0, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: molar
+        wordNumber: 5
+        startPosition: {x: 3, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: carol
+        wordNumber: 6
+        startPosition: {x: 5, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: coal
+        wordNumber: 7
+        startPosition: {x: 8, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 0, y: 1}
+      maxBounds: {x: 8, y: 6}
+      serializedGrid: '          |   m c    |M coral c |A  l r  o |cola orca |R 
+        r l  l |O         '
+  - language: ru
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  - language: es
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  - language: fr
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  words: 5
+  letters: 6
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0

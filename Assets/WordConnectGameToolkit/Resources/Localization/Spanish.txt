@@ -1,0 +1,77 @@
+COINSSHOP : Tienda de Monedas
+FREE : GRATIS
+BUYTIPS : Comprar Pistas
+GETFREE : Obtener Gratis
+DAILYREWARD : Recompensas Diarias
+DAY : Día
+THANKS : ¡Gracias!
+LOADING : Cargando...
+LUCKYSPIN : GIRO DE SUERTE
+YOURWIN : ¡Has Ganado!
+NOADSLABEL1 : Haz esta compra para eliminar los anuncios permanentemente
+NOADSLABEL2 : Los videos de recompensa son opcionales y están disponibles después de la compra
+BUY : COMPRAR
+OUTOFLIVES : SIN VIDAS
+REFILLTHELIVES : ¿Rellenar las vidas?
+OUTOFTIME : SIN TIEMPO
+REFILLTHETIME : ¿Rellenar el tiempo?
+GIFT : Regalo
+LEVELCLEARED : ¡NIVEL COMPLETADO!
+SETTINGS : Ajustes
+SHOP : TIENDA
+PRIVACY : PRIVACIDAD
+QUITTHEGAME : Salir del juego
+DOYOUWANTTOQUIT : ¿Realmente quieres salir?
+YES : Sí
+NO : NO
+COMINGSOON : Reinicia el juego para jugar de nuevo o espera la próxima actualización
+YOUWIN : ¡Has Ganado!
+NEXTLEVEL : Siguiente Nivel
+SCORE : Puntuación
+POINTS : Puntos
+REVIVEWITHNEWSHAPES : ¿Revivir con nuevas formas?
+WHATCHADS : Ver Anuncios
+CONTINUE : Continuar
+YOULOSE : Has Perdido...
+RETRY : Reintentar
+ALMOST : Casi ahí...
+ARCADEMODE : MODO ARCADE
+STAGE : ETAPA {stage}
+LEVEL : NIVEL {level}
+MOSTPOPULAR : Más Popular
+BESTOFFER : MEJOR Oferta
+NOADS : SIN ANUNCIOS
+FREESPIN : Giro GRATIS
+SOUNDS : Sonidos
+MUSIC : Música
+VIBRATION : Vibración
+GAMEOVER : Fin del Juego
+YOURSCORE : Tu Puntuación
+BESTSCORE : MEJOR Puntuación
+NEWRECORD : ¡Nuevo Récord!
+EXITGAME : Salir del Juego
+ADVENTURE : AVENTURA
+CLASSIC : CLÁSICO
+TUTORIAL : Tutorial
+RESTORE_PURCHASES : RESTAURAR COMPRAS
+EXTRAWORDS : Palabras Extra
+WORDSNOTINTCLUDEDINTHISLEVEL : Palabras no incluidas en este nivel
+CLAIM : Reclamar
+COINS : MONEDAS
+GEMS : GEMAS
+TAPTOCOLLECT : TOCA PARA RECOGER
+DAILYREWARDS : RECOMPENSAS DIARIAS
+SPIN : GIRO
+SELECTLANGUAGE : SELECCIONAR IDIOMA
+AGAIN : NUEVAMENTE
+UNLOCK : Reúne cartas para desbloquear un interesante facto
+TipBoosterButton : Si te quedas atascado, puedes usar una PISTA
+HammerBoosterButton : El MARTILLO revela cualquier letra que elijas
+ExtraWordsButton : ¡Has encontrado una PALABRA EXTRA! Las palabras extra se muestran aquí
+GiftButton : ¡Has desbloqueado un REGALO!<br><br> Gasta GEMAS para recibir una valiosa RECOMPENSA
+ShuffleButton : El botón MEZCLAR puede ayudarte a encontrar palabras más rápido
+RedGem : Conecta la palabra {word} para obtener una GEMA ROJA
+GameTutorial : Desliza para conectar la palabra {word} en un movimiento
+Home : Inicio
+HARD : DIFÍCIL
+TIMETUT : Resuelve todas las palabras a tiempo para GANAR

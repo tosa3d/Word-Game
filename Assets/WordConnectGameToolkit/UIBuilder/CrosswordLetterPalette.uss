@@ -1,0 +1,104 @@
+.container{
+    padding: 10px;
+}
+/*!* Letter Palette Styles *!*/
+/*.letter-palette {*/
+/*    flex-shrink: 0;*/
+/*    flex-grow: 0;*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 10px;*/
+/*    padding-left: 10px;*/
+/*    padding-right: 10px;*/
+/*}*/
+
+/*!* Header Row Styles *!*/
+/*.header-row {*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    margin-bottom: 10px;*/
+/*    flex-shrink: 0;*/
+/*    height: 35px;*/
+/*}*/
+
+/*.letters-field {*/
+/*    width: 150px;*/
+/*    min-width: 60px;*/
+/*}*/
+
+/*.letters-length {*/
+/*    width: 40px;*/
+/*    margin-left: 5px;*/
+/*}*/
+
+/*.generate-button {*/
+/*    background-color: rgb(0, 0, 204);*/
+/*    width: 80px;*/
+/*    height: 30px;*/
+/*    -unity-font-style: bold;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.spacer {*/
+/*    width: 20px;*/
+/*}*/
+
+/*.grid-size-label {*/
+/*    min-width: 60px;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.grid-size-field {*/
+/*    width: 40px;*/
+/*    margin-left: 5px;*/
+/*}*/
+
+/*.x-label {*/
+/*    width: 10px;*/
+/*    margin-left: 5px;*/
+/*    margin-right: 5px;*/
+/*    -unity-text-align: middle-center;*/
+/*}*/
+
+/*!* Property Row Styles *!*/
+/*.property-row {*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    margin-bottom: 5px;*/
+/*    padding-left: 5px;*/
+/*    padding-right: 5px;*/
+/*    min-height: 25px;*/
+/*}*/
+
+/*.property-field {*/
+/*    flex-grow: 1;*/
+/*}*/
+
+/*!* Test Level Button Styles *!*/
+/*.test-level-button {*/
+/*    background-color: rgb(70, 122, 102);*/
+/*    width: 100px;*/
+/*    height: 25px;*/
+/*    -unity-font-style: bold;*/
+/*}*/
+
+/*!* Generate Button Hover Effects *!*/
+/*.generate-button:hover {*/
+/*    background-color: rgb(0, 0, 255);*/
+/*}*/
+
+/*.test-level-button:hover {*/
+/*    background-color: rgb(80, 132, 112);*/
+/*}*/
+
+/*!* Additional styling for better UI layout *!*/
+/*.letters-field .unity-text-field__label {*/
+/*    min-width: 60px;*/
+/*}*/
+
+/*.grid-size-field .unity-integer-field__input {*/
+/*    -unity-text-align: middle-center;*/
+/*}*/
+
+/*.letters-length .unity-integer-field__input {*/
+/*    -unity-text-align: middle-center;*/
+/*}*/

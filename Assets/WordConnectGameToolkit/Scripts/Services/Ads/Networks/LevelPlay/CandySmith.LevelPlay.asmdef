@@ -1,0 +1,33 @@
+{
+    "name": "CandySmith.LevelPlay",
+    "rootNamespace": "",
+    "references": [
+        "GUID:00dd4a7ac8c24c898083910c81898ecc",
+        "GUID:760a4c7888534400e882b82c5b3fba06"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.services.levelplay",
+            "expression": "[0.0,9.0)",
+            "define": "LEVELPLAY8"
+        },
+        {
+            "name": "com.unity.services.levelplay",
+            "expression": "9.0.0",
+            "define": "LEVELPLAY9"
+        },
+        {
+            "name": "com.unity.services.levelplay",
+            "expression": "",
+            "define": "IRONSOURCE"
+        }
+    ],
+    "noEngineReferences": false
+}

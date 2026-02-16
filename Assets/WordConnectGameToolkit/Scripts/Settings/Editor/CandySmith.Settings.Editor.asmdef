@@ -1,0 +1,19 @@
+{
+    "name": "CandySmith.Settings.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d3bf71b33c0c04eb9bc1a8d6513d76bb",
+        "GUID:00dd4a7ac8c24c898083910c81898ecc"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

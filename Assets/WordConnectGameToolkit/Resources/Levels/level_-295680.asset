@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-295680
+  m_EditorClassIdentifier: 
+  number: 355
+  background: {fileID: 21300000, guid: 2a32ea8ee8934475ebef05125f0a4463, type: 3}
+  languages:
+  - language: en
+    letters: resolute
+    wordsAmount: 5
+    words:
+    - outer
+    - terse
+    - steel
+    - route
+    - lotus
+    - rout
+    - tele
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: lotus
+        wordNumber: 5
+        startPosition: {x: 4, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: terse
+        wordNumber: 2
+        startPosition: {x: 1, y: 4}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: route
+        wordNumber: 4
+        startPosition: {x: 5, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: steel
+        wordNumber: 3
+        startPosition: {x: 2, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: outer
+        wordNumber: 1
+        startPosition: {x: 5, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: rout
+        wordNumber: 6
+        startPosition: {x: 7, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: tele
+        wordNumber: 7
+        startPosition: {x: 9, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems:
+      - position: {x: 2, y: 1}
+        itemPath: special_item
+      - position: {x: 9, y: 5}
+        itemPath: special_item
+      minBounds: {x: 1, y: 1}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: '          |  s lotus |  t  u   t|  e  t r e| terse o l|  l 
+        route|       t  '
+  - language: ru
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  - language: es
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  - language: fr
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
+  words: 5
+  letters: 8
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0
