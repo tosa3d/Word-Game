@@ -144,44 +144,21 @@ MonoBehaviour:
       serializedGrid: '          |   ask    |    A     |    K     |          |         
         |          '
   - language: "\u0651Fa"
-    letters: "\u0644\u0628\u0647"
+    letters: "\u0633\u0644\u0637\u0627\u0646\u200C\u0645\u062D\u0645\u062F\u06A9\u06CC\u0627\u0635\u0627\u0644\u062D\u0627\u0646\u06CC"
     wordsAmount: 5
-    words:
-    - "\u0628\u0644"
-    - "\u0647\u0628"
-    - "\u0628\u0644\u0647"
+    words: []
     crosswordData:
       columns: 10
       rows: 7
-      placements:
-      - word: "\u0628\u0644"
-        wordNumber: 1
-        startPosition: {x: 3, y: 2}
-        isHorizontal: 1
-        isSpecialItem: 0
-        specialItemPath: 
-      - word: "\u0647\u0628"
-        wordNumber: 2
-        startPosition: {x: 4, y: 3}
-        isHorizontal: 1
-        isSpecialItem: 0
-        specialItemPath: 
-      - word: "\u0628\u0644\u0647"
-        wordNumber: 3
-        startPosition: {x: 4, y: 1}
-        isHorizontal: 0
-        isSpecialItem: 0
-        specialItemPath: 
-      specialItems:
-      - position: {x: 4, y: 2}
-        itemPath: special_item
-      minBounds: {x: 3, y: 1}
-      maxBounds: {x: 5, y: 3}
-      serializedGrid: "          |    \u0628     |   \u0628\u0644     |    \u0647\u0628   
-        |          |          |          "
+      placements: []
+      specialItems: []
+      minBounds: {x: 4, y: 1}
+      maxBounds: {x: 4, y: 1}
+      serializedGrid: "          |    \u0644     |          |          |         
+        |          |          "
   colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
   words: 5
-  letters: 3
+  letters: 20
   min: 3
   max: 6
   difficulty: 0
