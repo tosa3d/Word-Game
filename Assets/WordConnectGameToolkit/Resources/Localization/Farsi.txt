@@ -61,7 +61,7 @@ GEMS : جم
 TAPTOCOLLECT : برای دریافت ضربه بزن
 DAILYREWARDS : جوایز روزانه
 SPIN : چرخش
-SELECTLANGUAGE : انتخاب زبان
+SELECTLANGUAGE : ﻥﺎﺑﺯ ﺏﺎﺨﺘﻧﺍ
 AGAIN : دوباره
 UNLOCK : برای باز کردن، کارت‌ها را جمع‌آوری کنید تا به اطلاعات جالب دسترسی پیدا کنید
 TipBoosterButton : اگر گیر کردید، می‌توانید از راهنما (Hint) استفاده کنید
