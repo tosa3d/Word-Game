@@ -143,6 +143,42 @@ MonoBehaviour:
       maxBounds: {x: 5, y: 3}
       serializedGrid: '          |   ask    |    A     |    K     |          |         
         |          '
+  - language: "\u0651Fa"
+    letters: "\u0644\u0628\u0647"
+    wordsAmount: 5
+    words:
+    - "\u0628\u0644"
+    - "\u0647\u0628"
+    - "\u0628\u0644\u0647"
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: "\u0628\u0644"
+        wordNumber: 1
+        startPosition: {x: 3, y: 2}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0647\u0628"
+        wordNumber: 2
+        startPosition: {x: 4, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0628\u0644\u0647"
+        wordNumber: 3
+        startPosition: {x: 4, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems:
+      - position: {x: 4, y: 2}
+        itemPath: special_item
+      minBounds: {x: 3, y: 1}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: "          |    \u0628     |   \u0628\u0644     |    \u0647\u0628   
+        |          |          |          "
   colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
   words: 5
   letters: 3

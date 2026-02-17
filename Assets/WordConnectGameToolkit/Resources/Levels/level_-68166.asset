@@ -170,6 +170,19 @@ MonoBehaviour:
       maxBounds: {x: 6, y: 5}
       serializedGrid: '          |          |          |   geri   |    r     |  
         gir    |          '
+  - language: "\u0651Fa"
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 5, y: 3}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: '          |          |          |          |          |         
+        |          '
   colorsTile: {fileID: 11400000, guid: 63f1377c90d84ec478676a869dc2a2c1, type: 2}
   words: 5
   letters: 4

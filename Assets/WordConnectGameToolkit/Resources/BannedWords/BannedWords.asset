@@ -18,3 +18,9 @@ MonoBehaviour:
   - languageCode: tr
     bannedWords:
     - "\xFCre"
+  - languageCode: "\u0651Fa"
+    bannedWords:
+    - "\u0628\u0647"
+    - "\u0647"
+    - "\u0644\u0628\u0647"
+    - "\u0647\u0644\u0628"

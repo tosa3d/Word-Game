@@ -19,4 +19,10 @@ MonoBehaviour:
     languageModel: {fileID: 5022602860645237092, guid: 5a9fb8771656840c9bdcf09593160237, type: 3}
     enabledByDefault: 1
     localizationBase: {fileID: 4900000, guid: 914ee9d7b6e084087bb685a65d1ddae3, type: 3}
+  - code: "\u0651Fa"
+    displayName: Farsi
+    localizedName: Farsi
+    languageModel: {fileID: 5022602860645237092, guid: 504dbc88cc77b07449aa10e52c9eef34, type: 3}
+    enabledByDefault: 1
+    localizationBase: {fileID: 4900000, guid: 5e0ea29b61aa7b34f912f74d0ff0f800, type: 3}
   defaultLanguage: en

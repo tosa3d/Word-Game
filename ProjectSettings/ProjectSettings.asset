@@ -898,7 +898,7 @@ PlayerSettings:
   cloudProjectId: 0ae91b2a-5cb6-4b16-95c7-f03875982006
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: WordsCompleteProject
+  projectName: WordGame
   organizationId: rastaarco
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

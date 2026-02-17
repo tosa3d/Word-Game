@@ -92,6 +92,18 @@ MonoBehaviour:
       minBounds: {x: 0, y: 0}
       maxBounds: {x: 9, y: 6}
       serializedGrid: 
+  - language: "\u0651Fa"
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 0
+      rows: 0
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 0, y: 0}
+      serializedGrid: 
   colorsTile: {fileID: 11400000, guid: 73ffea776cb945c449514e51d2f92ace, type: 2}
   words: 5
   letters: 5

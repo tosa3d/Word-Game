@@ -1,0 +1,76 @@
+COINSSHOP : فروشگاه سکه
+FREE : رایگان
+BUYTIPS : خرید راهنما
+GETFREE : دریافت رایگان
+DAILYREWARD : جایزه روزانه
+DAY : روز
+THANKS : ممنون!
+LOADING : در حال بارگذاری…
+LUCKYSPIN : چرخ شانس
+NOADSLABEL1 : بازی بدون تبلیغات!
+NOADSLABEL2 : ویدیوهای جایزه اختیاری هستند و بعد از خرید در دسترس خواهند بود
+BUY : خرید
+OUTOFLIVES : جان‌ها تمام شد
+REFILLTHELIVES : شارژ جان‌ها؟
+OUTOFTIME : زمان تمام شد
+REFILLTHETIME : شارژ زمان؟
+GIFT : هدیه
+LEVELCLEARED : مرحله با موفقیت رد شد!
+SETTINGS : تنظیمات
+SHOP : فروشگاه
+PRIVACY : حریم خصوصی
+QUITTHEGAME : خروج از بازی
+DOYOUWANTTOQUIT : آیا واقعاً می‌خواهید از بازی خارج شوید؟
+YES : بله
+NO : خیر
+COMINGSOON : مراحل جدید به‌زودی اضافه می‌شوند. <br>منتظر آپدیت بعدی باشید.
+WIN : برنده شدی
+NEXTLEVEL : مرحله بعد
+SCORE : امتیاز
+POINTS : امتیازات
+REVIVEWITHNEWSHAPES : ادامه بازی با شکل‌های جدید؟
+WHATCHADS : تماشای تبلیغ
+CONTINUE : ادامه
+YOULOSE : باختی…
+RETRY : تلاش دوباره
+ALMOST : نزدیک بود…
+ARCADEMODE : حالت آرکید
+STAGE : مرحله {stage}
+LEVEL : لِوِل {level}
+MOSTPOPULAR : محبوب‌ترین
+BESTOFFER : بهترین پیشنهاد
+NOADS : حذف تبلیغات
+FREESPIN : چرخش رایگان
+SOUNDS : صدا
+MUSIC : موسیقی
+VIBRATION : لرزش
+GAMEOVER : پایان بازی
+YOURSCORE : امتیاز شما
+BESTSCORE : بهترین امتیاز
+NEWRECORD : رکورد جدید!
+EXITGAME : خروج از بازی
+ADVENTURE : ماجراجویی
+CLASSIC : کلاسیک
+TUTORIAL : آموزش
+RESTORE_PURCHASES : بازیابی خریدها
+EXTRAWORDS : کلمات اضافه
+WORDSNOTINTCLUDEDINTHISLEVEL : کلماتی که در این مرحله وجود ندارند
+CLAIM : دریافت
+COINS : سکه
+GEMS : جم
+TAPTOCOLLECT : برای دریافت ضربه بزن
+DAILYREWARDS : جوایز روزانه
+SPIN : چرخش
+SELECTLANGUAGE : انتخاب زبان
+AGAIN : دوباره
+UNLOCK : برای باز کردن، کارت‌ها را جمع‌آوری کنید تا به اطلاعات جالب دسترسی پیدا کنید
+TipBoosterButton : اگر گیر کردید، می‌توانید از راهنما (Hint) استفاده کنید
+HammerBoosterButton : چکش هر حرفی را که انتخاب کنید آشکار می‌کند
+ExtraWordsButton : شما یک کلمه اضافه پیدا کردید! کلمات اضافه اینجا نمایش داده می‌شوند
+GiftButton : شما یک هدیه باز کردید!<br><br>با خرج کردن جم، یک جایزه ارزشمند دریافت کنید
+ShuffleButton : دکمه‌ی مخلوط‌کردن به شما کمک می‌کند سریع‌تر کلمات را پیدا کنید
+RedGem : با وصل کردن کلمه {word} یک جم قرمز دریافت کنید
+GameTutorial : برای ساختن کلمه {word}، انگشت خود را در یک حرکت بکشید
+Home : خانه
+HARD : سخت
+TIMETUT : همه‌ی کلمات را قبل از تمام شدن زمان حل کنید تا برنده شوید

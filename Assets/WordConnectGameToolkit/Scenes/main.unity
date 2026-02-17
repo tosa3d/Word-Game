@@ -212,6 +212,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!222 &51932005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -630,6 +632,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!95 &287781565
 Animator:
   serializedVersion: 5
@@ -788,6 +792,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!95 &337934082
 Animator:
   serializedVersion: 5
@@ -1235,6 +1241,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!95 &703615447
 Animator:
   serializedVersion: 5
@@ -2617,6 +2625,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &1251246399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,7 +2687,6 @@ MonoBehaviour:
   lineRenderer: {fileID: 530248241}
   parentLetters: {fileID: 1652429909}
   panelCanvasGroup: {fileID: 6325133707767703772}
-  characterSpacing: 30
   backgroundSelectedWord: {fileID: 767724611}
   selectedWordText: {fileID: 1889722111}
   layout: {fileID: 767724614}
@@ -2788,6 +2796,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!95 &1263950665
 Animator:
   serializedVersion: 5
@@ -2957,6 +2967,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 1
+  isRewarded: 0
+  adReference: {fileID: 0}
   rectTransform: {fileID: 1107538897}
   savePosition: {x: 0, y: 0}
   targetPosition: {x: -1500, y: 0}
@@ -4831,6 +4843,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
   rectTransform: {fileID: 2003998213}
   savePosition: {x: 500, y: -174}
   targetPosition: {x: 1500, y: -174}
@@ -5096,7 +5110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -233.00006
+      value: -233.00003
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
