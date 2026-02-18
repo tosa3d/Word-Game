@@ -1,19 +1,19 @@
-COINSSHOP : فروشگاه سکه
-FREE : رایگان
-BUYTIPS : خرید راهنما
-GETFREE : دریافت رایگان
-DAILYREWARD : جایزه روزانه
-DAY : روز
-THANKS : ممنون!
-LOADING : در حال بارگذاری…
-LUCKYSPIN : چرخ شانس
-NOADSLABEL1 : بازی بدون تبلیغات!
-NOADSLABEL2 : ویدیوهای جایزه اختیاری هستند و بعد از خرید در دسترس خواهند بود
-BUY : خرید
-OUTOFLIVES : جان‌ها تمام شد
-REFILLTHELIVES : شارژ جان‌ها؟
-OUTOFTIME : زمان تمام شد
-REFILLTHETIME : شارژ زمان؟
+COINSSHOP : ﻪﮑﺳ ﻩﺎﮕﺷﻭﺮﻓ
+FREE : ﻥﺎﮕﯾﺍﺭ
+BUYTIPS : ﺎﻤﻨﻫﺍﺭ ﺪﯾﺮﺧ
+GETFREE : ﻥﺎﮕﯾﺍﺭ ﺖﻓﺎﯾﺭﺩ
+DAILYREWARD : ﻪﻧﺍﺯﻭﺭ ﻩﺰﯾﺎﺟ
+DAY : ﺯﻭﺭ
+THANKS : !ﻥﻮﻨﻤﻣ
+LOADING : …ﯼﺭﺍﺬﮔﺭﺎﺑ ﻝﺎﺣ ﺭﺩ
+LUCKYSPIN : ﺲﻧﺎﺷ ﺥﺮﭼ
+NOADSLABEL1 : !ﺕﺎﻐﯿﻠﺒﺗ ﻥﻭﺪﺑ ﯼﺯﺎﺑ
+NOADSLABEL2 : ﺩﻮﺑ ﺪﻨﻫﺍﻮﺧ ﺱﺮﺘﺳﺩ ﺭﺩ ﺪﯾﺮﺧ ﺯﺍ ﺪﻌﺑ ﻭ ﺪﻨﺘﺴﻫ ﯼﺭﺎﯿﺘﺧﺍ ﻩﺰﯾﺎﺟ ﯼﺎﻫﻮﯾﺪﯾﻭ
+BUY : ﺪﯾﺮﺧ
+OUTOFLIVES : ﺪﺷ ﻡﺎﻤﺗ ﺎﻫ‌ﻥﺎﺟ
+REFILLTHELIVES : ؟ﺎﻫ‌ﻥﺎﺟ ﮊﺭﺎﺷ
+OUTOFTIME : ﺪﺷ ﻡﺎﻤﺗ ﻥﺎﻣﺯ
+REFILLTHETIME : ؟ﻥﺎﻣﺯ ﮊﺭﺎﺷ
 GIFT : هدیه
 LEVELCLEARED : مرحله با موفقیت رد شد!
 SETTINGS : تنظیمات
@@ -41,9 +41,9 @@ MOSTPOPULAR : محبوب‌ترین
 BESTOFFER : بهترین پیشنهاد
 NOADS : حذف تبلیغات
 FREESPIN : چرخش رایگان
-SOUNDS : صدا
-MUSIC : موسیقی
-VIBRATION : لرزش
+SOUNDS : ﺍﺪﺻ
+MUSIC : ﯽﻘﯿﺳﻮﻣ
+VIBRATION : ﺵﺯﺮﻟ
 GAMEOVER : پایان بازی
 YOURSCORE : امتیاز شما
 BESTSCORE : بهترین امتیاز
