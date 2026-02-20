@@ -48,14 +48,14 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         public List<Tile> allTiles = new List<Tile>();
         public TextMeshProUGUI characterPrefab;
         private Queue<TextMeshProUGUI> characterPool = new Queue<TextMeshProUGUI>();
-        private HashSet<string> openedWords = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        private HashSet<string> openedWords = new HashSet<string>(StringComparer.Ordinal);
         private Level levelData;
 
         [SerializeField]
         private Transform extraWordPositionTransform;
-        [SerializeField] 
+        [SerializeField]
         private Transform specialItemsContainer;
-        [SerializeField] 
+        [SerializeField]
         private GameObject defaultSpecialItemPrefab;
 
         public UnityEvent OnAllTilesOpened = new UnityEvent();
@@ -149,16 +149,16 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             // Initialize collections
             tileMap.Clear();
             allTiles.Clear();
-            
+
             // First, try to load saved crossword data from the level
             var languageData = levelData.GetLanguageData(language);
             bool useSavedData = false;
-            
+
             if (languageData != null && languageData.crosswordData != null)
             {
                 useSavedData = LoadSavedCrosswordData(languageData.crosswordData, words);
             }
-            
+
             // If we couldn't load saved data, generate a new crossword
             if (!useSavedData)
             {
@@ -167,7 +167,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 {
                     crosswordConfig = Resources.Load<CrosswordGenerationConfigSO>("Settings/CrosswordConfig");
                 }
-                
+
                 // Use the CrosswordGenerator with configuration
                 bool success;
                 if (crosswordConfig != null)
@@ -180,7 +180,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     // Fallback to legacy method for backward compatibility
                     success = CrosswordGenerator.GenerateCrossword(words, gridSize, out grid, out placedWords);
                 }
-                
+
                 if (!success)
                 {
                     Debug.LogError("Could not place any words. Check word list.");
@@ -203,16 +203,16 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             // Wait for the end of frame to ensure layout calculations are completed
             yield return new WaitForEndOfFrame();
-            
+
             // Wait one more frame to be extra sure
             yield return null;
-            
+
             // Force layout rebuild
             LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
-            
+
             // Wait one more frame after forcing rebuild
             yield return null;
-            
+
             // Now create the visual grid
             CreateVisualGrid(gridCenter, levelData);
             foreach (Tile tile in allTiles)
@@ -259,20 +259,20 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
 
             // Apply reasonable limits
             cellSize = Mathf.Clamp(cellSize, 40f, 300);
-            
+
             // Calculate spacing as a percentage of cell size
             spacing = cellSize * -0.01f; // 10% of cell size
-            
+
             // Get original tile size from prefab for positioning calculations
             RectTransform tilePrefabRect = tile.GetComponent<RectTransform>();
             float originalTileSize = tilePrefabRect != null ? tilePrefabRect.sizeDelta.x : 50f; // fallback to 50f
-            
+
             // Calculate grid positioning offsets using original tile size
             float totalWidth = gridWidth * originalTileSize + (gridWidth - 1) * spacing;
             float totalHeight = gridHeight * originalTileSize + (gridHeight - 1) * spacing;
             float startX = -totalWidth / 2f;
             float startY = totalHeight / 2f;
-            
+
             // Fill the grid with tiles or placeholders
             int gridX = 0, gridY = 0;
             for (int y = minBounds.y; y <= maxBounds.y; y++)
@@ -286,19 +286,19 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                         Tile newTile = resolver.Instantiate(tile, transform);
                         newTile.SetColors(levelData.colorsTile);
                         newTile.SetCharacter(grid[x, y]);
-                        
+
                         // Position tile manually without changing its size
                         RectTransform tileRect = newTile.GetComponent<RectTransform>();
                         // Keep original tile size, just position it
-                        
+
                         float posX = startX + gridX * (originalTileSize + spacing);
                         float posY = startY - gridY * (originalTileSize + spacing);
                         tileRect.anchoredPosition = new Vector2(posX, posY);
-                        
+
                         // Store tile in the map
                         tileMap[new Vector2Int(x, y)] = newTile;
                         allTiles.Add(newTile);
-                        
+
                     }
                     gridX++;
                 }
@@ -362,11 +362,11 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
 
                 // After scaling, apply a final centering correction for maximum precision
                 RectTransform thisRect = GetComponent<RectTransform>();
-                
+
                 // Recalculate actual centers after scaling
                 float finalMinX = float.MaxValue, finalMaxX = float.MinValue;
                 float finalMinY = float.MaxValue, finalMaxY = float.MinValue;
-                
+
                 foreach (var tile in allTiles)
                 {
                     Vector3 globalTilePos = tile.GetComponent<RectTransform>().TransformPoint(Vector3.zero);
@@ -375,10 +375,10 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     finalMinY = Mathf.Min(finalMinY, globalTilePos.y);
                     finalMaxY = Mathf.Max(finalMaxY, globalTilePos.y);
                 }
-                
+
                 Vector3 finalTilesGlobalCenter = new Vector3((finalMinX + finalMaxX) / 2f, (finalMinY + finalMaxY) / 2f, 0);
                 Vector3 finalFieldGlobalCenter = thisRect.TransformPoint(fieldCenter);
-                
+
                 // Apply micro-adjustment to the entire transform if needed
                 Vector3 finalCenteringOffset = finalFieldGlobalCenter - finalTilesGlobalCenter;
                 if (finalCenteringOffset.magnitude > 0.01f) // Only adjust if difference is significant
@@ -388,10 +388,10 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     thisRect.anchoredPosition += new Vector2(localOffset.x, localOffset.y);
                 }
             }
-            
+
             // Associate tiles with their words
             AssociateTilesWithWords();
-            
+
             // Store the current tile size for later reference
             tileSize = cellSize;
         }
@@ -403,16 +403,16 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             {
                 var tilesList = wordPlacement.tiles as List<Tile>;
                 tilesList?.Clear(); // Clear without casting to avoid type errors
-                
+
                 // Create a new typed list and copy to the object list
                 List<Tile> typedTiles = new List<Tile>();
-                
+
                 for (int i = 0; i < wordPlacement.word.Length; i++)
                 {
                     int x = wordPlacement.isHorizontal ? wordPlacement.startPosition.x + i : wordPlacement.startPosition.x;
                     int y = wordPlacement.isHorizontal ? wordPlacement.startPosition.y : wordPlacement.startPosition.y + i;
                     Vector2Int pos = new Vector2Int(x, y);
-                    
+
                     if (tileMap.TryGetValue(pos, out Tile tile))
                     {
                         typedTiles.Add(tile);
@@ -429,7 +429,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 Tile tile = tileObj as Tile;
                 if (tile == null)
                     continue;
-                
+
                 tile.ShakeTile();
             }
         }
@@ -442,7 +442,10 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         private void AnimateCharacters(WordPlacement wordPlacement, List<Vector3> letterPositions)
         {
             // Convert the generic object list to typed Tile list
-            var tiles = wordPlacement.tiles.Cast<Tile>().ToList();
+            var tiles = wordPlacement.tiles
+     .Cast<Tile>()
+     .Reverse()
+     .ToList();
             int minCount = Mathf.Min(tiles.Count, letterPositions.Count);
 
             for (int i = 0; i < minCount; i++)
@@ -494,7 +497,8 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 Tile currentTile = tile;
                 var isLastCharacter = (i == minCount - 1);
                 // When this specific character's animation completes
-                animSequence.OnComplete(() => {
+                animSequence.OnComplete(() =>
+                {
                     currentTile.SetTileOpen();
                     Color textColor = currentAnimChar.color;
                     textColor.a = 1f;
@@ -505,7 +509,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     if (isLastCharacter)
                     {
                         EventManager.GetEvent(EGameEvent.WordAnimated).Invoke();
-                       CheckAllTilesOpened();
+                        CheckAllTilesOpened();
                     }
                 });
             }
@@ -523,17 +527,30 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             if (string.IsNullOrEmpty(word))
                 return false;
 
-            if (!wordValidator.IsWordKnown(word, gameStateManager.CurrentLanguage))
+            // For Persian RTL: check both the word as typed and its reverse
+            string wordReversed = PersianLanguageUtility.Reverse(word);
+            if (!wordValidator.IsWordKnown(word, gameStateManager.CurrentLanguage) &&
+                !wordValidator.IsWordKnown(wordReversed, gameStateManager.CurrentLanguage))
                 return false;
 
             bool wasOpened = false;
-            
-            // Find the word in the placed words list
-            WordPlacement wordPlacement = placedWords?.FirstOrDefault(w => w.word.Equals(word, StringComparison.OrdinalIgnoreCase));
-            
+
+            // For Persian RTL: the user may select letters right-to-left OR left-to-right.
+            // PlaceWord stores the word based on language direction in the grid.
+            // So we must check BOTH the word and its reverse.
+            string reversedWord = PersianLanguageUtility.Reverse(word);
+
+            // Find the word in the placed words list (try both directions)
+            WordPlacement wordPlacement = placedWords?.FirstOrDefault(w =>
+                w.word.Equals(word, StringComparison.Ordinal) ||
+                w.word.Equals(reversedWord, StringComparison.Ordinal));
+
+            // Use the canonical (stored) form for openedWords tracking
+            string canonicalWord = wordPlacement?.word ?? word;
+
             // Check if the word is already open
-            bool alreadyOpen = IsWordOpen(word);
-            
+            bool alreadyOpen = IsWordOpen(canonicalWord);
+
             // Case 1: Word exists on the field and is already open - shake it
             if (alreadyOpen && wordPlacement != null)
             {
@@ -544,8 +561,8 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             // Case 2: Word exists on the field but is not open - animate to tiles
             if (wordPlacement != null)
             {
-                openedWords.Add(word);
-                
+                openedWords.Add(canonicalWord);
+
                 if (letterPositions != null && letterPositions.Count > 0)
                 {
                     AnimateCharacters(wordPlacement, letterPositions);
@@ -565,19 +582,21 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 var levelWords = gameStateManager.GetLevelWords();
                 if (levelWords != null)
                 {
-                    var allRequiredWords = new HashSet<string>(levelWords, StringComparer.OrdinalIgnoreCase);
+                    var allRequiredWords = new HashSet<string>(levelWords, StringComparer.Ordinal);
                 }
             }
             // Case 3: Word is known but not on the field or is slang - it's an extra word
-            else 
+            else
             {
                 var levelWords = gameStateManager.GetLevelWords();
-                bool isExtraWord = (levelWords == null || !levelWords.Contains(word, StringComparer.OrdinalIgnoreCase));
+                bool isExtraWord = (levelWords == null ||
+                    (!levelWords.Contains(word, StringComparer.Ordinal) &&
+                     !levelWords.Contains(reversedWord, StringComparer.Ordinal)));
 
                 if (isExtraWord && letterPositions != null && letterPositions.Count > 0)
                 {
                     OnExtraWordFound?.Invoke(word);
-                    if(customWordRepo.AddExtraWord(word))
+                    if (customWordRepo.AddExtraWord(word))
                     {
                         AnimateExtraWord(word, letterPositions);
                         wasOpened = true;
@@ -694,12 +713,13 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
 
                 // Quick fade out at the end
                 animSequence.Join(animChar.DOFade(0, 0.3f).SetEase(Ease.InQuad));
-                
+
                 // Capture the current animChar in a closure
                 TextMeshProUGUI currentAnimChar = animChar;
-                
+
                 // When animation completes
-                animSequence.OnComplete(() => {
+                animSequence.OnComplete(() =>
+                {
                     // Reset alpha
                     Color textColor = currentAnimChar.color;
                     textColor.a = 1f;
@@ -708,7 +728,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     // Return to pool
                     ReturnToPool(currentAnimChar);
                     // the last character will trigger the extra word found event
-                    if(currentAnimChar.text == word.First().ToString())
+                    if (currentAnimChar.text == word.First().ToString())
                     {
                         EventManager.GetEvent<string>(EGameEvent.ExtraWordFound).Invoke(word);
                     }
@@ -721,26 +741,26 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             // First attempt to load or generate the basic crossword
             Generate(levelData, language);
-            
+
             // Early exit if generation failed (no grid)
             if (grid == null)
             {
                 Debug.LogError("Failed to generate or load crossword grid");
                 return;
             }
-            
+
             // Check if we're using a loaded crossword or a newly generated one
             var languageData = levelData.GetLanguageData(language);
-            bool isLoadedCrossword = (languageData != null && 
-                                     languageData.crosswordData != null && 
+            bool isLoadedCrossword = (languageData != null &&
+                                     languageData.crosswordData != null &&
                                      languageData.crosswordData.grid != null);
-            
+
             // Then add special items
             if (specialItemPlacements != null && specialItemPlacements.Count > 0)
             {
                 // Filter out non-special items for clarity
                 var onlySpecialItems = specialItemPlacements.Where(p => p.isSpecialItem).ToList();
-                
+
                 if (onlySpecialItems.Count > 0)
                 {
                     StartCoroutine(AddSpecialItemsWhenReady(onlySpecialItems));
@@ -753,14 +773,14 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             // First attempt to load or generate the basic crossword
             Generate(levelData, language);
-            
+
             // Early exit if generation failed (no grid)
             if (grid == null)
             {
                 Debug.LogError("Failed to generate or load crossword grid");
                 return;
             }
-            
+
             // Then add special items from the new format
             if (specialItems != null && specialItems.Count > 0)
             {
@@ -778,17 +798,17 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             foreach (var placement in specialItemPlacements)
             {
                 if (!placement.isSpecialItem) continue;
-                
+
                 // Only place special items above letters
                 Vector2Int position = placement.startPosition;
-                
+
                 // Check if we have a tile at this position
                 if (!tileMap.TryGetValue(position, out Tile tile))
                 {
                     Debug.LogWarning($"Cannot place special item at {position}: No letter tile found.");
                     continue;
                 }
-                
+
                 // Just tell the tile to create a special item - it has its own prefab
                 tile.AssociateSpecialItem(position);
             }
@@ -805,14 +825,14 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             {
                 // Only place special items above letters
                 Vector2Int position = specialItem.position;
-                
+
                 // Check if we have a tile at this position
                 if (!tileMap.TryGetValue(position, out Tile tile))
                 {
                     Debug.LogWarning($"Cannot place special item at {position}: No letter tile found.");
                     continue;
                 }
-                
+
                 // Tell the tile to create a special item - it has its own prefab
                 tile.AssociateSpecialItem(position);
             }
@@ -825,26 +845,26 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             {
                 // Deserialize grid from saved data
                 savedData.DeserializeGrid();
-                
+
                 if (savedData.grid == null)
                 {
                     Debug.LogWarning("Saved grid data couldn't be loaded (grid is null).");
                     return false;
                 }
-                
+
                 // Additional validation - check grid dimensions
                 if (savedData.grid.GetLength(0) <= 0 || savedData.grid.GetLength(1) <= 0)
                 {
                     Debug.LogWarning($"Invalid grid dimensions: {savedData.grid.GetLength(0)}x{savedData.grid.GetLength(1)}");
                     return false;
                 }
-                
+
                 // Set the grid
                 grid = savedData.grid;
-                
+
                 // Filter out special items from placements to get just words
                 var wordPlacements = savedData.placements;
-                
+
                 // Convert saved placements to runtime placements
                 placedWords = new List<WordPlacement>();
                 foreach (var savedPlacement in wordPlacements)
@@ -857,21 +877,21 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                         isHorizontal = savedPlacement.isHorizontal,
                         tiles = new List<Tile>()
                     };
-                    
+
                     placedWords.Add(placement);
                 }
-                
+
                 // Store special items for later processing (after visual grid is created)
                 if (savedData.specialItems != null && savedData.specialItems.Count > 0)
                 {
                     // We'll add these special items after the visual grid is created
                     StartCoroutine(AddSpecialItemsFromSavedData(savedData.specialItems));
                 }
-                
+
                 // Verify the words match what we expect
-                var savedWords = placedWords.Select(p => p.word.ToLower()).ToArray();
-                var levelWords = words.Select(w => w.ToLower()).ToArray();
-                
+                var savedWords = placedWords.Select(p => p.word).ToArray();
+                var levelWords = words; // Persian: do NOT call ToLower() — it corrupts Persian characters
+
                 return true;
             }
             catch (Exception ex)
@@ -880,25 +900,25 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 return false;
             }
         }
-        
+
         // Coroutine to add special items from saved crossword data
         private IEnumerator AddSpecialItemsFromSavedData(List<SerializableSpecialItem> specialItems)
         {
             // Wait until the visual grid is fully created
             yield return new WaitUntil(() => allTiles.Count > 0 && tileMap.Count > 0);
-            
+
             // Add each special item
             foreach (var specialItem in specialItems)
             {
                 Vector2Int position = specialItem.position;
-                
+
                 // Check if we have a tile at this position
                 if (!tileMap.TryGetValue(position, out Tile tile))
                 {
                     Debug.LogWarning($"Cannot place special item at {position}: No letter tile found.");
                     continue;
                 }
-                
+
                 // Tell the tile to create a special item
                 tile.AssociateSpecialItem(position);
             }
@@ -908,7 +928,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         private IEnumerator CollectSpecialItemDelayed(Vector2Int position, float delay)
         {
             yield return new WaitForSeconds(delay);
-            
+
             // Check if the tile still has a special item
             if (tileMap.TryGetValue(position, out Tile tile) && tile.HasSpecialItem(out _))
             {
@@ -926,7 +946,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             // Get list of all tiles that are not yet open
             var closedTiles = allTiles.Where(t => t != null && !t.IsOpen()).ToList();
-            
+
             if (closedTiles.Count > 0)
             {
                 // Select random tile from closed tiles
@@ -950,7 +970,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         public bool OpenFirstClosedTile()
         {
             var firstClosedTile = allTiles.FirstOrDefault(t => t != null && !t.IsOpen());
-            
+
             if (firstClosedTile != null)
             {
                 firstClosedTile.SetTileOpen();
@@ -973,10 +993,10 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             // Stop all running coroutines
             StopAllCoroutines();
-            
+
             // Kill any active DOTween animations
             DOTween.Kill(transform);
-            
+
             // Clear and destroy all tiles
             foreach (Transform child in transform)
             {
@@ -993,7 +1013,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             allTiles?.Clear();
             placedWords?.Clear();
             openedWords?.Clear();
-            
+
             // Clear character pool
             while (characterPool != null && characterPool.Count > 0)
             {
@@ -1019,7 +1039,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         public bool AreAllTilesOpen()
         {
             if (allTiles == null) return false;
-            
+
             foreach (var tile in allTiles)
             {
                 if (tile != null && !tile.IsOpen())
@@ -1033,7 +1053,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         public void CheckAllTilesOpened()
         {
             if (allTiles == null) return;
-            
+
             bool allOpened = true;
             foreach (var tile in allTiles)
             {
@@ -1043,10 +1063,10 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                     break;
                 }
             }
-            
+
             if (allOpened)
             {
-                Debug.Log( "All tiles have been opened!");
+                Debug.Log("All tiles have been opened!");
                 OnAllTilesOpened?.Invoke();
             }
         }
@@ -1055,12 +1075,12 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             EventManager.GetEvent<Tile>(EGameEvent.TileSelected).Subscribe(OnTileSelected);
         }
-    
+
         private void OnDisable()
         {
             EventManager.GetEvent<Tile>(EGameEvent.TileSelected).Unsubscribe(OnTileSelected);
         }
-    
+
         private void OnTileSelected(Tile tile)
         {
             audioService.PlayBonus();
@@ -1071,7 +1091,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
         {
             if (allTiles == null || allTiles.Count == 0)
                 return false;
-                
+
             // Check if any tile has a special item
             foreach (var tile in allTiles)
             {

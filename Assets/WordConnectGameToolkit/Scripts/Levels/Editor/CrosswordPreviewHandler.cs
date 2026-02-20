@@ -1199,6 +1199,12 @@ namespace WordsToolkit.Scripts.Levels.Editor
                         {
                             string word = currentWord.ToString();
 
+                            // Persian/Arabic: Extract horizontal words in reverse order if it's an RTL language
+                            if (PersianLanguageUtility.IsRTL(langCode))
+                            {
+                                word = PersianLanguageUtility.Reverse(word);
+                            }
+
                             newPlacements.Add(new WordPlacement
                             {
                                 word = word,

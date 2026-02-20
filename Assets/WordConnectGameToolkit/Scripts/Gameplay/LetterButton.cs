@@ -1,15 +1,3 @@
-// // ©2015 - 2025 Candy Smith
-// // All rights reserved
-// // Redistribution of this software is strictly not allowed.
-// // Copy of this software can be obtained from unity asset store only.
-// // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// // FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-// // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// // THE SOFTWARE.
-
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +5,8 @@ using UnityEngine.EventSystems;
 using WordsToolkit.Scripts.Enums;
 using WordsToolkit.Scripts.System;
 using WordsToolkit.Scripts.System.Haptic;
+using RTLTMPro;
+
 
 namespace WordsToolkit.Scripts.Gameplay
 {
@@ -28,17 +18,17 @@ namespace WordsToolkit.Scripts.Gameplay
         private WordSelectionManager wordSelectionManager;
         private bool isSelected = false;
         private Color color;
-        private string originalLetter; // Store the original letter for validation
+
+        // متغیر برای ذخیره حرف اصلی و سالم
+        private string originalLetter;
 
         private void Awake()
         {
-            // Get a reference to the WordSelectionManager
             wordSelectionManager = GetComponentInParent<WordSelectionManager>();
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            // Start selection process when the user taps/clicks on a letter
             if (wordSelectionManager != null && EventManager.GameStatus == EGameState.Playing)
             {
                 wordSelectionManager.StartSelection(this);
@@ -48,7 +38,6 @@ namespace WordsToolkit.Scripts.Gameplay
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            // When dragging over this letter, add it to the selection
             if (wordSelectionManager != null && wordSelectionManager.IsSelecting && EventManager.GameStatus == EGameState.Playing)
             {
                 wordSelectionManager.AddToSelection(this);
@@ -58,7 +47,6 @@ namespace WordsToolkit.Scripts.Gameplay
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            // End selection process when the user lifts finger/mouse
             if (wordSelectionManager != null && EventManager.GameStatus == EGameState.Playing)
             {
                 wordSelectionManager.EndSelection();
@@ -67,26 +55,47 @@ namespace WordsToolkit.Scripts.Gameplay
 
         public void SetSelected(bool selected)
         {
-            HapticFeedback.TriggerHapticFeedback(HapticFeedback.HapticForce.Light);
+            if (isSelected != selected && selected)
+            {
+                HapticFeedback.TriggerHapticFeedback(HapticFeedback.HapticForce.Light);
+            }
             isSelected = selected;
             circleImage.color = new Color(color.r, color.g, color.b, selected ? 1f : 0);
             letterText.color = selected ? Color.white : Color.black;
         }
 
+        // این متد توسط WordSelectionManager صدا زده می‌شود تا کلمه را بسازد
         public string GetLetter()
         {
-            return originalLetter ?? letterText.text;
+            // برگرداندن حرف اصلی (مثلاً "ب") نه حرف گرافیکی (مثلاً "ﺐ")
+            return originalLetter;
         }
 
-        public void SetText(string toString)
+        public void SetText(string text)
         {
-           originalLetter = toString; // Store the original letter
-           letterText.text = toString.ToUpper(); // Display in uppercase
+            // 1. ذخیره اصلِ حرف برای منطق بازی (بدون تغییر)
+            originalLetter = text;
+
+            // 2. تبدیل حرف برای نمایش صحیح در UI
+            // طبق تستی که فرستادید، پارامتر آخر باید true باشد تا فارسی درست کار کند
+            if (!string.IsNullOrEmpty(text))
+            {
+                // Use a FastStringBuilder for output as required by RTLSupport.FixRTL
+                var output = new FastStringBuilder(RTLSupport.DefaultBufferSize);
+                RTLSupport.FixRTL(text, output, true, true, false);
+                Debug.Log(GetLetter() + " -> " + output.ToString());
+                letterText.text = output.ToString();
+            }
+            else
+            {
+                letterText.text = "";
+            }
         }
 
         public void SetColor(Color color)
         {
             this.color = color;
+            circleImage.color = new Color(color.r, color.g, color.b, isSelected ? 1f : 0f);
         }
     }
 }

@@ -124,7 +124,7 @@ namespace WordsToolkit.Scripts.Levels
         public SerializableCrosswordData crosswordData;
     }
 
-    [CreateAssetMenu(fileName = "Level", menuName ="WordConnectGameToolkit/Editor/Level")]
+    [CreateAssetMenu(fileName = "Level", menuName = "WordConnectGameToolkit/Editor/Level")]
     public class Level : ScriptableObject
     {
         [Tooltip("Level number")]
@@ -242,15 +242,15 @@ namespace WordsToolkit.Scripts.Levels
 
         public bool GroupIsFinished()
         {
-           int currentIndex = GetGroup().levels.IndexOf(this);
-           return currentIndex == GetGroup().levels.Count - 1;
+            int currentIndex = GetGroup().levels.IndexOf(this);
+            return currentIndex == GetGroup().levels.Count - 1;
         }
 
         public void UpdateWords(LanguageData languageData)
         {
             var crosswordWords = languageData.crosswordData.placements
                 .OrderBy(p => p.wordNumber)
-                .Select(p => p.word.ToLower())
+                .Select(p => p.word) // Persian: do NOT call ToLower() — it corrupts Persian characters
                 .ToArray();
 
             // Always clear existing words first

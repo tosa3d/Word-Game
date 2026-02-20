@@ -37,12 +37,13 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 Debug.LogError("Model controller is null, cannot generate words for level");
                 return;
             }
-            
+
             // Make sure all language models are loaded
             model.LoadModels();
-            
+
             // Wait a moment to ensure models are loaded
-            EditorApplication.delayCall += () => {
+            EditorApplication.delayCall += () =>
+            {
                 // Check if model is loaded properly
                 bool allLanguagesLoaded = true;
                 foreach (var langData in level.languages)
@@ -53,7 +54,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                         Debug.LogWarning($"Model for language {langData.language} is not loaded properly");
                     }
                 }
-                
+
                 if (allLanguagesLoaded)
                 {
                     Debug.Log($"Generating words for level {level.number}");
@@ -63,7 +64,8 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 {
                     // Retry once after a short delay
                     Debug.Log("Models not fully loaded, retrying word generation shortly...");
-                    EditorApplication.delayCall += () => {
+                    EditorApplication.delayCall += () =>
+                    {
                         Debug.Log($"Retrying word generation for level {level.number}");
                         GenerateAllWords(level, model);
                     };
@@ -71,7 +73,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
             };
         }
 
-        public static void GenerateAllWords(Level level,IModelController model)
+        public static void GenerateAllWords(Level level, IModelController model)
         {
             if (level == null) return;
 
@@ -128,7 +130,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
 
             // Group words by length
             var wordsFromSymbols = Controller.GetWordsFromSymbols(languageData.letters, languageData.language);
-            var wordsByLength = wordsFromSymbols.Where(i=> !IsWordUsed( i, languageData.language, level, out _))
+            var wordsByLength = wordsFromSymbols.Where(i => !IsWordUsed(i, languageData.language, level, out _))
                 .Where(w => w.Length >= minLettersInWord && w.Length <= maxLettersInWord)
                 .Where(w => bannedWordsService == null || !bannedWordsService.IsWordBanned(w, languageData.language)) // Filter out banned words
                 .GroupBy(w => w.Length)
@@ -137,7 +139,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
             // Use the new GetWordsByFactor function to select words
             var selectedWords = GetWordsByFactor(wordsByLength, probability, languageData.wordsAmount);
 
-            if(selectedWords.Count < languageData.wordsAmount)
+            if (selectedWords.Count < languageData.wordsAmount)
             {
                 // If not enough words were selected, try to fill the gap with random words
                 var allWords = wordsFromSymbols.Where(w => w.Length >= minLettersInWord && w.Length <= maxLettersInWord)
@@ -196,7 +198,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
         {
             var controller = EditorScope.Resolve<IModelController>();
             var bannedWordsService = EditorScope.Resolve<IBannedWordsService>();
-            
+
             // Ensure model is loaded
             if (controller == null)
             {
@@ -208,7 +210,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
             if (generateLetters)
             {
                 string randomLetters = GenerateActualRandomLetters(languageData.language, lettersAmount);
-                
+
                 // Check if these random letters can generate any words
                 var wordsFromRandomLetters = controller.GetWordsFromSymbols(randomLetters, languageData.language);
                 if (wordsFromRandomLetters != null && wordsFromRandomLetters.Count() > 0)
@@ -218,10 +220,10 @@ namespace WordsToolkit.Scripts.Levels.Editor
             }
 
             var usedWords = LevelEditorServices.GetUsedWords(languageData.language);
-            
+
             // Try getting words with specified length
             var words = controller.GetWordsWithLength(lettersAmount, languageData.language).Where(w => !usedWords.Contains(w)).ToList();
-            
+
             // If no words found with the specified length, try with other lengths
             if (words.Count == 0)
             {
@@ -229,11 +231,11 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 if (!controller.IsModelLoaded(languageData.language))
                 {
                     controller.LoadModels();
-                    
+
                     // Try again after reloading
                     words = controller.GetWordsWithLength(lettersAmount, languageData.language).Where(w => !usedWords.Contains(w)).ToList();
                 }
-                
+
                 // If still no words found after reloading, try with other lengths
                 if (words.Count == 0)
                 {
@@ -246,14 +248,14 @@ namespace WordsToolkit.Scripts.Levels.Editor
                             words = controller.GetWordsWithLength(lettersAmount - offset, languageData.language);
                             if (words.Count > 0) break;
                         }
-                        
+
                         // Try larger length
                         words = controller.GetWordsWithLength(lettersAmount + offset, languageData.language);
                         if (words.Count > 0) break;
                     }
                 }
             }
-            
+
             // If still no words found, use some default letters
             if (words.Count == 0)
             {
@@ -264,7 +266,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                     { "es", "eaosrnidlctumpbgvyqjhfzñxw" },
                     { "ru", "оеаинтсрвлкмдпуяыьгзбчйхжшюцщэфъ" },
                 };
-                
+
                 if (defaultLetters.TryGetValue(languageData.language, out string letters))
                 {
                     return letters.Substring(0, Mathf.Min(lettersAmount, letters.Length));
@@ -274,7 +276,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                     return new string('a', lettersAmount);
                 }
             }
-            
+
             // Continue with the normal process if words are found
             string bestWord = words[0];
             int maxWordsGenerated = 0;
@@ -282,13 +284,13 @@ namespace WordsToolkit.Scripts.Levels.Editor
             for (int i = 0; i < words.Count; i++)
             {
                 var generatedWords = controller.GetWordsFromSymbols(words[i], languageData.language);
-                
+
                 // Filter out banned words when counting generated words
                 if (bannedWordsService != null)
                 {
                     generatedWords = generatedWords.Where(w => !bannedWordsService.IsWordBanned(w, languageData.language)).ToList();
                 }
-                
+
                 int wordsCount = generatedWords?.Count() ?? 0;
 
                 if (wordsCount >= count)
@@ -310,13 +312,13 @@ namespace WordsToolkit.Scripts.Levels.Editor
         {
             // Define Latin languages that use vowel/consonant distinction
             HashSet<string> latinLanguages = new HashSet<string> { "en", "es", "fr", "de", "it", "pt", "nl", "da", "sv", "no" };
-            
+
             if (latinLanguages.Contains(language))
             {
                 // For Latin languages, use vowel/consonant distribution
                 string vowels = "aeiou";
                 string consonants = "bcdfghjklmnpqrstvwxyz";
-                
+
                 var result = new List<char>();
                 int vowelCount = Mathf.Max(1, length / 2); // About 1/2 vowels
                 int consonantCount = length - vowelCount;
@@ -353,19 +355,19 @@ namespace WordsToolkit.Scripts.Levels.Editor
                     { "ja", "あいうえおかきくけこさしすせそたちつてとなにぬねの" },
                     { "ar", "ابتثجحخدذرزسشصضطظعغفقكلمنهوي" }
                 };
-                
+
                 string letters;
                 if (!defaultLetters.TryGetValue(language, out letters))
                 {
                     letters = "abcdefghijklmnopqrstuvwxyz"; // Fallback to Latin alphabet
                 }
-                
+
                 var result = new List<char>();
                 for (int i = 0; i < length; i++)
                 {
                     result.Add(letters[UnityEngine.Random.Range(0, letters.Length)]);
                 }
-                
+
                 return new string(result.ToArray());
             }
         }
@@ -449,7 +451,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
             // Extract words from placements
             var crosswordWords = placements
                 .Where(p => !string.IsNullOrEmpty(p.word))
-                .Select(p => p.word.ToLower())
+                .Select(p => PersianLanguageUtility.PrepareForComparison(p.word, langCode))
                 .ToArray();
 
             // Always clear existing words first
@@ -458,7 +460,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 // If no words in crossword, set to empty array
                 languageData.words = Array.Empty<string>();
             }
-            else 
+            else
             {
                 // Replace with crossword words
                 languageData.words = crosswordWords;
@@ -506,7 +508,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
             }
             return false; // Word is not used in any other level
         }
-        
+
         public static void TestLevel(Level level, string languageCode)
         {
             if (level == null)
@@ -514,13 +516,13 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 Debug.LogWarning("No level provided to test.");
                 return;
             }
-            
+
             if (string.IsNullOrEmpty(languageCode))
             {
                 Debug.LogWarning("No language code provided for testing.");
                 return;
             }
-            
+
             // First, ensure we load the main scene before testing
             string mainScenePath = "Assets/WordConnectGameToolkit/Scenes/main.unity";
             if (File.Exists(mainScenePath))
@@ -534,22 +536,22 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 Debug.LogError($"Main scene not found at path: {mainScenePath}");
                 return;
             }
-            
+
             // Set test play mode and level
             GameDataManager.isTestPlay = true;
             GameDataManager.SetLevel(level);
             GameDataManager.SetLevelNum(level.number);
-            
+
             // Set the current language
             PlayerPrefs.SetString("SelectedLanguage", languageCode);
-            
+
             // Set state manager to main menu first, then it will transition to game
             var stateManager = UnityEngine.Object.FindObjectOfType<StateManager>();
             if (stateManager != null)
             {
                 stateManager.CurrentState = EScreenStates.MainMenu;
             }
-            
+
             // Enter play mode if not already in it
             if (!EditorApplication.isPlaying)
             {
@@ -572,7 +574,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                             {
                                 playModeStateManager.CurrentState = EScreenStates.Game;
                             }
-                            
+
                             // Find and initialize the LevelManager
                             var levelManager = UnityEngine.Object.FindObjectOfType<LevelManager>();
                             if (levelManager != null)
@@ -588,7 +590,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 }
             };
         }
-        
+
         // Check for problematic overlapping words
         public static bool CheckForOverlappingWords(List<WordPlacement> placements, string[] originalWords = null)
         {
@@ -608,7 +610,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 {
                     var word1 = placements[i];
                     var word2 = placements[j];
-                    
+
                     // Only check words with the same orientation
                     if (word1.isHorizontal == word2.isHorizontal)
                     {
@@ -619,7 +621,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                             {
                                 int word1End = word1.startPosition.x + word1.word.Length - 1;
                                 int word2End = word2.startPosition.x + word2.word.Length - 1;
-                                
+
                                 // Check for overlap
                                 bool overlaps = !(word1End < word2.startPosition.x || word2End < word1.startPosition.x);
                                 if (overlaps)
@@ -636,7 +638,7 @@ namespace WordsToolkit.Scripts.Levels.Editor
                             {
                                 int word1End = word1.startPosition.y + word1.word.Length - 1;
                                 int word2End = word2.startPosition.y + word2.word.Length - 1;
-                                
+
                                 // Check for overlap
                                 bool overlaps = !(word1End < word2.startPosition.y || word2End < word1.startPosition.y);
                                 if (overlaps)

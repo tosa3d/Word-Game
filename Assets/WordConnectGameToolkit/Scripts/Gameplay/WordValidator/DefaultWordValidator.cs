@@ -34,7 +34,7 @@ namespace WordsToolkit.Scripts.Gameplay.WordValidator
                 return false;
 
             return (modelController != null && modelController.IsWordKnown(word, currentLanguage)) ||
-                   (customWordRepository != null && customWordRepository.ContainsWord(word));
+                   (customWordRepository != null && customWordRepository.ContainsWord(word, currentLanguage));
         }
 
         public bool IsExtraWordValid(string word, string language)

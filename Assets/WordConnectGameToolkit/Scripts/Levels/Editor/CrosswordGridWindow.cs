@@ -1847,7 +1847,8 @@ namespace WordsToolkit.Scripts.Levels.Editor
             if (word.Length > pattern.Length)
                 return false;
 
-            word = word.ToLower();
+            word = PersianLanguageUtility.PrepareForComparison(word, _currentLanguageCode);
+    pattern = PersianLanguageUtility.PrepareForComparison(pattern, _currentLanguageCode);
 
             // Check each position in the word against the pattern
             for (int i = 0; i < word.Length; i++)

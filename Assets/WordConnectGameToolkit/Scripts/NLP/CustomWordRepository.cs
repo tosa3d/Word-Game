@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using WordsToolkit.Scripts.Enums;
 using WordsToolkit.Scripts.System;
+using WordsToolkit.Scripts.Utilities;
 
 namespace WordsToolkit.Scripts.NLP
 {
@@ -25,24 +26,26 @@ namespace WordsToolkit.Scripts.NLP
         private readonly string m_DefaultLanguage = "en";
         private readonly Dictionary<string, HashSet<string>> customWordsByLanguage = new Dictionary<string, HashSet<string>>();
         private readonly Dictionary<string, Dictionary<string, float[]>> customWordVectorsByLanguage = new Dictionary<string, Dictionary<string, float[]>>();
-        private HashSet<string> extraWords = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        private HashSet<string> extraWords = new HashSet<string>(StringComparer.Ordinal);
 
         public void AddWord(string word, string language = null)
         {
             language = language ?? m_DefaultLanguage;
-            
+
             if (string.IsNullOrEmpty(word))
                 return;
 
-            word = word.ToLower();
-            
+            // Persian: do NOT call ToLower() — it corrupts Persian characters
+            // Use neutralization for consistent comparison
+            word = PersianLanguageUtility.PrepareForComparison(word, language);
+
             if (!customWordsByLanguage.ContainsKey(language))
             {
                 customWordsByLanguage[language] = new HashSet<string>();
             }
-            
+
             customWordsByLanguage[language].Add(word);
-            
+
             if (!customWordVectorsByLanguage.ContainsKey(language))
             {
                 customWordVectorsByLanguage[language] = new Dictionary<string, float[]>();
@@ -62,8 +65,8 @@ namespace WordsToolkit.Scripts.NLP
         {
             if (string.IsNullOrEmpty(word))
                 return false;
-            var addExtraWord = extraWords.Add(word.ToLower());
-            if(addExtraWord)
+            var addExtraWord = extraWords.Add(word);
+            if (addExtraWord)
             {
                 SaveExtraWords();
                 PlayerPrefs.SetInt("ExtraWordsCollected", PlayerPrefs.GetInt("ExtraWordsCollected") + 1);
@@ -81,10 +84,10 @@ namespace WordsToolkit.Scripts.NLP
         {
             var extraWordsString = PlayerPrefs.GetString("ExtraWords", string.Empty);
             if (string.IsNullOrEmpty(extraWordsString))
-                return new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                return new HashSet<string>(StringComparer.Ordinal);
 
             var wordsArray = extraWordsString.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            return new HashSet<string>(wordsArray, StringComparer.OrdinalIgnoreCase);
+            return new HashSet<string>(wordsArray, StringComparer.Ordinal);
         }
 
         public int GetExtraWordsCount()
@@ -108,30 +111,32 @@ namespace WordsToolkit.Scripts.NLP
         public bool ContainsWord(string word, string language = null)
         {
             language = language ?? m_DefaultLanguage;
-            
+
             if (string.IsNullOrEmpty(word))
                 return false;
-                
-            word = word.ToLower();
-            
-            return customWordsByLanguage.ContainsKey(language) && 
+
+            // Persian: do NOT call ToLower() — it corrupts Persian characters
+            word = PersianLanguageUtility.PrepareForComparison(word, language);
+
+            return customWordsByLanguage.ContainsKey(language) &&
                    customWordsByLanguage[language].Contains(word);
         }
 
         public void RemoveWord(string word, string language = null)
         {
             language = language ?? m_DefaultLanguage;
-            
+
             if (string.IsNullOrEmpty(word))
                 return;
-                
-            word = word.ToLower();
-            
+
+            // Persian: do NOT call ToLower() — it corrupts Persian characters
+            word = PersianLanguageUtility.PrepareForComparison(word, language);
+
             if (customWordsByLanguage.ContainsKey(language))
             {
                 customWordsByLanguage[language].Remove(word);
             }
-            
+
             if (customWordVectorsByLanguage.ContainsKey(language))
             {
                 customWordVectorsByLanguage[language].Remove(word);
@@ -145,9 +150,9 @@ namespace WordsToolkit.Scripts.NLP
             if (string.IsNullOrEmpty(word))
                 return null;
 
-            word = word.ToLower();
+            // Persian: do NOT call ToLower() — it corrupts Persian characters
 
-            if (customWordVectorsByLanguage.ContainsKey(language) && 
+            if (customWordVectorsByLanguage.ContainsKey(language) &&
                 customWordVectorsByLanguage[language].ContainsKey(word))
             {
                 return customWordVectorsByLanguage[language][word];

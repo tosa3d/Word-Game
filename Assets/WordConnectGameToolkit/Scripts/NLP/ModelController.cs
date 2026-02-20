@@ -11,6 +11,7 @@ using WordsToolkit.Scripts.Levels;
 using WordsToolkit.Scripts.Services;
 using WordsToolkit.Scripts.Services.BannedWords;
 using VContainer;
+using WordsToolkit.Scripts.Utilities;
 using Random = System.Random;
 
 namespace WordsToolkit.Scripts.NLP
@@ -45,12 +46,17 @@ namespace WordsToolkit.Scripts.NLP
         {
             if (string.IsNullOrEmpty(text))
                 return text;
-                
-            text = text.ToLower();
-            
+
+            // Persian: use centralized normalization
+            text = PersianLanguageUtility.Normalize(text);
+
+            // Convert to lowercase but be careful with Persian
+            // We'll use the preparation utility which handles this
+            text = PersianLanguageUtility.PrepareForComparison(text, m_DefaultLanguage);
+
             var normalizedString = text.Normalize(NormalizationForm.FormD);
             var stringBuilder = new StringBuilder();
-            
+
             foreach (var c in normalizedString)
             {
                 var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
@@ -59,7 +65,7 @@ namespace WordsToolkit.Scripts.NLP
                     stringBuilder.Append(c);
                 }
             }
-            
+
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
@@ -95,7 +101,7 @@ namespace WordsToolkit.Scripts.NLP
             {
                 m_DefaultLanguage = languageConfiguration?.defaultLanguage ?? "en";
             }
-            
+
             languageModels.Clear();
 
             foreach (var langInfo in languageConfiguration.languages)
@@ -259,7 +265,7 @@ namespace WordsToolkit.Scripts.NLP
         {
             string path = Path.Combine(Application.streamingAssetsPath, "WordConnectGameToolkit", "model",
                 "custom", $"{language}_custom_words.bin");
-            
+
             if (!wordToIndexByLanguage.ContainsKey(language))
             {
                 return;
@@ -299,7 +305,7 @@ namespace WordsToolkit.Scripts.NLP
                 for (int i = 0; i < customWordCount; i++)
                 {
                     string word = br.ReadString();
-                    
+
                     // Add to vocabulary
                     wordToIndexByLanguage[language][word] = nextIndex++;
                 }
@@ -384,10 +390,10 @@ namespace WordsToolkit.Scripts.NLP
                     using var worker = new Worker(model, BackendType.CPU);
                     using var dummyInput = new Tensor<int>(new TensorShape(1));
                     dummyInput[0] = 0;
-                    
+
                     worker.Schedule(dummyInput);
                     var vocabJsonTensor = worker.PeekOutput("wc_vocab_json");
-                    
+
                     if (vocabJsonTensor != null)
                     {
                         // Parse JSON to get original vocab size
@@ -400,7 +406,7 @@ namespace WordsToolkit.Scripts.NLP
                     Debug.LogWarning($"[ModelController] Could not determine base vocab size for '{language}': {e.Message}");
                 }
             }
-            
+
             // Fallback heuristic - assume custom words start after a reasonable base size
             var currentSize = wordToIndexByLanguage[language].Count;
             return currentSize > 1000 ? currentSize - 100 : Math.Max(1, currentSize / 2);
@@ -582,15 +588,15 @@ namespace WordsToolkit.Scripts.NLP
                 return false;
             }
 
-            int oldVocab  = embConst.shape[0];
-            int oldElems  = embConst.shape.length;              // vocab * dim
+            int oldVocab = embConst.shape[0];
+            int oldElems = embConst.shape.length;              // vocab * dim
             float[] oldBuf = new float[oldElems];
             NativeTensorArray.Copy(embConst.weights, 0, oldBuf, 0, oldElems);
 
             // Build new buffer = old + newVector
             var newBuf = new float[oldElems + dim];
-            Buffer.BlockCopy(oldBuf,   0, newBuf, 0, oldElems * sizeof(float));
-            Buffer.BlockCopy(newVector,0, newBuf, oldElems * sizeof(float), dim * sizeof(float));
+            Buffer.BlockCopy(oldBuf, 0, newBuf, 0, oldElems * sizeof(float));
+            Buffer.BlockCopy(newVector, 0, newBuf, oldElems * sizeof(float), dim * sizeof(float));
 
             // Inference Engine requires a non‑generic NativeTensorArrayFromManagedArray
             // Inference Engine requires (Array, bytesPerElem, length, channels)
@@ -603,7 +609,7 @@ namespace WordsToolkit.Scripts.NLP
 #pragma warning disable 618 // Constant.weights setter is obsolete but still functional
             embConst.weights = newWeights;
 #pragma warning restore 618
-            embConst.shape   = new TensorShape(oldVocab + 1, dim);   // update shape metadata
+            embConst.shape = new TensorShape(oldVocab + 1, dim);   // update shape metadata
 
             // 3️⃣ Write new BIN
             SaveCustomWordsToBinary(language);
@@ -699,7 +705,7 @@ namespace WordsToolkit.Scripts.NLP
         {
             language = language ?? (languageService?.GetCurrentLanguageCode() ?? m_DefaultLanguage);
 
-            if(!IsModelLoaded(language))
+            if (!IsModelLoaded(language))
             {
                 return new List<string>();
             }
@@ -742,7 +748,7 @@ namespace WordsToolkit.Scripts.NLP
                 }
             }
 
-            if(!candidateWords.Contains(inputSymbols) &&
+            if (!candidateWords.Contains(inputSymbols) &&
                !bannedWordsService.IsWordBanned(inputSymbols, language) && IsWordKnown(inputSymbols, language))
             {
                 candidateWords.Add(inputSymbols);
@@ -775,7 +781,8 @@ namespace WordsToolkit.Scripts.NLP
             var symbolSet = new HashSet<char>(inputSymbols);
 
             var bestMatches = wordToIndexByLanguage[language].Keys
-                .Select(word => new {
+                .Select(word => new
+                {
                     Word = word,
                     SharedChars = word.Count(c => symbolSet.Contains(c))
                 })
@@ -926,10 +933,10 @@ namespace WordsToolkit.Scripts.NLP
         public void ClearCustomWordsCache(string language = null)
         {
             string customDir = Path.Combine(Application.dataPath, "StreamingAssets", "WordConnectGameToolkit", "model", "custom");
-            
+
             if (!Directory.Exists(customDir))
                 return;
-                
+
             try
             {
                 if (language != null)

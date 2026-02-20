@@ -38,10 +38,10 @@ namespace WordsToolkit.Scripts.Gameplay
 
         private bool isSelected = false;
         private bool isOpen = false;
-        
+
         [Header("Special Item")]
         [SerializeField] private GameObject specialItemPrefab; // Direct reference to the special item prefab
-        
+
         [Header("Hammer Animation")]
         [SerializeField] private GameObject hammerAnimationPrefab; // Reference to hammer animation prefab
 
@@ -49,7 +49,7 @@ namespace WordsToolkit.Scripts.Gameplay
         private bool hasSpecialItem = false;
         private Vector2Int specialItemPosition;
         private GameObject specialItemInstance; // Reference to the instantiated special item
-        
+
         // Simple selection state
 
         private LevelManager levelManager;
@@ -83,13 +83,13 @@ namespace WordsToolkit.Scripts.Gameplay
         public void SetTileClosed()
         {
             isOpen = false;
-            
+
             // Hide character
             if (character != null)
             {
                 character.gameObject.SetActive(false);
             }
-            
+
             // Apply closed color to all images
             for (var i = 0; i < images.Length; i++)
             {
@@ -102,7 +102,7 @@ namespace WordsToolkit.Scripts.Gameplay
 
             transform.SetAsFirstSibling();
         }
-        
+
         // Set the tile to open state
         public void SetTileOpen()
         {
@@ -114,7 +114,7 @@ namespace WordsToolkit.Scripts.Gameplay
             {
                 character.gameObject.SetActive(true);
             }
-            
+
             // Apply open color to all images
             for (var i = 0; i < images.Length; i++)
             {
@@ -124,28 +124,29 @@ namespace WordsToolkit.Scripts.Gameplay
                     img.color = openColors[i];
                 }
             }
-            
+
             // Add bounce animation
             transform.DOScale(1.2f, 0.1f)
                 .SetEase(Ease.OutQuad)
-                .OnComplete(() => {
+                .OnComplete(() =>
+                {
                     transform.DOScale(1f, 0.15f)
                         .SetEase(Ease.Linear);
                 });
-                
+
             transform.SetAsLastSibling();
-            
+
             // If this tile has a special item, animate it and ensure it stays on top
             if (hasSpecialItem && specialItemInstance != null)
             {
                 specialItemInstance.transform.SetAsLastSibling();
-                
+
                 SpecialItem specialItem = specialItemInstance.GetComponent<SpecialItem>();
                 if (specialItem != null)
                 {
                     // Try to find a target position - use level manager collection point if available
                     Vector3 targetPosition = transform.position + new Vector3(0, 300, 0); // Default fallback
-                    
+
                     // Get special item collection point if available
                     if (levelManager != null)
                     {
@@ -154,7 +155,8 @@ namespace WordsToolkit.Scripts.Gameplay
                     }
 
                     // Start the animation
-                    specialItem.FlyToPosition(targetPosition, () => {
+                    specialItem.FlyToPosition(targetPosition, () =>
+                    {
                         // Notify level manager that item was collected
                         if (levelManager != null)
                         {
@@ -173,16 +175,16 @@ namespace WordsToolkit.Scripts.Gameplay
         {
             return isOpen;
         }
-        
+
         // Set the character for this tile
         public void SetCharacter(char c)
         {
             if (character != null)
             {
-                character.text = c.ToString().ToUpper();
+                character.text = c.ToString(); // Persian: do NOT call ToUpper() — it corrupts Persian characters
             }
         }
-        
+
         public void ShakeTile()
         {
             RectTransform rectTransform = GetComponent<RectTransform>();
@@ -190,22 +192,22 @@ namespace WordsToolkit.Scripts.Gameplay
                 return;
 
             Vector2 originalPosition = rectTransform.anchoredPosition;
-            
+
             Sequence shakeSequence = DOTween.Sequence();
-            
+
             float shakeAmount = 5f;
             float shakeDuration = 0.05f;
             int shakeCount = 4;
-            
+
             for (int i = 0; i < shakeCount; i++)
             {
                 float xOffset = (i % 2 == 0) ? shakeAmount : -shakeAmount;
-                
+
                 shakeSequence.Append(rectTransform.DOAnchorPos(
-                    new Vector2(originalPosition.x + xOffset, originalPosition.y), 
+                    new Vector2(originalPosition.x + xOffset, originalPosition.y),
                     shakeDuration).SetEase(Ease.OutQuad));
             }
-            
+
 
             for (int i = 0; i < images.Length; i++)
             {
@@ -217,19 +219,19 @@ namespace WordsToolkit.Scripts.Gameplay
             }
             shakeSequence.Append(rectTransform.DOAnchorPos(originalPosition, shakeDuration));
         }
-        
+
         // Enhanced method to associate a special item with this tile
         public void AssociateSpecialItem(Vector2Int position)
         {
             hasSpecialItem = true;
             specialItemPosition = position;
-            
+
             // Create the special item instance if we have a prefab
             if (specialItemPrefab != null && specialItemInstance == null)
             {
                 InstantiateSpecialItem();
             }
-            
+
         }
 
         // Associate with a specific prefab (override the default)
@@ -237,7 +239,7 @@ namespace WordsToolkit.Scripts.Gameplay
         {
             // Set the prefab
             specialItemPrefab = itemPrefab;
-            
+
             // Call the regular association method
             AssociateSpecialItem(position);
         }
@@ -249,14 +251,14 @@ namespace WordsToolkit.Scripts.Gameplay
             {
                 // Try to load a default prefab if none is assigned
                 specialItemPrefab = Resources.Load<GameObject>("Prefabs/DefaultSpecialItem");
-                
+
                 if (specialItemPrefab == null)
                 {
                     Debug.LogWarning("No special item prefab assigned to tile and no default found.");
                     return;
                 }
             }
-            
+
             specialItemInstance = objectResolver.Instantiate(specialItemPrefab, transform);
             specialItemInstance.transform.SetParent(transform.parent);
             specialItemInstance.transform.SetAsLastSibling();
@@ -271,12 +273,12 @@ namespace WordsToolkit.Scripts.Gameplay
                 levelManager.RegisterSpecialItem(specialItemPosition, specialItemInstance);
             }
         }
-        
+
         // Remove special item association and destroy instance
         public void RemoveSpecialItem()
         {
             hasSpecialItem = false;
-            
+
             if (specialItemInstance != null)
             {
                 Destroy(specialItemInstance);
@@ -306,14 +308,14 @@ namespace WordsToolkit.Scripts.Gameplay
                 OpenTileAfterAnimation();
             }
         }
-        
+
         // Open the tile after animation completes
         private void OpenTileAfterAnimation()
         {
             SetTileOpen();
             EventManager.GetEvent<Tile>(EGameEvent.TileSelected).Invoke(this);
         }
-        
+
         // Implement UI touch interface method instead of OnMouseDown
         public void OnPointerClick(PointerEventData eventData)
         {

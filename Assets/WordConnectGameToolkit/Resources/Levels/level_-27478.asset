@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-27478
+  m_EditorClassIdentifier: 
+  number: 2
+  background: {fileID: 21300000, guid: d6420d5d30edc4f149ce953ae2a50268, type: 3}
+  languages:
+  - language: en
+    letters: 
+    wordsAmount: 5
+    words: []
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements: []
+      specialItems: []
+      minBounds: {x: 0, y: 0}
+      maxBounds: {x: 9, y: 6}
+      serializedGrid: 
+  - language: "\u0651Fa"
+    letters: "\u0642\u0648\u0627\u0631\u0647"
+    wordsAmount: 5
+    words:
+    - "\u0647\u0631\u0627"
+    - "\u0648\u0631\u0642"
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: "\u0647\u0631\u0627"
+        wordNumber: 1
+        startPosition: {x: 3, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0648\u0631\u0642"
+        wordNumber: 2
+        startPosition: {x: 4, y: 0}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 3, y: 0}
+      maxBounds: {x: 5, y: 2}
+      serializedGrid: "    \u0648     |   \u0647\u0631\u0627    |    \u0642     |         
+        |          |          |          "
+  colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
+  words: 5
+  letters: 5
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0

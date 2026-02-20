@@ -1,76 +1,76 @@
-COINSSHOP : ﻪﮑﺳ ﻩﺎﮕﺷﻭﺮﻓ
-FREE : ﻥﺎﮕﯾﺍﺭ
-BUYTIPS : ﺎﻤﻨﻫﺍﺭ ﺪﯾﺮﺧ
-GETFREE : ﻥﺎﮕﯾﺍﺭ ﺖﻓﺎﯾﺭﺩ
-DAILYREWARD : ﻪﻧﺍﺯﻭﺭ ﻩﺰﯾﺎﺟ
-DAY : ﺯﻭﺭ
-THANKS : !ﻥﻮﻨﻤﻣ
-LOADING : …ﯼﺭﺍﺬﮔﺭﺎﺑ ﻝﺎﺣ ﺭﺩ
-LUCKYSPIN : ﺲﻧﺎﺷ ﺥﺮﭼ
-NOADSLABEL1 : !ﺕﺎﻐﯿﻠﺒﺗ ﻥﻭﺪﺑ ﯼﺯﺎﺑ
-NOADSLABEL2 : ﺩﻮﺑ ﺪﻨﻫﺍﻮﺧ ﺱﺮﺘﺳﺩ ﺭﺩ ﺪﯾﺮﺧ ﺯﺍ ﺪﻌﺑ ﻭ ﺪﻨﺘﺴﻫ ﯼﺭﺎﯿﺘﺧﺍ ﻩﺰﯾﺎﺟ ﯼﺎﻫﻮﯾﺪﯾﻭ
-BUY : ﺪﯾﺮﺧ
-OUTOFLIVES : ﺪﺷ ﻡﺎﻤﺗ ﺎﻫ‌ﻥﺎﺟ
-REFILLTHELIVES : ؟ﺎﻫ‌ﻥﺎﺟ ﮊﺭﺎﺷ
-OUTOFTIME : ﺪﺷ ﻡﺎﻤﺗ ﻥﺎﻣﺯ
-REFILLTHETIME : ؟ﻥﺎﻣﺯ ﮊﺭﺎﺷ
-GIFT : ﻪﯾﺪﻫ
-LEVELCLEARED : !ﺪﺷ ﺩﺭ ﺖﯿﻘﻓﻮﻣ ﺎﺑ ﻪﻠﺣﺮﻣ
-SETTINGS : ﺕﺎﻤﯿﻈﻨﺗ
-SHOP : ﻩﺎﮕﺷﻭﺮﻓﯽﺻﻮﺼﺧ ﻢﯾﺮﺣ
-PRIVACY : ﺣﺮﯾﻢ ﺧﺼﻮﺻﯽ
-QUITTHEGAME : ﯼﺯﺎﺑ ﺯﺍ ﺝﻭﺮﺧ
-DOYOUWANTTOQUIT : ؟ﺪﯾﻮﺷ ﺝﺭﺎﺧ ﯼﺯﺎﺑ ﺯﺍ ﺪﯿﻫﺍﻮﺧ‌ﯽﻣ ًﺎﻌﻗﺍﻭ ﺎﯾﺁ
-YES : ﻪﻠﺑ
-NO : ﺮﯿﺧ
-COMINGSOON : .ﺪﯿﺷﺎﺑ ﯼﺪﻌﺑ ﺖﯾﺪﭘﺁ ﺮﻈﺘﻨﻣ>rb< .ﺪﻧﻮﺷ‌ﯽﻣ ﻪﻓﺎﺿﺍ ﯼﺩﻭﺯ‌ﻪﺑ ﺪﯾﺪﺟ ﻞﺣﺍﺮﻣ
-WIN : ﯼﺪﺷ ﻩﺪﻧﺮﺑ
-NEXTLEVEL : ﺪﻌﺑ ﻪﻠﺣﺮﻣ
-SCORE : ﺯﺎﯿﺘﻣﺍ
-POINTS : ﺕﺍﺯﺎﯿﺘﻣﺍ
-REVIVEWITHNEWSHAPES : ؟ﺪﯾﺪﺟ ﯼﺎﻫ‌ﻞﮑﺷ ﺎﺑ ﯼﺯﺎﺑ ﻪﻣﺍﺩﺍ
-WHATCHADS : ﻎﯿﻠﺒﺗ ﯼﺎﺷﺎﻤﺗ
-CONTINUE : ﻪﻣﺍﺩﺍ
-YOULOSE : …ﯽﺘﺧﺎﺑ
-RETRY : ﻩﺭﺎﺑﻭﺩ ﺵﺎﻠﺗ
-ALMOST : …ﺩﻮﺑ ﮏﯾﺩﺰﻧ
-ARCADEMODE : ﺪﯿﮐﺭﺁ ﺖﻟﺎﺣ
-STAGE : ﻪﻠﺣﺮﻣ {stage}
-LEVEL : ﻪﻠﺣﺮﻣ {level}
-MOSTPOPULAR : ﻦﯾﺮﺗ‌ﺏﻮﺒﺤﻣ
-BESTOFFER : ﺩﺎﻬﻨﺸﯿﭘ ﻦﯾﺮﺘﻬﺑ
-NOADS : ﺕﺎﻐﯿﻠﺒﺗ ﻑﺬﺣ
-FREESPIN : ﻥﺎﮕﯾﺍﺭ ﺶﺧﺮﭼ
-SOUNDS : ﺍﺪﺻ
-MUSIC : ﯽﻘﯿﺳﻮﻣ
-VIBRATION : ﺵﺯﺮﻟ
-GAMEOVER : ﯼﺯﺎﺑ ﻥﺎﯾﺎﭘ
-YOURSCORE : ﺎﻤﺷ ﺯﺎﯿﺘﻣﺍ
-BESTSCORE : ﺯﺎﯿﺘﻣﺍ ﻦﯾﺮﺘﻬﺑ
-NEWRECORD : ﺑﻬﺘﺮﯾﻦ ﺍﻣﺘﯿﺎﺯ
-EXITGAME : ﯼﺯﺎﺑ ﺯﺍ ﺝﻭﺮﺧ 
-ADVENTURE : مﯽﯾﻮﺟﺍﺮﺟﺍ
-CLASSIC : ﮏﯿﺳﺎﻠﮐ
-TUTORIAL : ﺵﺯﻮﻣﺁ
-RESTORE_PURCHASES : ﺎﻫﺪﯾﺮﺧ ﯽﺑﺎﯾﺯﺎﺑ 
-EXTRAWORDS :ﻪﻓﺎﺿﺍ ﺕﺎﻤﻠﮐ 
-WORDSNOTINTCLUDEDINTHISLEVEL : ﺪﻧﺭﺍﺪﻧ ﺩﻮﺟﻭ ﻪﻠﺣﺮﻣ ﻦﯾﺍ ﺭﺩ ﻪﮐ ﯽﺗﺎﻤﻠﮐ
-CLAIM : ﺖﻓﺎﯾﺭﺩ
-COINS : ﻪﮑﺳ
-GEMS : ﺱﺎﻤﻟﺍ
-TAPTOCOLLECT : ﻥﺰﺑ ﻪﺑﺮﺿ ﺖﻓﺎﯾﺭﺩ ﯼﺍﺮﺑ
-DAILYREWARDS : ﻪﻧﺍﺯﻭﺭ ﺰﯾﺍﻮﺟ
-SPIN : ﺶﺧﺮﭼ
+COINSSHOP : فروشگاه سکه
+FREE : رایگان
+BUYTIPS : خرید راهنما
+GETFREE : دریافت رایگان
+DAILYREWARD : جایزه روزانه
+DAY : روز
+THANKS : ممنون!
+LOADING : در حال بارگذاری…
+LUCKYSPIN : چرخ شانس
+NOADSLABEL1 : بازی بدون تبلیغات!
+NOADSLABEL2 : ویدیوهای جایزه اختیاری هستند و بعد از خرید در دسترس خواهند بود
+BUY : خرید
+OUTOFLIVES : جان‌ها تمام شد
+REFILLTHELIVES : شارژ جان‌ها؟
+OUTOFTIME : زمان تمام شد
+REFILLTHETIME : شارژ زمان؟
+GIFT : هدیه
+LEVELCLEARED : مرحله با موفقیت رد شد!
+SETTINGS : تنظیمات
+SHOP : فروشگاه
+PRIVACY : حریم خصوصی
+QUITTHEGAME : خروج از بازی
+DOYOUWANTTOQUIT : آیا واقعاً می‌خواهید از بازی خارج شوید؟
+YES : بله
+NO : خیر
+COMINGSOON : مراحل جدید به‌زودی اضافه می‌شوند. <br>منتظر آپدیت بعدی باشید.
+WIN : برنده شدی
+NEXTLEVEL : مرحله بعد
+SCORE : امتیاز
+POINTS : امتیازات
+REVIVEWITHNEWSHAPES : ادامه بازی با شکل‌های جدید؟
+WHATCHADS : تماشای تبلیغ
+CONTINUE : ادامه
+YOULOSE : باختی…
+RETRY : تلاش دوباره
+ALMOST : نزدیک بود…
+ARCADEMODE : حالت آرکید
+STAGE : مرحله {stage}
+LEVEL : لِوِل {level}
+MOSTPOPULAR : محبوب‌ترین
+BESTOFFER : بهترین پیشنهاد
+NOADS : حذف تبلیغات
+FREESPIN : چرخش رایگان
+SOUNDS : صدا
+MUSIC : موسیقی
+VIBRATION : لرزش
+GAMEOVER : پایان بازی
+YOURSCORE : امتیاز شما
+BESTSCORE : بهترین امتیاز
+NEWRECORD : رکورد جدید!
+EXITGAME : خروج از بازی
+ADVENTURE : ماجراجویی
+CLASSIC : کلاسیک
+TUTORIAL : آموزش
+RESTORE_PURCHASES : بازیابی خریدها
+EXTRAWORDS : کلمات اضافه
+WORDSNOTINTCLUDEDINTHISLEVEL : کلماتی که در این مرحله وجود ندارند
+CLAIM : دریافت
+COINS : سکه
+GEMS : جم
+TAPTOCOLLECT : برای دریافت ضربه بزن
+DAILYREWARDS : جوایز روزانه
+SPIN : چرخش
 SELECTLANGUAGE : ﻥﺎﺑﺯ ﺏﺎﺨﺘﻧﺍ
-AGAIN : ﻩﺭﺎﺑﻭﺩ
-UNLOCK : ﺪﯿﻨﮐ ﺍﺪﯿﭘ ﯽﺳﺮﺘﺳﺩ ﺐﻟﺎﺟ ﺕﺎﻋﺎﻠﻃﺍ ﻪﺑ ﺎﺗ ﺪﯿﻨﮐ ﯼﺭﻭﺁ‌ﻊﻤﺟ ﺍﺭ ﺎﻫ‌ﺕﺭﺎﮐ ،ﻥﺩﺮﮐ ﺯﺎﺑ ﯼﺍﺮﺑ
-TipBoosterButton : ﺪﯿﻨﮐ ﻩﺩﺎﻔﺘﺳﺍ )tniH( ﺎﻤﻨﻫﺍﺭ ﺯﺍ ﺪﯿﻧﺍﻮﺗ‌ﯽﻣ ،ﺪﯾﺩﺮﮐ ﺮﯿﮔ ﺮﮔﺍ
-HammerBoosterButton : ﺪﻨﮐ‌ﯽﻣ ﺭﺎﮑﺷﺁ ﺪﯿﻨﮐ ﺏﺎﺨﺘﻧﺍ ﻪﮐ ﺍﺭ ﯽﻓﺮﺣ ﺮﻫ ﺶﮑﭼ
-ExtraWordsButton : ﺪﻧﻮﺷ‌ﯽﻣ ﻩﺩﺍﺩ ﺶﯾﺎﻤﻧ ﺎﺠﻨﯾﺍ ﻪﻓﺎﺿﺍ ﺕﺎﻤﻠﮐ !ﺪﯾﺩﺮﮐ ﺍﺪﯿﭘ ﻪﻓﺎﺿﺍ ﻪﻤﻠﮐ ﮏﯾ ﺎﻤﺷ
-GiftButton : ﺪﯿﻨﮐ ﺖﻓﺎﯾﺭﺩ ﺪﻨﻤﺷﺯﺭﺍ ﻩﺰﯾﺎﺟ ﮏﯾ ،ﻢﺟ ﻥﺩﺮﮐ ﺝﺮﺧ ﺎﺑ>rb<>rb<!ﺪﯾﺩﺮﮐ ﺯﺎﺑ ﻪﯾﺪﻫ ﮏﯾ ﺎﻤﺷ
-ShuffleButton : ﺪﯿﻨﮐ ﺍﺪﯿﭘ ﺍﺭ ﺕﺎﻤﻠﮐ ﺮﺗ‌ﻊﯾﺮﺳ ﺪﻨﮐ‌ﯽﻣ ﮏﻤﮐ ﺎﻤﺷ ﻪﺑ ﻥﺩﺮﮐ‌ﻁﻮﻠﺨﻣ ﯼ‌ﻪﻤﮐﺩ
-RedGem :ﺪﯿﻨﮐ ﺖﻓﺎﯾﺭﺩ ﺰﻣﺮﻗ ﺱﺎﻤﻟﺍ ﮏﯾ }drow{ ﻪﻤﻠﮐ ﻥﺩﺮﮐ ﻞﺻﻭ ﺎﺑ 
-GameTutorial : ﺪﯿﺸﮑﺑ ﺖﮐﺮﺣ ﮏﯾ ﺭﺩ ﺍﺭ ﺩﻮﺧ ﺖﺸﮕﻧﺍ ،}drow{ ﻪﻤﻠﮐ ﻦﺘﺧﺎﺳ ﯼﺍﺮﺑ
-Home : ﻪﻧﺎﺧ
-HARD : ﺖﺨﺳ
-TIMETUT : ﺪﯾﻮﺷ ﻩﺪﻧﺮﺑ ﺎﺗ ﺪﯿﻨﮐ ﻞﺣ ﻥﺎﻣﺯ ﻥﺪﺷ ﻡﺎﻤﺗ ﺯﺍ ﻞﺒﻗ ﺍﺭ ﺕﺎﻤﻠﮐ ﯼ‌ﻪﻤﻫ
+AGAIN : دوباره
+UNLOCK : برای باز کردن، کارت‌ها را جمع‌آوری کنید تا به اطلاعات جالب دسترسی پیدا کنید
+TipBoosterButton : اگر گیر کردید، می‌توانید از راهنما (Hint) استفاده کنید
+HammerBoosterButton : چکش هر حرفی را که انتخاب کنید آشکار می‌کند
+ExtraWordsButton : شما یک کلمه اضافه پیدا کردید! کلمات اضافه اینجا نمایش داده می‌شوند
+GiftButton : شما یک هدیه باز کردید!<br><br>با خرج کردن جم، یک جایزه ارزشمند دریافت کنید
+ShuffleButton : دکمه‌ی مخلوط‌کردن به شما کمک می‌کند سریع‌تر کلمات را پیدا کنید
+RedGem : با وصل کردن کلمه {word} یک جم قرمز دریافت کنید
+GameTutorial : برای ساختن کلمه {word}، انگشت خود را در یک حرکت بکشید
+Home : خانه
+HARD : سخت
+TIMETUT : همه‌ی کلمات را قبل از تمام شدن زمان حل کنید تا برنده شوید
