@@ -1,13 +1,13 @@
-COINSSHOP : فروشگاه سکه
-FREE : رایگان
+COINSSHOP : دکان
+FREE : مفتی
 BUYTIPS : خرید راهنما
-GETFREE : دریافت رایگان
+GETFREE : مفتی بگیر
 DAILYREWARD : جایزه روزانه
 DAY : روز
-THANKS : ممنون!
+THANKS : دمت گرم
 LOADING : در حال بارگذاری…
-LUCKYSPIN : چرخ شانس
-NOADSLABEL1 : بازی بدون تبلیغات!
+LUCKYSPIN : گردونه شانس
+NOADSLABEL1 : بازی بدون تبلیغ!
 NOADSLABEL2 : ویدیوهای جایزه اختیاری هستند و بعد از خرید در دسترس خواهند بود
 BUY : خرید
 OUTOFLIVES : جان‌ها تمام شد
@@ -15,16 +15,16 @@ REFILLTHELIVES : شارژ جان‌ها؟
 OUTOFTIME : زمان تمام شد
 REFILLTHETIME : شارژ زمان؟
 GIFT : هدیه
-LEVELCLEARED : مرحله با موفقیت رد شد!
+LEVELCLEARED : ایول بزن بریم مرحله بعد
 SETTINGS : تنظیمات
-SHOP : فروشگاه
+SHOP : دکان
 PRIVACY : حریم خصوصی
 QUITTHEGAME : خروج از بازی
-DOYOUWANTTOQUIT : آیا واقعاً می‌خواهید از بازی خارج شوید؟
-YES : بله
-NO : خیر
-COMINGSOON : مراحل جدید به‌زودی اضافه می‌شوند. <br>منتظر آپدیت بعدی باشید.
-WIN : برنده شدی
+DOYOUWANTTOQUIT : آیا می‌خواهید از بازی خارج شوید؟
+YES : آره
+NO : نه
+COMINGSOON : مراحل جدید به‌زودی اضافه می‌شوند. <br>منتظر آپدیت بعدی باش.
+WIN : ترکوندی مشتی
 NEXTLEVEL : مرحله بعد
 SCORE : امتیاز
 POINTS : امتیازات
@@ -36,11 +36,11 @@ RETRY : تلاش دوباره
 ALMOST : نزدیک بود…
 ARCADEMODE : حالت آرکید
 STAGE : مرحله {stage}
-LEVEL : لِوِل {level}
-MOSTPOPULAR : محبوب‌ترین
-BESTOFFER : بهترین پیشنهاد
-NOADS : حذف تبلیغات
-FREESPIN : چرخش رایگان
+LEVEL : سطح {level}
+MOSTPOPULAR : باحال ترین
+BESTOFFER : خفن ترین پیشنهاد
+NOADS : حذف تبلیغ
+FREESPIN : چرخش مفتی
 SOUNDS : صدا
 MUSIC : موسیقی
 VIBRATION : لرزش
@@ -56,21 +56,21 @@ RESTORE_PURCHASES : بازیابی خریدها
 EXTRAWORDS : کلمات اضافه
 WORDSNOTINTCLUDEDINTHISLEVEL : کلماتی که در این مرحله وجود ندارند
 CLAIM : دریافت
-COINS : سکه
-GEMS : جم
+COINS : لوخ
+GEMS : گوهر
 TAPTOCOLLECT : برای دریافت ضربه بزن
 DAILYREWARDS : جوایز روزانه
 SPIN : چرخش
-SELECTLANGUAGE : ﻥﺎﺑﺯ ﺏﺎﺨﺘﻧﺍ
+SELECTLANGUAGE : انتخاب زبان
 AGAIN : دوباره
-UNLOCK : برای باز کردن، کارت‌ها را جمع‌آوری کنید تا به اطلاعات جالب دسترسی پیدا کنید
+UNLOCK : کارت ها رو جمع کن تا پرات بریزه 
 TipBoosterButton : اگر گیر کردید، می‌توانید از راهنما (Hint) استفاده کنید
-HammerBoosterButton : چکش هر حرفی را که انتخاب کنید آشکار می‌کند
+HammerBoosterButton : تیشه هر حرفی را که انتخاب کنید، آشکار می‌کند
 ExtraWordsButton : شما یک کلمه اضافه پیدا کردید! کلمات اضافه اینجا نمایش داده می‌شوند
-GiftButton : شما یک هدیه باز کردید!<br><br>با خرج کردن جم، یک جایزه ارزشمند دریافت کنید
-ShuffleButton : دکمه‌ی مخلوط‌کردن به شما کمک می‌کند سریع‌تر کلمات را پیدا کنید
-RedGem : با وصل کردن کلمه {word} یک جم قرمز دریافت کنید
-GameTutorial : برای ساختن کلمه {word}، انگشت خود را در یک حرکت بکشید
+GiftButton : شما یک هدیه باز کردید!<br><br>با خرج کردن گوهر، یک جایزه ارزشمند دریافت کنید
+ShuffleButton : دکمه‌ی بر زدن به شما کمک می‌کند سریع‌تر کلمات را پیدا کنید
+RedGem : با وصل کردن کلمه {word} یک گوهر قرمز دریافت کنید
+GameTutorial : برای ساختن کلمه {word}، باانگشت حروف را به هم وصل کن
 Home : خانه
 HARD : سخت
-TIMETUT : همه‌ی کلمات را قبل از تمام شدن زمان حل کنید تا برنده شوید
+TIMETUT : همه‌ی کلمات را قبل از تمام شدن زمان حل کن تا برنده شی

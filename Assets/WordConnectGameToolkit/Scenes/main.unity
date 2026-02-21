@@ -4414,7 +4414,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bed5e0afc601c854faaa82e2f6a2afac, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6082034435222097936, guid: bed5e0afc601c854faaa82e2f6a2afac, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4433,7 +4433,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4464,7 +4464,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -5209,7 +5209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -233.00006
+      value: -233
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6447,7 +6447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8066142236189538299, guid: 7c8e4739e8dd640cd9446b343d1439dd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.0999756
+      value: -3.1000977
       objectReference: {fileID: 0}
     - target: {fileID: 8066142236189538299, guid: 7c8e4739e8dd640cd9446b343d1439dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
