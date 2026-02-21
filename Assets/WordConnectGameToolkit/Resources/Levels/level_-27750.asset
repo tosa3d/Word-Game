@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
   m_Name: level_-27750
   m_EditorClassIdentifier: 
-  number: 4
+  number: 3
   background: {fileID: 0}
   languages:
   - language: en
@@ -24,24 +24,53 @@ MonoBehaviour:
       rows: 7
       placements: []
       specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
+      minBounds: {x: 5, y: 3}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: '          |          |          |          |          |         
+        |          '
   - language: "\u0651Fa"
-    letters: 
+    letters: "\u0627\u062F\u0631\u0645"
     wordsAmount: 5
-    words: []
+    words:
+    - "\u062F\u0631\u0627"
+    - "\u062F\u0631"
+    - "\u0631\u0627\u0645"
     crosswordData:
       columns: 10
       rows: 7
-      placements: []
+      placements:
+      - word: "\u062F\u0631\u0627"
+        wordNumber: 1
+        startPosition: {x: 3, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0645\u0631\u0627"
+        wordNumber: 2
+        startPosition: {x: 2, y: 2}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u062F\u0631"
+        wordNumber: 3
+        startPosition: {x: 3, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0631\u0627\u0645"
+        wordNumber: 4
+        startPosition: {x: 4, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
       specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
+      minBounds: {x: 2, y: 1}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: "          |   \u062F\u0631\u0627    |  \u0645\u0631\u0627    
+        |    \u0645     |          |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
-  letters: 5
+  letters: 4
   min: 3
   max: 6
   difficulty: 0

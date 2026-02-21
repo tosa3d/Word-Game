@@ -13,56 +13,69 @@ MonoBehaviour:
   m_Name: level_-49254
   m_EditorClassIdentifier: 
   number: 1
-  background: {fileID: 21300000, guid: d6420d5d30edc4f149ce953ae2a50268, type: 3}
+  background: {fileID: 0}
   languages:
   - language: en
-    letters: 
-    wordsAmount: 5
-    words: []
-    crosswordData:
-      columns: 10
-      rows: 7
-      placements: []
-      specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
-  - language: "\u0651Fa"
-    letters: "\u0627\u0646\u062A\u0646"
+    letters: "\u062F\u0631\u0627\u067E\u0633"
     wordsAmount: 5
     words:
-    - "\u0646\u062A\u0646\u0627"
-    - "\u062A\u0646"
-    - "\u062A\u0627"
+    - "\u0631\u062F"
+    - "\u0631\u0633\u067E"
+    - "\u0631\u0627\u0633"
     crosswordData:
       columns: 10
       rows: 7
       placements:
-      - word: "\u0646\u062A\u0646\u0627"
+      - word: "\u0631\u062F"
         wordNumber: 1
-        startPosition: {x: 3, y: 2}
+        startPosition: {x: 4, y: 1}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
-      - word: "\u062A\u0646"
+      - word: "\u0631\u0633\u067E"
         wordNumber: 2
-        startPosition: {x: 4, y: 2}
-        isHorizontal: 0
+        startPosition: {x: 3, y: 3}
+        isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
-      - word: "\u062A\u0627"
+      - word: "\u0631\u0627\u0633"
         wordNumber: 3
-        startPosition: {x: 6, y: 1}
+        startPosition: {x: 4, y: 1}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
-      specialItems:
-      - position: {x: 4, y: 2}
-        itemPath: special_item
+      specialItems: []
       minBounds: {x: 3, y: 1}
-      maxBounds: {x: 6, y: 3}
-      serializedGrid: "          |      \u062A   |   \u0646\u062A\u0646\u0627   |   
-        \u0646     |          |          |          "
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: "          |    \u0631\u062F    |    \u0627     |   \u0631\u0633\u067E   
+        |          |          |          "
+  - language: "\u0651Fa"
+    letters: "\u0631\u0627\u0633\u0628"
+    wordsAmount: 5
+    words:
+    - "\u0631\u0633"
+    - "\u0627\u0633\u0628"
+    crosswordData:
+      columns: 10
+      rows: 7
+      placements:
+      - word: "\u0631\u0633"
+        wordNumber: 1
+        startPosition: {x: 1, y: 2}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0627\u0633\u0628"
+        wordNumber: 2
+        startPosition: {x: 2, y: 1}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 1, y: 1}
+      maxBounds: {x: 2, y: 3}
+      serializedGrid: "          |  \u0627       | \u0631\u0633       |  \u0628      
+        |          |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 4

@@ -13,12 +13,6 @@ MonoBehaviour:
   m_Name: LanguageConfiguration
   m_EditorClassIdentifier: 
   languages:
-  - code: en
-    displayName: English
-    localizedName: English
-    languageModel: {fileID: 5022602860645237092, guid: 5a9fb8771656840c9bdcf09593160237, type: 3}
-    enabledByDefault: 1
-    localizationBase: {fileID: 4900000, guid: 914ee9d7b6e084087bb685a65d1ddae3, type: 3}
   - code: "\u0651Fa"
     displayName: Farsi
     localizedName: Farsi

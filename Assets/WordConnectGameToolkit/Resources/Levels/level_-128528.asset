@@ -10,40 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
-  m_Name: level_-27612
+  m_Name: level_-128528
   m_EditorClassIdentifier: 
-  number: 4
+  number: 6
   background: {fileID: 0}
   languages:
-  - language: en
-    letters: 
-    wordsAmount: 5
-    words: []
-    crosswordData:
-      columns: 10
-      rows: 7
-      placements: []
-      specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
   - language: "\u0651Fa"
-    letters: "\u0627\u0631\u0647\u0628"
+    letters: "\u062A\u0631\u0628\u062A\u0639"
     wordsAmount: 5
     words:
-    - "\u0628\u0627"
-    - "\u0627\u0631\u0647"
+    - "\u062A\u0631\u0628\u0639"
+    - "\u062A\u0631\u0628\u062A"
     crosswordData:
       columns: 10
       rows: 7
       placements:
-      - word: "\u0628\u0627"
+      - word: "\u062A\u0631\u0628\u0639"
         wordNumber: 1
-        startPosition: {x: 3, y: 1}
+        startPosition: {x: 3, y: 2}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
-      - word: "\u0627\u0631\u0647"
+      - word: "\u062A\u0631\u0628\u062A"
         wordNumber: 2
         startPosition: {x: 4, y: 1}
         isHorizontal: 0
@@ -51,12 +39,12 @@ MonoBehaviour:
         specialItemPath: 
       specialItems: []
       minBounds: {x: 3, y: 1}
-      maxBounds: {x: 4, y: 3}
-      serializedGrid: "          |   \u0628\u0627     |    \u0631     |    \u0647    
-        |          |          |          "
+      maxBounds: {x: 6, y: 4}
+      serializedGrid: "          |    \u062A     |   \u062A\u0631\u0628\u0639   |   
+        \u0628     |    \u062A     |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
-  letters: 4
+  letters: 5
   min: 3
   max: 6
   difficulty: 0

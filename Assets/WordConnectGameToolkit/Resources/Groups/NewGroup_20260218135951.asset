@@ -17,14 +17,15 @@ MonoBehaviour:
   levels:
   - {fileID: 11400000, guid: 70b2582e1f1f9ea4f86562617b472e40, type: 2}
   - {fileID: 11400000, guid: 421c4de7c5ce55f4ab57e6a50f01d192, type: 2}
-  - {fileID: 11400000, guid: f160e2f4be5bb7b4cba58a5083f9f03a, type: 2}
   - {fileID: 11400000, guid: c28c95b8ff3d4644f8cac0a30764f601, type: 2}
+  - {fileID: 11400000, guid: f160e2f4be5bb7b4cba58a5083f9f03a, type: 2}
+  - {fileID: 11400000, guid: 833684c3ec1ef3745be80a99b4024c96, type: 2}
+  - {fileID: 11400000, guid: 00094945b759fdd4aaabc5f22dfb1ac9, type: 2}
+  - {fileID: 11400000, guid: a5e98c37897bfc340aa01e14336138d9, type: 2}
+  - {fileID: 11400000, guid: adab621c49cfbc54bafabf2d41d96198, type: 2}
   background: {fileID: 0}
   localizedTexts:
   - language: en
-    title: 
-    text: 
-  - language: "\u0651Fa"
     title: 
     text: 
   colorsTile: {fileID: 0}
