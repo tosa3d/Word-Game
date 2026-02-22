@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
+  m_Name: level_-7700
+  m_EditorClassIdentifier: 
+  number: 19
+  background: {fileID: 0}
+  languages:
+  - language: "\u0651Fa"
+    letters: "\u0632\u0627\u06AF\u0631\u0633"
+    wordsAmount: 5
+    words:
+    - "\u0632\u0627\u0633"
+    - "\u0632\u0627\u0631\u06AF"
+    - "\u06AF\u0627\u0632"
+    - "\u0627\u0631\u0632"
+    - "\u0632\u0627\u06AF\u0631\u0633"
+    crosswordData:
+      columns: 10
+      rows: 10
+      placements:
+      - word: "\u0632\u0627\u0633"
+        wordNumber: 1
+        startPosition: {x: 5, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0632\u0627\u0631\u06AF"
+        wordNumber: 2
+        startPosition: {x: 2, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u06AF\u0627\u0632"
+        wordNumber: 3
+        startPosition: {x: 2, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0627\u0631\u0632"
+        wordNumber: 4
+        startPosition: {x: 3, y: 5}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0632\u0627\u06AF\u0631\u0633"
+        wordNumber: 5
+        startPosition: {x: 5, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      specialItems: []
+      minBounds: {x: 2, y: 3}
+      maxBounds: {x: 7, y: 7}
+      serializedGrid: "          |          |          |  \u06AF  \u0632\u0627\u0633 
+        |  \u0627  \u0627    |  \u0632\u0627\u0631\u06AF    |   \u0631 \u0631   
+        |   \u0632 \u0633    |          |          "
+  colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
+  words: 5
+  letters: 5
+  min: 3
+  max: 6
+  difficulty: 0
+  enableTimer: 0
+  timerDuration: 120
+  isHardLevel: 0

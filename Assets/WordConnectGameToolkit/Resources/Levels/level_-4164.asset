@@ -10,45 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
-  m_Name: level_-114202
+  m_Name: level_-4164
   m_EditorClassIdentifier: 
-  number: 5
+  number: 12
   background: {fileID: 0}
   languages:
   - language: "\u0651Fa"
-    letters: "\u0631\u0627\u0645\u062C"
+    letters: "\u06A9\u0634\u062A\u06CC"
     wordsAmount: 5
-    words:
-    - "\u0645\u0627\u062C"
-    - "\u0645\u0627\u0631"
-    - "\u062C\u0645"
+    words: []
     crosswordData:
       columns: 10
-      rows: 7
+      rows: 10
       placements:
-      - word: "\u0645\u0627\u062C"
+      - word: "\u0634\u06CC\u06A9"
         wordNumber: 1
-        startPosition: {x: 3, y: 3}
+        startPosition: {x: 3, y: 4}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
-      - word: "\u0645\u0627\u0631"
+      - word: "\u06A9\u0634\u062A"
         wordNumber: 2
-        startPosition: {x: 3, y: 3}
+        startPosition: {x: 3, y: 6}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u06A9\u0634\u062A"
+        wordNumber: 2
+        startPosition: {x: 3, y: 6}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
-      - word: "\u062C\u0645"
-        wordNumber: 3
-        startPosition: {x: 5, y: 3}
+      - word: "\u06A9\u0634\u062A\u06CC"
+        wordNumber: 4
+        startPosition: {x: 5, y: 4}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       specialItems: []
-      minBounds: {x: 3, y: 3}
-      maxBounds: {x: 5, y: 5}
-      serializedGrid: "          |          |          |   \u0645\u0627\u062C   
-        |   \u0627 \u0645    |   \u0631      |          "
+      minBounds: {x: 3, y: 4}
+      maxBounds: {x: 5, y: 8}
+      serializedGrid: "          |          |          |          |   \u0634\u06CC\u06A9   
+        |     \u0634    |   \u06A9\u0634\u062A    |   \u0634 \u06CC    |   \u062A     
+        |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 4
