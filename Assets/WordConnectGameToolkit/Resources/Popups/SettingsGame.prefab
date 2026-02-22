@@ -415,6 +415,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 620553229098533321, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_fontSize
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 620553229098533321, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 620553229098533321, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 621257374199314380, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -454,6 +466,18 @@ PrefabInstance:
     - target: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: restorePurchase
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343066330380575442, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_fontSize
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343066330380575442, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343066330380575442, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5358110227974715695, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchorMax.y
@@ -613,8 +637,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280370012
+  m_fontColor: {r: 0.36078432, g: 0.2627451, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -631,15 +655,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.3
-  m_fontSizeBase: 36
+  m_fontSize: 40.5
+  m_fontSizeBase: 40.5
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

@@ -422,7 +422,9 @@ MonoBehaviour:
   tagsToShow: []
   isPopupAboveTags: 0
   fadeAlpha: 0.98
-  text: {fileID: 1125315528492237606}
+  appearSound: {fileID: 0}
+  disappearSound: {fileID: 0}
+  text: {fileID: 0}
   arrow: {fileID: 4729978360462516172}
 --- !u!1 &8640787484592943226
 GameObject:
@@ -434,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613910635124729401}
   - component: {fileID: 8380903544585966541}
-  - component: {fileID: 1125315528492237606}
+  - component: {fileID: 8772113072958799581}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -458,8 +460,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000002861, y: 350.37}
-  m_SizeDelta: {x: 934.7441, y: 267.0206}
+  m_AnchoredPosition: {x: 10.6013, y: 350.37}
+  m_SizeDelta: {x: 955.9466, y: 267.0206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8380903544585966541
 CanvasRenderer:
@@ -469,7 +471,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8640787484592943226}
   m_CullTransparentMesh: 1
---- !u!114 &1125315528492237606
+--- !u!114 &8772113072958799581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,7 +480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8640787484592943226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc838cbc2e148b3a5e7578d063ccb18, type: 3}
+  m_Script: {fileID: 11500000, guid: b9839c2d141529145a431aef4d757ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -489,11 +491,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''ve unlocked a GIFT!
-
-
-    SPEND GEMS to receive a valuable REWARD'
-  m_isRightToLeft: 0
+  m_text: "\uFEB7\uFEE4\uFE8E \uFBFE\uFB8F \uFEEB\uFEAA\uFBFE\uFEEA \uFE91\uFE8E\uFEAF
+    \uFB90\uFEAE\uFEA9\uFBFE\uFEAA! \uFE91\uFE8E \uFEA7\uFEAE\uFE9D \uFB90\uFEAE\uFEA9\uFEE5
+    \uFB94\uFEEE\uFEEB\uFEAE\u060C \uFBFE\uFB8F \uFE9F\uFE8E\uFBFE\uFEB0\uFEE9 \uFE8D\uFEAD\uFEAF\uFEB7\uFEE4\uFEE8\uFEAA
+    \uFEA9\uFEAD\uFBFE\uFE8E\uFED3\uFE96 \uFB90\uFEE8\uFBFF\uFEAA "
+  m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
   m_sharedMaterial: {fileID: 3722732180671858053, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
   m_fontSharedMaterials: []
@@ -501,8 +503,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287184178
-  m_fontColor: {r: 0.19607843, g: 0.23921569, b: 0.5372549, a: 1}
+    rgba: 4280370012
+  m_fontColor: {r: 0.36078432, g: 0.2627451, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -519,12 +521,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 64.45
+  m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 16
-  m_fontSizeMax: 200
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -561,7 +563,14 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  instanceID: HINT1
+  preserveNumbers: 0
+  farsi: 1
+  originalText: "\u0634\u0645\u0627 \u06CC\u06A9 \u0647\u062F\u06CC\u0647 \u0628\u0627\u0632
+    \u06A9\u0631\u062F\u06CC\u062F! \u0628\u0627 \u062E\u0631\u062C \u06A9\u0631\u062F\u0646
+    \u06AF\u0648\u0647\u0631\u060C \u06CC\u06A9 \u062C\u0627\u06CC\u0632\u0647 \u0627\u0631\u0632\u0634\u0645\u0646\u062F
+    \u062F\u0631\u06CC\u0627\u0641\u062A \u06A9\u0646\u06CC\u062F "
+  fixTags: 1
+  forceFix: 0
 --- !u!1 &8697308365127599735
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,3 +719,6 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls: []
+  noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}

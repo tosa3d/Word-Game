@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 613910635124729401}
   - component: {fileID: 8380903544585966541}
-  - component: {fileID: 1125315528492237606}
+  - component: {fileID: 8171491639798331273}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -536,7 +536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -169}
+  m_AnchoredPosition: {x: 0, y: -202}
   m_SizeDelta: {x: 721.3619, y: 267.0206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8380903544585966541
@@ -547,7 +547,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8640787484592943226}
   m_CullTransparentMesh: 1
---- !u!114 &1125315528492237606
+--- !u!114 &8171491639798331273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8640787484592943226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc838cbc2e148b3a5e7578d063ccb18, type: 3}
+  m_Script: {fileID: 11500000, guid: b9839c2d141529145a431aef4d757ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -567,17 +567,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Solve all the words in time to WIN
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
-  m_sharedMaterial: {fileID: 3722732180671858053, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
+  m_text: "\uFEEB\uFEE4\uFEEA\uFBFC \uFB90\uFEE0\uFEE4\uFE8E\uFE95 \uFEAD\uFE8D \uFED7\uFE92\uFEDE
+    \uFE8D\uFEAF \uFE97\uFEE4\uFE8E\uFEE1 \uFEB7\uFEAA\uFEE5 \uFEAF\uFEE3\uFE8E\uFEE5
+    \uFEA3\uFEDE \uFB90\uFEE6 \uFE97\uFE8E \uFE91\uFEAE\uFEE7\uFEAA\uFEE9 \uFEB7\uFBFD"
+  m_isRightToLeft: 1
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287184178
-  m_fontColor: {r: 0.19607843, g: 0.23921569, b: 0.5372549, a: 1}
+    rgba: 4280370012
+  m_fontColor: {r: 0.36078432, g: 0.2627451, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -594,15 +596,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 57.85
+  m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 16
-  m_fontSizeMax: 200
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -636,7 +638,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  instanceID: TIMETUT
+  preserveNumbers: 0
+  farsi: 1
+  originalText: "\u0647\u0645\u0647\u200C\u06CC \u06A9\u0644\u0645\u0627\u062A \u0631\u0627
+    \u0642\u0628\u0644 \u0627\u0632 \u062A\u0645\u0627\u0645 \u0634\u062F\u0646 \u0632\u0645\u0627\u0646
+    \u062D\u0644 \u06A9\u0646 \u062A\u0627 \u0628\u0631\u0646\u062F\u0647 \u0634\u06CC"
+  fixTags: 1
+  forceFix: 0
 --- !u!1 &8697308365127599735
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,3 +794,5 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}

@@ -809,7 +809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 1
+  m_text: Level 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 1bc401f1f42e1439786ee36e058568d4, type: 2}
@@ -964,7 +964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1816809834705380866}
   - component: {fileID: 8592739343244835352}
-  - component: {fileID: 2624921307032082044}
+  - component: {fileID: 6415414739486272417}
   m_Layer: 0
   m_Name: Fact
   m_TagString: Untagged
@@ -999,7 +999,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6733866827775383241}
   m_CullTransparentMesh: 1
---- !u!114 &2624921307032082044
+--- !u!114 &6415414739486272417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6733866827775383241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc838cbc2e148b3a5e7578d063ccb18, type: 3}
+  m_Script: {fileID: 11500000, guid: b9839c2d141529145a431aef4d757ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1019,10 +1019,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect cards to unlock an interesting facts
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
-  m_sharedMaterial: {fileID: 3722732180671858053, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
+  m_text: "\uFB90\uFE8E\uFEAD\uFE95 \uFEEB\uFE8E \uFEAD\uFEED \uFE9F\uFEE4\uFECA
+    \uFB90\uFEE6 \uFE97\uFE8E \uFB58\uFEAE\uFE8D\uFE95 \uFE91\uFEAE\uFBFE\uFEB0\uFEE9"
+  m_isRightToLeft: 1
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1046,12 +1047,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 72
+  m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 50
-  m_fontSizeMax: 200
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1088,7 +1089,12 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  instanceID: UNLOCK
+  preserveNumbers: 0
+  farsi: 1
+  originalText: "\u06A9\u0627\u0631\u062A \u0647\u0627 \u0631\u0648 \u062C\u0645\u0639
+    \u06A9\u0646 \u062A\u0627 \u067E\u0631\u0627\u062A \u0628\u0631\u06CC\u0632\u0647"
+  fixTags: 1
+  forceFix: 0
 --- !u!1 &6770474850957748408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1554,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!1 &9197143773484515529
 GameObject:
   m_ObjectHideFlags: 0

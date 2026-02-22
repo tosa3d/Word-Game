@@ -47,7 +47,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7435182478936566494}
   - component: {fileID: 5343662648323841933}
-  - component: {fileID: 9184448257825037357}
+  - component: {fileID: 4877540579368505799}
   m_Layer: 0
   m_Name: Localized TextMeshPro
   m_TagString: Untagged
@@ -82,7 +82,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2527946409526802892}
   m_CullTransparentMesh: 1
---- !u!114 &9184448257825037357
+--- !u!114 &4877540579368505799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2527946409526802892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc838cbc2e148b3a5e7578d063ccb18, type: 3}
+  m_Script: {fileID: 11500000, guid: b9839c2d141529145a431aef4d757ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -102,10 +102,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New levels coming soon. <br>Stay tuned for the next update.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
-  m_sharedMaterial: {fileID: 3722732180671858053, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
+  m_text: "\uFEE3\uFEAE\uFE8D\uFEA3\uFEDE \uFE9F\uFEAA\uFBFE\uFEAA \uFE91\uFEEA\uFEAF\uFEED\uFEA9\uFBFC
+    \uFE8D\uFEBF\uFE8E\uFED3\uFEEA \uFEE3\uFBFD\uFEB7\uFEEE\uFEE7\uFEAA. <br> \uFEE3\uFEE8\uFE98\uFEC8\uFEAE
+    \uFE81\uFB58\uFEAA\uFBFE\uFE96 \uFE91\uFECC\uFEAA\uFBFC \uFE91\uFE8E\uFEB5."
+  m_isRightToLeft: 1
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -129,12 +131,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.1
-  m_fontSizeBase: 64.1
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 16
-  m_fontSizeMax: 200
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -171,7 +173,14 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  instanceID: COMINGSOON
+  preserveNumbers: 0
+  farsi: 1
+  originalText: "\u0645\u0631\u0627\u062D\u0644 \u062C\u062F\u06CC\u062F \u0628\u0647\u200C\u0632\u0648\u062F\u06CC
+    \u0627\u0636\u0627\u0641\u0647 \u0645\u06CC\u200C\u0634\u0648\u0646\u062F. <br>
+    \u0645\u0646\u062A\u0638\u0631 \u0622\u067E\u062F\u06CC\u062A \u0628\u0639\u062F\u06CC
+    \u0628\u0627\u0634."
+  fixTags: 1
+  forceFix: 0
 --- !u!1 &3096027242882433678
 GameObject:
   m_ObjectHideFlags: 0
