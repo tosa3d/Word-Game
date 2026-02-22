@@ -1591,7 +1591,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: m_text
-      value: $2.99
+      value: 299,000t
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
+      propertyPath: m_fontSize
+      value: 57.4
       objectReference: {fileID: 0}
     - target: {fileID: 3184420392104802565, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: resource
@@ -1652,7 +1656,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 5756ff5f824174454b36d6d9a38304da, type: 3}
     - target: {fileID: 5009899631098291910, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: m_text
-      value: $4.99
+      value: 79,900
       objectReference: {fileID: 0}
     - target: {fileID: 5009899631098291910, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: m_fontSize
@@ -1933,11 +1937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: m_text
-      value: $3.99
+      value: 399,000t
       objectReference: {fileID: 0}
     - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: m_fontSize
-      value: 68.4
+      value: 57.4
       objectReference: {fileID: 0}
     - target: {fileID: 3184420392104802565, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: resource
@@ -2090,7 +2094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: m_text
-      value: $1.99
+      value: 199,000t
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750356214649160660, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
+      propertyPath: m_fontSize
+      value: 60.25
       objectReference: {fileID: 0}
     - target: {fileID: 3184420392104802565, guid: 3eb102b359f7d42f7b77f7e5d8ff4f09, type: 3}
       propertyPath: resource
@@ -2284,7 +2292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009899631098291910, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: m_text
-      value: $2.99
+      value: 19,900t
       objectReference: {fileID: 0}
     - target: {fileID: 5736691152768228375, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: productID
@@ -2409,11 +2417,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3ff3e144b5a6a4e0896130a6434bb1c4, type: 3}
     - target: {fileID: 5009899631098291910, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: m_text
-      value: $3.99
+      value: 39,900t
       objectReference: {fileID: 0}
     - target: {fileID: 5009899631098291910, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: m_fontSize
-      value: 68.4
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 5736691152768228375, guid: 5b4c8fe65fe254c9cb034f7a41219527, type: 3}
       propertyPath: productID
