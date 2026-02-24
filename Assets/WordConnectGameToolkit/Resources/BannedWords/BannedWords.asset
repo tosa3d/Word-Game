@@ -19,4 +19,5 @@ MonoBehaviour:
     bannedWords:
     - "\xFCre"
   - languageCode: "\u0651Fa"
-    bannedWords: []
+    bannedWords:
+    - "\u062C\u0627\u0645"

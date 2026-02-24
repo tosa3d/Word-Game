@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: level_-128528
   m_EditorClassIdentifier: 
   number: 6
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: c668b55eb0cc74093bce5fc94a13d741, type: 3}
   languages:
   - language: "\u0651Fa"
     letters: "\u062A\u0631\u0628\u062A\u0639"

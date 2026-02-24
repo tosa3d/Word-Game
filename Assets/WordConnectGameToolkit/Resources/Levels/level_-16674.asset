@@ -13,23 +13,67 @@ MonoBehaviour:
   m_Name: level_-16674
   m_EditorClassIdentifier: 
   number: 21
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: cdb9103f906f644ab8b3184d03f6c2e6, type: 3}
   languages:
   - language: "\u0651Fa"
-    letters: 
+    letters: "\u0633\u0645\u0633\u0627\u0631\u0648"
     wordsAmount: 5
-    words: []
+    words:
+    - "\u0631\u0648\u0627\u0645\u0633"
+    - "\u0648\u0633\u0627\u0631"
+    - "\u0631\u0627\u0633\u0645\u0633"
+    - "\u0633\u0648\u0633\u0645\u0627\u0631"
+    - "\u0633\u0627\u0633"
+    - "\u0633\u0645\u0648\u0631"
     crosswordData:
       columns: 10
-      rows: 7
-      placements: []
+      rows: 10
+      placements:
+      - word: "\u0631\u0648\u0627\u0645\u0633"
+        wordNumber: 1
+        startPosition: {x: 3, y: 3}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0648\u0633\u0627\u0631"
+        wordNumber: 2
+        startPosition: {x: 6, y: 5}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0631\u0627\u0633\u0645\u0633"
+        wordNumber: 3
+        startPosition: {x: 4, y: 7}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0633\u0648\u0633\u0645\u0627\u0631"
+        wordNumber: 4
+        startPosition: {x: 4, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0633\u0627\u0633"
+        wordNumber: 5
+        startPosition: {x: 7, y: 3}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0633\u0645\u0648\u0631"
+        wordNumber: 6
+        startPosition: {x: 9, y: 2}
+        isHorizontal: 0
+        isSpecialItem: 0
+        specialItemPath: 
       specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
+      minBounds: {x: 3, y: 2}
+      maxBounds: {x: 9, y: 7}
+      serializedGrid: "          |          |    \u0633    \u0633|   \u0631\u0648\u0627\u0645\u0633
+        \u0645|    \u0633  \u0627 \u0648|    \u0645 \u0648\u0633\u0627\u0631|   
+        \u0627     |    \u0631\u0627\u0633\u0645\u0633 |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
-  letters: 5
+  letters: 6
   min: 3
   max: 6
   difficulty: 0

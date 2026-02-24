@@ -35,10 +35,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5b0e3591b95988843a499b83b4464f46, type: 2}
   - {fileID: 11400000, guid: f175f2b4c909f7e4c8bc9dbaf0763c3b, type: 2}
   - {fileID: 11400000, guid: 8a64dafee0328c146adf8355626cb9af, type: 2}
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: c668b55eb0cc74093bce5fc94a13d741, type: 3}
   localizedTexts:
   - language: en
     title: 
     text: 
+  - language: "\u0651Fa"
+    title: "\u06A9\u0631\u0645\u0627\u0646"
+    text: "\u0627\u0631\u06AF \u0628\u0645"
   colorsTile: {fileID: 0}
   targetExtraWords: 8

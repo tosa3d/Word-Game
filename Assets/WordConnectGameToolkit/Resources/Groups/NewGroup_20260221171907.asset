@@ -16,7 +16,16 @@ MonoBehaviour:
   parentGroup: {fileID: 0}
   levels:
   - {fileID: 11400000, guid: 98022ad896d9d774483cd3ddda68f829, type: 2}
-  background: {fileID: 0}
+  - {fileID: 11400000, guid: 08f03da6fba00fb48b8ed3f280934e8e, type: 2}
+  - {fileID: 11400000, guid: 6acb6c5513cb3824682195d3438c835e, type: 2}
+  - {fileID: 11400000, guid: e931967b2dd50454c9d8654f3bf8e162, type: 2}
+  - {fileID: 11400000, guid: 04c93b0510c45d748b78a92668693f39, type: 2}
+  - {fileID: 11400000, guid: d2e26459fb71f164eba552d863d3fce5, type: 2}
+  - {fileID: 11400000, guid: d194d5d356cfa7f469a2aa0c41e8d2e9, type: 2}
+  - {fileID: 11400000, guid: de0a9107a043cb34faae4ad354070cd6, type: 2}
+  - {fileID: 11400000, guid: 7cf99d337eb8c344d93dd24add9e79e9, type: 2}
+  - {fileID: 11400000, guid: 46deb77f5edbff0468ae37f3d5e8cfd6, type: 2}
+  background: {fileID: 21300000, guid: cdb9103f906f644ab8b3184d03f6c2e6, type: 3}
   localizedTexts:
   - language: "\u0651Fa"
     title: 
