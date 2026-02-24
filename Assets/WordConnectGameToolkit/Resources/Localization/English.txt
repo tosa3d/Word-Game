@@ -1,4 +1,4 @@
-COINSSHOP : Coins Shop
+﻿COINSSHOP : Coins Shop
 FREE : FREE
 BUYTIPS : Buy Tips
 GETFREE : Get Free
@@ -36,7 +36,7 @@ RETRY : Retry
 ALMOST : Almost there...
 ARCADEMODE : ARCADE MODE
 STAGE : STAGE {stage}
-LEVEL : Level {level}
+LEVEL :  {level} ﻪﻠﺣﺮﻣ 
 MOSTPOPULAR : Most Popular
 BESTOFFER : BEST Offer
 NOADS : Remove ADS
@@ -71,6 +71,6 @@ GiftButton : You've unlocked a GIFT!<br><br> SPEND GEMS to receive a valuable RE
 ShuffleButton : The SHUFFLE button can help you find words faster
 RedGem : Connect the word {word} to get a RED GEM
 GameTutorial : Swipe to connect the word {word} in one motion
-Home : Home
+Home : ﻪﻧﺎﺧ
 HARD : HARD
 TIMETUT : Solve all the words in time to WIN
