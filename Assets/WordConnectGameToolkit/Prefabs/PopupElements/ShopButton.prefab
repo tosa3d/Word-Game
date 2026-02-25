@@ -488,6 +488,12 @@ MonoBehaviour:
       m_Calls: []
   overrideClickSound: {fileID: 0}
   overrideAnimatorController: {fileID: 0}
+  onClick:
+    m_PersistentCalls:
+      m_Calls: []
+  noSound: 0
+  isRewarded: 0
+  adReference: {fileID: 0}
 --- !u!95 &7257125089187863838
 Animator:
   serializedVersion: 5
