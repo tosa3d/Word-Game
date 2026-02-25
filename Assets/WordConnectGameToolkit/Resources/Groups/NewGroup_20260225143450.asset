@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2735e9cfb14f5a8cd82921f773105, type: 3}
+  m_Name: NewGroup_20260225143450
+  m_EditorClassIdentifier: 
+  groupName: New Group
+  parentGroup: {fileID: 0}
+  levels:
+  - {fileID: 11400000, guid: 43d9c6120807155499553a4294810084, type: 2}
+  - {fileID: 11400000, guid: 1816cafdfc6a26744a99c2134b24d416, type: 2}
+  - {fileID: 11400000, guid: dc4e68fe37e3e434b8351d52aefad4b5, type: 2}
+  - {fileID: 11400000, guid: 4d777590893136c4cb749b1c51bbd5c0, type: 2}
+  background: {fileID: 0}
+  localizedTexts:
+  - language: "\u0651Fa"
+    title: 
+    text: 
+  colorsTile: {fileID: 0}
+  targetExtraWords: 8

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
   m_Name: level_-4848
   m_EditorClassIdentifier: 
-  number: 39
+  number: 36
   background: {fileID: 21300000, guid: 278dd9d6bc8664b9d8ea34f184218f99, type: 3}
   languages:
   - language: "\u0651Fa"
@@ -24,9 +24,10 @@ MonoBehaviour:
       rows: 10
       placements: []
       specialItems: []
-      minBounds: {x: 0, y: 0}
-      maxBounds: {x: 9, y: 6}
-      serializedGrid: 
+      minBounds: {x: 5, y: 5}
+      maxBounds: {x: 5, y: 5}
+      serializedGrid: '          |          |          |          |          |         
+        |          |          |          |          '
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 6

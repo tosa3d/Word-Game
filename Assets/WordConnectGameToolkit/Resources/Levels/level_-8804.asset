@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b786b482ba477f8b77ebd212edd6f0, type: 3}
   m_Name: level_-8804
   m_EditorClassIdentifier: 
-  number: 30
+  number: 27
   background: {fileID: 21300000, guid: cdb9103f906f644ab8b3184d03f6c2e6, type: 3}
   languages:
   - language: "\u0651Fa"
