@@ -1,76 +1,76 @@
-COINSSHOP : دکان
-FREE : مفتی
-BUYTIPS : خرید راهنما
-GETFREE : مفتی بگیر
-DAILYREWARD : جایزه روزانه
-DAY : روز
-THANKS : دمت گرم
-LOADING : در حال بارگذاری…
-LUCKYSPIN : گردونه شانس
-NOADSLABEL1 : بازی بدون تبلیغ!
-NOADSLABEL2 : ویدیوهای جایزه اختیاری هستند و بعد از خرید در دسترس خواهند بود
-BUY : خرید
-OUTOFLIVES : جان‌ها تمام شد
-REFILLTHELIVES : شارژ جان‌ها؟
-OUTOFTIME : زمان تمام شد
-REFILLTHETIME : شارژ زمان؟
-GIFT : هدیه
-LEVELCLEARED : ایول بزن بریم مرحله بعد
-SETTINGS : تنظیمات
-SHOP : دکان
-PRIVACY : حریم خصوصی
-QUITTHEGAME : خروج از بازی
-DOYOUWANTTOQUIT : آیا می‌خواهید از بازی خارج شوید؟
-YES : آره
-NO : نه
-COMINGSOON : مراحل جدید به‌زودی اضافه می‌شوند. <br>منتظر آپدیت بعدی باش.
-WIN : ترکوندی مشتی
-NEXTLEVEL : مرحله بعد
-SCORE : امتیاز
-POINTS : امتیازات
-REVIVEWITHNEWSHAPES : ادامه بازی با شکل‌های جدید؟
-WHATCHADS : تماشای تبلیغ
-CONTINUE : ادامه
-YOULOSE : باختی…
-RETRY : تلاش دوباره
-ALMOST : نزدیک بود…
-ARCADEMODE : حالت آرکید
-STAGE : مرحله {stage}
-LEVEL : سطح {level}
-MOSTPOPULAR : باحال ترین
-BESTOFFER : خفن ترین پیشنهاد
-NOADS : حذف تبلیغ
-FREESPIN : چرخش مفتی
-SOUNDS : صدا
-MUSIC : موسیقی
-VIBRATION : لرزش
-GAMEOVER : پایان بازی
-YOURSCORE : امتیاز شما
-BESTSCORE : بهترین امتیاز
-NEWRECORD : رکورد جدید!
-EXITGAME : خروج از بازی
-ADVENTURE : ماجراجویی
-CLASSIC : کلاسیک
-TUTORIAL : آموزش
-RESTORE_PURCHASES : بازیابی خریدها
-EXTRAWORDS : کلمات اضافه
-WORDSNOTINTCLUDEDINTHISLEVEL : کلماتی که در این مرحله وجود ندارند
-CLAIM : دریافت
-COINS : لوخ
-GEMS : گوهر
-TAPTOCOLLECT : برای دریافت ضربه بزن
-DAILYREWARDS : جوایز روزانه
-SPIN : چرخش
-SELECTLANGUAGE : انتخاب زبان
-AGAIN : دوباره
-UNLOCK : کارت ها رو جمع کن تا پرات بریزه 
-TipBoosterButton : اگر گیر کردید، می‌توانید از راهنما (Hint) استفاده کنید
-HammerBoosterButton : تیشه هر حرفی را که انتخاب کنید، آشکار می‌کند
-ExtraWordsButton : شما یک کلمه اضافه پیدا کردید! کلمات اضافه اینجا نمایش داده می‌شوند
-GiftButton : شما یک هدیه باز کردید!<br><br>با خرج کردن گوهر، یک جایزه ارزشمند دریافت کنید
-ShuffleButton : دکمه‌ی بر زدن به شما کمک می‌کند سریع‌تر کلمات را پیدا کنید
-RedGem : با وصل کردن کلمه {word} یک گوهر قرمز دریافت کنید
+COINSSHOP : ﻥﺎﮐﺩ
+FREE : ﯽﺘﻔﻣ
+BUYTIPS : ﺎﻤﻨﻫﺍﺭ ﺪﯾﺮﺧ
+GETFREE : ﺮﯿﮕﺑ ﯽﺘﻔﻣ
+DAILYREWARD : ﺮﯿﮕﺑ ﯽﺘﻔﻣ
+DAY : ﺯﻭﺭ
+THANKS : ﻡﺮﮔ ﺖﻣﺩ
+LOADING : …ﯼﺭﺍﺬﮔﺭﺎﺑ ﻝﺎﺣ ﺭﺩ
+LUCKYSPIN : ﺲﻧﺎﺷ ﻪﻧﻭﺩﺮﮔ
+NOADSLABEL1 : !ﻎﯿﻠﺒﺗ ﻥﻭﺪﺑ ﯼﺯﺎﺑ
+NOADSLABEL2 : ﺩﻮﺑ ﺪﻨﻫﺍﻮﺧ ﺱﺮﺘﺳﺩ ﺭﺩ ﺪﯾﺮﺧ ﺯﺍ ﺪﻌﺑ ﻭ ﺪﻨﺘﺴﻫ ﯼﺭﺎﯿﺘﺧﺍ ﻩﺰﯾﺎﺟ ﯼﺎﻫﻮﯾﺪﯾﻭ
+BUY : ﺪﯾﺮﺧ
+OUTOFLIVES : ﺪﺷ ﻡﺎﻤﺗ ﺎﻫ‌ﻥﺎﺟ
+REFILLTHELIVES : ؟ﺎﻫ‌ﻥﺎﺟ ﮊﺭﺎﺷ
+OUTOFTIME : ﺪﺷ ﻡﺎﻤﺗ ﻥﺎﻣﺯ
+REFILLTHETIME : ؟ﻥﺎﻣﺯ ﮊﺭﺎﺷ
+GIFT : ﻪﯾﺪﻫ
+LEVELCLEARED : ﺪﻌﺑ ﻪﻠﺣﺮﻣ ﻢﯾﺮﺑ ﻥﺰﺑ ﻝﻮﯾﺍ
+SETTINGS : ﺕﺎﻤﯿﻈﻨﺗ
+SHOP : ﻥﺎﮐﺩ
+PRIVACY : ﯽﺻﻮﺼﺧ ﻢﯾﺮﺣ
+QUITTHEGAME : ﯼﺯﺎﺑ ﺯﺍ ﺝﻭﺮﺧ
+DOYOUWANTTOQUIT : ؟ﺪﯾﻮﺷ ﺝﺭﺎﺧ ﯼﺯﺎﺑ ﺯﺍ ﺪﯿﻫﺍﻮﺧ‌ﯽﻣ ﺎﯾﺁ
+YES : ﻩﺭﺁ
+NO : ﻪﻧ
+COMINGSOON : .ﺵﺎﺑ ﯼﺪﻌﺑ ﺖﯾﺪﭘﺁ ﺮﻈﺘﻨﻣ>rb< .ﺪﻧﻮﺷ‌ﯽﻣ ﻪﻓﺎﺿﺍ ﯼﺩﻭﺯ‌ﻪﺑ ﺪﯾﺪﺟ ﻞﺣﺍﺮﻣ
+WIN : ﯽﺘﺸﻣ ﯼﺪﻧﻮﮐﺮﺗ
+NEXTLEVEL : ﺪﻌﺑ ﻪﻠﺣﺮﻣ
+SCORE : ﺯﺎﯿﺘﻣﺍ
+POINTS : ﺕﺍﺯﺎﯿﺘﻣﺍ
+REVIVEWITHNEWSHAPES : ؟ﺪﯾﺪﺟ ﯼﺎﻫ‌ﻞﮑﺷ ﺎﺑ ﯼﺯﺎﺑ ﻪﻣﺍﺩﺍ
+WHATCHADS : ﻎﯿﻠﺒﺗ ﯼﺎﺷﺎﻤﺗ
+CONTINUE : ﻪﻣﺍﺩﺍ
+YOULOSE : …ﯽﺘﺧﺎﺑ
+RETRY : ﻩﺭﺎﺑﻭﺩ ﺵﺎﻠﺗ
+ALMOST : ﺩﻮﺑ ﮏﯾﺩﺰﻧ…
+ARCADEMODE : ﺪﯿﮐﺭﺁ ﺖﻟﺎﺣ
+STAGE : ﻪﻠﺣﺮﻣ {stage}
+LEVEL : ﺢﻄﺳ {level}
+MOSTPOPULAR : ﻦﯾﺮﺗ ﻝﺎﺣﺎﺑ
+BESTOFFER : ﺩﺎﻬﻨﺸﯿﭘ ﻦﯾﺮﺗ ﻦﻔﺧ
+NOADS : ﻎﯿﻠﺒﺗ ﻑﺬﺣ
+FREESPIN : ﯽﺘﻔﻣ ﺶﺧﺮﭼ
+SOUNDS : ﺍﺪﺻ
+MUSIC : ﯽﻘﯿﺳﻮﻣ
+VIBRATION : ﯽﻘﯿﺳﻮﻣ
+GAMEOVER : ﯼﺯﺎﺑ ﻥﺎﯾﺎﭘ
+YOURSCORE : ﺎﻤﺷ ﺯﺎﯿﺘﻣﺍ
+BESTSCORE : ﺯﺎﯿﺘﻣﺍ ﻦﯾﺮﺘﻬﺑ
+NEWRECORD : !ﺪﯾﺪﺟ ﺩﺭﻮﮐﺭ
+EXITGAME : ﯼﺯﺎﺑ ﺯﺍ ﺝﻭﺮﺧ
+ADVENTURE : ﯽﯾﻮﺟﺍﺮﺟﺎﻣ
+CLASSIC : ﮏﯿﺳﺎﻠﮐ
+TUTORIAL : ﺵﺯﻮﻣﺁ
+RESTORE_PURCHASES : ﺎﻫﺪﯾﺮﺧ ﯽﺑﺎﯾﺯﺎﺑ
+EXTRAWORDS : ﺎﻫﺪﯾﺮﺧ ﯽﺑﺎﯾﺯﺎﺑ
+WORDSNOTINTCLUDEDINTHISLEVEL : ﺪﻧﺭﺍﺪﻧ ﺩﻮﺟﻭ ﻪﻠﺣﺮﻣ ﻦﯾﺍ ﺭﺩ ﻪﮐ ﯽﺗﺎﻤﻠﮐ
+CLAIM : ﺖﻓﺎﯾﺭﺩ
+COINS : ﺥﻮﻟ
+GEMS : ﺮﻫﻮﮔ
+TAPTOCOLLECT : ﻥﺰﺑ ﻪﺑﺮﺿ ﺖﻓﺎﯾﺭﺩ ﯼﺍﺮﺑ
+DAILYREWARDS : ﻪﻧﺍﺯﻭﺭ ﺰﯾﺍﻮﺟ
+SPIN : ﺶﺧﺮﭼ
+SELECTLANGUAGE : ﻥﺎﺑﺯ ﺏﺎﺨﺘﻧﺍ
+AGAIN : ﻩﺭﺎﺑﻭﺩ
+UNLOCK : ﻩﺰﯾﺮﺑ ﺕﺍﺮﭘ ﺎﺗ ﻦﮐ ﻊﻤﺟ ﻭﺭ ﺎﻫ ﺕﺭﺎﮐ 
+TipBoosterButton : ﺪﯿﻨﮐ ﻩﺩﺎﻔﺘﺳﺍ )tniH( ﺎﻤﻨﻫﺍﺭ ﺯﺍ ﺪﯿﻧﺍﻮﺗ‌ﯽﻣ ،ﺪﯾﺩﺮﮐ ﺮﯿﮔ ﺮﮔﺍ
+HammerBoosterButton : ﺪﻨﮐ‌ﯽﻣ ﺭﺎﮑﺷﺁ ،ﺪﯿﻨﮐ ﺏﺎﺨﺘﻧﺍ ﻪﮐ ﺍﺭ ﯽﻓﺮﺣ ﺮﻫ ﻪﺸﯿﺗ
+ExtraWordsButton : ﺪﻧﻮﺷ‌ﯽﻣ ﻩﺩﺍﺩ ﺶﯾﺎﻤﻧ ﺎﺠﻨﯾﺍ ﻪﻓﺎﺿﺍ ﺕﺎﻤﻠﮐ !ﺪﯾﺩﺮﮐ ﺍﺪﯿﭘ ﻪﻓﺎﺿﺍ ﻪﻤﻠﮐ ﮏﯾ ﺎﻤﺷ
+GiftButton : ﺪﯿﻨﮐ ﺖﻓﺎﯾﺭﺩ ﺪﻨﻤﺷﺯﺭﺍ ﻩﺰﯾﺎﺟ ﮏﯾ ،ﺮﻫﻮﮔ ﻥﺩﺮﮐ ﺝﺮﺧ ﺎﺑ!<br><br>ﺪﯾﺩﺮﮐ ﺯﺎﺑ ﻪﯾﺪﻫ ﮏﯾ ﺎﻤﺷ
+ShuffleButton : ﺪﯿﻨﮐ ﺍﺪﯿﭘ ﺍﺭ ﺕﺎﻤﻠﮐ ﺮﺗ‌ﻊﯾﺮﺳ ﺪﻨﮐ‌ﯽﻣ ﮏﻤﮐ ﺎﻤﺷ ﻪﺑ ﻥﺩﺯ ﺮﺑ ﯼ‌ﻪﻤﮐﺩ
+RedGem : ﺪﯿﻨﮐ ﺖﻓﺎﯾﺭﺩ ﺰﻣﺮﻗ ﺮﻫﻮﮔ ﮏﯾ {word} ﻪﻤﻠﮐ ﻥﺩﺮﮐ ﻞﺻﻭ ﺎﺑ
 GameTutorial : برای ساختن کلمه {word}، باانگشت حروف را به هم وصل کن
-Home : خانه
-HARD : سخت
-TIMETUT : همه‌ی کلمات را قبل از تمام شدن زمان حل کن تا برنده شی
+Home : ﻪﻧﺎﺧ
+HARD : ﺖﺨﺳ
+TIMETUT : ﯽﺷ ﻩﺪﻧﺮﺑ ﺎﺗ ﻦﮐ ﻞﺣ ﻥﺎﻣﺯ ﻥﺪﺷ ﻡﺎﻤﺗ ﺯﺍ ﻞﺒﻗ ﺍﺭ ﺕﺎﻤﻠﮐ ﯼ‌ﻪﻤﻫ

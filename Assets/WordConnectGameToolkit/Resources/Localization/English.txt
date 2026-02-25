@@ -1,9 +1,9 @@
-﻿COINSSHOP : Coins Shop
-FREE : FREE
-BUYTIPS : Buy Tips
-GETFREE : Get Free
-DAILYREWARD : Daily Rewards
-DAY : Day
+﻿COINSSHOP : ﻥﺎﮐﺩ
+FREE : ﯽﺘﻔﻣ
+BUYTIPS : ﺎﻤﻨﻫﺍﺭ ﺪﯾﺮﺧ
+GETFREE : ﺮﯿﮕﺑ ﯽﺘﻔﻣ
+DAILYREWARD : ﻪﻧﺍﺯﻭﺭ ﻩﺰﯾﺎﺟ
+DAY : ﺯﻭﺭ
 THANKS : Thanks!
 LOADING : Loading...
 LUCKYSPIN : Lucky Spin
@@ -59,7 +59,7 @@ CLAIM : Claim
 COINS : COINS
 GEMS : GEMS
 TAPTOCOLLECT : TAP TO COLLECT
-DAILYREWARDS : DAILY REWARDS
+DAILYREWARDS : ﻪﻧﺍﺯﻭﺭ ﺰﯾﺍﻮﺟ
 SPIN :SPIN
 SELECTLANGUAGE : SELECT LANGUAGE
 AGAIN : AGAIN
@@ -72,5 +72,6 @@ ShuffleButton : The SHUFFLE button can help you find words faster
 RedGem : Connect the word {word} to get a RED GEM
 GameTutorial : Swipe to connect the word {word} in one motion
 Home : ﻪﻧﺎﺧ
-HARD : HARD
-TIMETUT : Solve all the words in time to WIN
+HARD : ﺖﺨﺳ
+TIMETUT : ﯽﺷ ﻩﺪﻧﺮﺑ ﺎﺗ ﻦﮐ ﻞﺣ ﻥﺎﻣﺯ ﻥﺪﺷ ﻡﺎﻤﺗ ﺯﺍ ﻞﺒﻗ ﺍﺭ ﺕﺎﻤﻠﮐ ﯼ‌ﻪﻤﻫ
+OK : ﻪﻠﺣ

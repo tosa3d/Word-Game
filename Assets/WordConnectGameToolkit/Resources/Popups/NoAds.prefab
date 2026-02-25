@@ -454,10 +454,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $ 1.99
+  m_text: 49.900 T
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: d7d241a568d1d49f7870e33c7691faab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 82.75
+  m_fontSize: 65.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

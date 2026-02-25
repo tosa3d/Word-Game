@@ -33,6 +33,14 @@ PrefabInstance:
       value: 0.52156866
       objectReference: {fileID: 0}
     - target: {fileID: 4754573032395750348, guid: b8fd04762727d4e08a7273e19c2a019c, type: 3}
+      propertyPath: m_text
+      value: "\uFEAF\uFEED\uFEAD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754573032395750348, guid: b8fd04762727d4e08a7273e19c2a019c, type: 3}
+      propertyPath: m_fontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754573032395750348, guid: b8fd04762727d4e08a7273e19c2a019c, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2100000, guid: a355fc2b1e51c499eb19b288920e364f, type: 2}
