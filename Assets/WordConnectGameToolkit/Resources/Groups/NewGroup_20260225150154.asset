@@ -16,6 +16,11 @@ MonoBehaviour:
   parentGroup: {fileID: 0}
   levels:
   - {fileID: 11400000, guid: 412be899d7ae45f4d8124ee786ad4f8d, type: 2}
+  - {fileID: 11400000, guid: 8eb43e8c6022a3443912ce4f026c6107, type: 2}
+  - {fileID: 11400000, guid: 291207f62c3233e448e65d955d053b18, type: 2}
+  - {fileID: 11400000, guid: 0e227dd4b963238488f5de8e290cea8a, type: 2}
+  - {fileID: 11400000, guid: 86a27ca57e3783449aa3d49d7d082a8f, type: 2}
+  - {fileID: 11400000, guid: 825ada3c88c4e6445b35b7d5e8b16670, type: 2}
   background: {fileID: 0}
   localizedTexts:
   - language: "\u0651Fa"

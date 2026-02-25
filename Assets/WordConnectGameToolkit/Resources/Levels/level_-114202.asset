@@ -44,7 +44,9 @@ MonoBehaviour:
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
-      specialItems: []
+      specialItems:
+      - position: {x: 4, y: 3}
+        itemPath: special_item
       minBounds: {x: 3, y: 3}
       maxBounds: {x: 5, y: 5}
       serializedGrid: "          |          |          |   \u0645\u0627\u062C   
