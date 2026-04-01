@@ -18,59 +18,68 @@ MonoBehaviour:
   - language: "\u0651Fa"
     letters: "\u06AF\u0634\u0646\u0647\u0648"
     wordsAmount: 5
-    words: []
+    words:
+    - "\u0647\u0646\u0648\u06AF"
+    - "\u0647\u0646\u0634\u06AF"
+    - "\u0647\u0648\u0646"
+    - "\u0646\u0648\u0634"
+    - "\u0647\u0648\u0634"
+    - "\u06AF\u0648\u0634\u0647"
+    - "\u06AF\u0648\u0634"
     crosswordData:
       columns: 10
       rows: 10
       placements:
       - word: "\u0647\u0646\u0648\u06AF"
         wordNumber: 1
-        startPosition: {x: 6, y: 0}
+        startPosition: {x: 3, y: 0}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u0647\u0646\u0634\u06AF"
         wordNumber: 2
-        startPosition: {x: 4, y: 2}
+        startPosition: {x: 1, y: 2}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u0647\u0648\u0646"
         wordNumber: 3
-        startPosition: {x: 7, y: 5}
+        startPosition: {x: 4, y: 5}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u0646\u0648\u0634"
         wordNumber: 4
-        startPosition: {x: 5, y: 2}
+        startPosition: {x: 2, y: 2}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u0647\u0648\u0634"
         wordNumber: 5
-        startPosition: {x: 6, y: 0}
+        startPosition: {x: 3, y: 0}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u06AF\u0648\u0634\u0647"
         wordNumber: 6
-        startPosition: {x: 7, y: 2}
+        startPosition: {x: 4, y: 2}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u06AF\u0648\u0634"
         wordNumber: 7
-        startPosition: {x: 9, y: 0}
+        startPosition: {x: 6, y: 0}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
-      specialItems: []
-      minBounds: {x: 4, y: 0}
-      maxBounds: {x: 9, y: 5}
-      serializedGrid: "      \u0647\u0646\u0648\u06AF|      \u0648  \u0648|    \u0647\u0646\u0634\u06AF
-        \u0634|     \u0648 \u0648  |     \u0634 \u0634  |       \u0647\u0648\u0646|         
-        |          |          |          "
+      specialItems:
+      - position: {x: 3, y: 1}
+        itemPath: special_item
+      minBounds: {x: 1, y: 0}
+      maxBounds: {x: 6, y: 5}
+      serializedGrid: "   \u0647\u0646\u0648\u06AF   |   \u0648  \u0648   | \u0647\u0646\u0634\u06AF
+        \u0634   |  \u0648 \u0648     |  \u0634 \u0634     |    \u0647\u0648\u0646  
+        |          |          |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 5
