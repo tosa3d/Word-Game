@@ -16,12 +16,10 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: c668b55eb0cc74093bce5fc94a13d741, type: 3}
   languages:
   - language: "\u0651Fa"
-    letters: "\u062F\u0631\u0627\u0633\u067E"
+    letters: "\u067E\u0633\u0631\u0627\u062F"
     wordsAmount: 5
     words:
-    - "\u0631\u062F"
     - "\u0631\u0633\u067E"
-    - "\u0631\u0627\u0633"
     crosswordData:
       columns: 10
       rows: 7
@@ -49,7 +47,7 @@ MonoBehaviour:
       maxBounds: {x: 5, y: 3}
       serializedGrid: "          |    \u0631\u062F    |    \u0627     |   \u0631\u0633\u067E   
         |          |          |          "
-  colorsTile: {fileID: 0}
+  colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 5
   min: 3
