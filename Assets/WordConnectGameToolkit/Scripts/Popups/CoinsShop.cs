@@ -32,23 +32,23 @@ namespace WordsToolkit.Scripts.Popups
 
         private void OnEnable()
         {
-            shopSettings = Resources.Load<CoinsShopSettings>("Settings/CoinsShopSettings");
-            foreach (var itemPurchase in packs)
-            {
-                if (shopSettings.coinsProducts.Count > 0)
-                {
-                    var productID = itemPurchase.productID;
-                    if (shopSettings.coinsProducts.TryToGetPair(kvp => kvp.Key == productID, out var settingsShopItem))
-                    {
-                        itemPurchase.Init(settingsShopItem, iapManager);
-                    }
-                }
-            }
+            //shopSettings = Resources.Load<CoinsShopSettings>("Settings/CoinsShopSettings");
+            //foreach (var itemPurchase in packs)
+            //{
+            //    if (shopSettings.coinsProducts.Count > 0)
+            //    {
+            //        var productID = itemPurchase.productID;
+            //        if (shopSettings.coinsProducts.TryToGetPair(kvp => kvp.Key == productID, out var settingsShopItem))
+            //        {
+            //            itemPurchase.Init(settingsShopItem, iapManager);
+            //        }
+            //    }
+            //}
 
-            EventManager.GetEvent<string>(EGameEvent.PurchaseSucceeded).Subscribe(PurchaseSucceded);
+            //EventManager.GetEvent<string>(EGameEvent.PurchaseSucceeded).Subscribe(PurchaseSucceded);
             
-            // Update NoAds price display
-            UpdateNoAdsPriceDisplay();
+            //// Update NoAds price display
+            //UpdateNoAdsPriceDisplay();
         }
 
         protected override void OnDisable()

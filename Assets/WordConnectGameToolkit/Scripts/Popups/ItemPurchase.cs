@@ -71,12 +71,13 @@ namespace WordsToolkit.Scripts.Popups
             // Removed old initialization code since it's now in Init
         }
 
-        private void BuyCoins()
+        public void BuyCoins()
         {
-            if (productID != null)
-            {
-                GetComponentInParent<CoinsShop>().BuyCoins(productID.ID);
-            }
+            
+            //if (productID != null)
+            //{
+            //    GetComponentInParent<CoinsShop>().BuyCoins(productID.ID);
+            //}
         }
     }
 }

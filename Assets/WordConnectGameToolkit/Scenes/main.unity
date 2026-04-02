@@ -255,6 +255,37 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &128096661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128096662}
+  m_Layer: 0
+  m_Name: CafeBazaarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128096662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128096661}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.95287734, y: 5.22581, z: -0.06268924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176002433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,7 +5375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -232.99995
+      value: -232.99997
       objectReference: {fileID: 0}
     - target: {fileID: 862757017896117680, guid: 62f7a9d47df56401f802404b7d45d912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6762,3 +6793,4 @@ SceneRoots:
   - {fileID: 1436822523}
   - {fileID: 967591351}
   - {fileID: 1435117445}
+  - {fileID: 128096662}
