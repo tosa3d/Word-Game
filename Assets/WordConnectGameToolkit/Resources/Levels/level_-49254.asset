@@ -53,36 +53,29 @@ MonoBehaviour:
     letters: "\u0631\u0627\u0633\u0628"
     wordsAmount: 5
     words:
-    - "\u0631\u0633"
+    - "\u0631\u0628\u0627"
     - "\u0627\u0633\u0628"
-    - "\u0627\u0628\u0631"
     crosswordData:
       columns: 10
       rows: 7
       placements:
-      - word: "\u0627\u0633\u0628"
-        wordNumber: 3
-        startPosition: {x: 3, y: 3}
-        isHorizontal: 1
-        isSpecialItem: 0
-        specialItemPath: 
-      - word: "\u0631\u0633"
-        wordNumber: 2
-        startPosition: {x: 5, y: 4}
-        isHorizontal: 1
-        isSpecialItem: 0
-        specialItemPath: 
-      - word: "\u0627\u0628\u0631"
+      - word: "\u0631\u0628\u0627"
         wordNumber: 1
-        startPosition: {x: 5, y: 2}
+        startPosition: {x: 3, y: 1}
+        isHorizontal: 1
+        isSpecialItem: 0
+        specialItemPath: 
+      - word: "\u0627\u0633\u0628"
+        wordNumber: 2
+        startPosition: {x: 5, y: 1}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       specialItems: []
-      minBounds: {x: 3, y: 2}
-      maxBounds: {x: 6, y: 4}
-      serializedGrid: "          |          |     \u0627    |   \u0627\u0633\u0628   
-        |     \u0631\u0633   |          |          "
+      minBounds: {x: 3, y: 1}
+      maxBounds: {x: 5, y: 3}
+      serializedGrid: "          |   \u0631\u0628\u0627    |     \u0633    |    
+        \u0628    |          |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 4

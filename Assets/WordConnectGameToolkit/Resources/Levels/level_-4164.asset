@@ -18,41 +18,45 @@ MonoBehaviour:
   - language: "\u0651Fa"
     letters: "\u06A9\u0634\u062A\u06CC"
     wordsAmount: 5
-    words: []
+    words:
+    - "\u0634\u06CC\u06A9"
+    - "\u06A9\u0634\u062A"
+    - "\u06A9\u0634\u062A"
+    - "\u06A9\u0634\u062A\u06CC"
     crosswordData:
       columns: 10
       rows: 10
       placements:
       - word: "\u0634\u06CC\u06A9"
         wordNumber: 1
-        startPosition: {x: 3, y: 4}
+        startPosition: {x: 3, y: 3}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u06A9\u0634\u062A"
         wordNumber: 2
-        startPosition: {x: 3, y: 6}
+        startPosition: {x: 3, y: 5}
         isHorizontal: 1
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u06A9\u0634\u062A"
         wordNumber: 2
-        startPosition: {x: 3, y: 6}
+        startPosition: {x: 3, y: 5}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       - word: "\u06A9\u0634\u062A\u06CC"
         wordNumber: 4
-        startPosition: {x: 5, y: 4}
+        startPosition: {x: 5, y: 3}
         isHorizontal: 0
         isSpecialItem: 0
         specialItemPath: 
       specialItems: []
-      minBounds: {x: 3, y: 4}
-      maxBounds: {x: 5, y: 8}
-      serializedGrid: "          |          |          |          |   \u0634\u06CC\u06A9   
+      minBounds: {x: 3, y: 3}
+      maxBounds: {x: 5, y: 7}
+      serializedGrid: "          |          |          |   \u0634\u06CC\u06A9   
         |     \u0634    |   \u06A9\u0634\u062A    |   \u0634 \u06CC    |   \u062A     
-        |          "
+        |          |          "
   colorsTile: {fileID: 11400000, guid: d129003572c2d4b159bffaa89a976492, type: 2}
   words: 5
   letters: 4

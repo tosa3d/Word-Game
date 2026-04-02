@@ -521,29 +521,106 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
             }
         }
 
+        // Helper method to determine if selection is horizontal or vertical based on letter positions
+        private bool IsSelectionHorizontal(List<Vector3> letterPositions)
+        {
+            if (letterPositions == null || letterPositions.Count < 2)
+                return true; // Default to horizontal if we can't determine
+
+            // Calculate the distances in X and Y directions
+            float minX = float.MaxValue, maxX = float.MinValue;
+            float minY = float.MaxValue, maxY = float.MinValue;
+
+            foreach (var pos in letterPositions)
+            {
+                minX = Mathf.Min(minX, pos.x);
+                maxX = Mathf.Max(maxX, pos.x);
+                minY = Mathf.Min(minY, pos.y);
+                maxY = Mathf.Max(maxY, pos.y);
+            }
+
+            float xRange = maxX - minX;
+            float yRange = maxY - minY;
+
+            // If X range is significantly larger than Y range, it's horizontal
+            // Otherwise it's vertical
+            return xRange > yRange;
+        }
+
+        // Helper method to check if selection direction matches placement orientation
+        private bool DoesSelectionMatchPlacementDirection(WordPlacement wordPlacement, List<Vector3> letterPositions)
+        {
+            if (wordPlacement == null || letterPositions == null || letterPositions.Count < 2)
+                return true; // If we can't validate, allow it
+
+            bool selectionIsHorizontal = IsSelectionHorizontal(letterPositions);
+
+            // For horizontal placements, selection must be horizontal
+            // For vertical placements, selection must be vertical
+            return wordPlacement.isHorizontal == selectionIsHorizontal;
+        }
+
         // New method that validates a word with the ModelController and opens it if valid
         public bool ValidateWord(string word, List<Vector3> letterPositions = null)
         {
             if (string.IsNullOrEmpty(word))
                 return false;
 
-            // For Persian RTL: check both the word as typed and its reverse
-            string wordReversed = PersianLanguageUtility.Reverse(word);
-            if (!wordValidator.IsWordKnown(word, gameStateManager.CurrentLanguage) &&
-                !wordValidator.IsWordKnown(wordReversed, gameStateManager.CurrentLanguage))
-                return false;
+            // Normalize user input (do NOT reverse here; will reverse placement when needed)
+            string normalizedInput = PersianLanguageUtility.Normalize(word);
+
+            // Try to find a matching placement by comparing tile characters to the user input
+            WordPlacement wordPlacement = null;
+            if (placedWords != null)
+            {
+                foreach (var p in placedWords)
+                {
+                    if (p.tiles == null || p.tiles.Count == 0) continue;
+
+                    // Build string from tiles in grid order (left->right for horizontal, top->bottom for vertical)
+                    var chars = p.tiles.Cast<Tile>().Select(t => t?.character?.text ?? "");
+                    string placedSeq = string.Concat(chars);
+                    placedSeq = PersianLanguageUtility.Normalize(placedSeq);
+
+                    // For Persian RTL: if placement is horizontal, grid stores left-to-right sequence
+                    // but user types right-to-left. Reverse placement sequence for comparison.
+                    string expectedUserForm = placedSeq;
+                    //if (gameStateManager != null && gameStateManager.CurrentLanguage == "fa")
+                    {
+                        if (p.isHorizontal)
+                        {
+                            expectedUserForm = PersianLanguageUtility.Reverse(placedSeq);
+                        }
+                        else
+                        {
+                            // vertical words: keep order as-is (top->bottom equals reading order)
+                            expectedUserForm = placedSeq;
+                        }
+                    }
+
+                    if (string.Equals(expectedUserForm, normalizedInput, StringComparison.Ordinal))
+                    {
+                        wordPlacement = p;
+                        break;
+                    }
+                }
+            }
+
+            // Debug logging to trace matching attempts
+            Debug.Log($"[ValidateWord] input='{normalizedInput}' matchedPlacement={ (wordPlacement!=null ? wordPlacement.word : "<none>") }");
+
+            // If no placement matched, allow checking extra words (known words not on grid)
+            string wordReversed = normalizedInput;
+            if (wordPlacement == null)
+            {
+                if (!wordValidator.IsWordKnown(normalizedInput, gameStateManager.CurrentLanguage) &&
+                    !wordValidator.IsWordKnown(wordReversed, gameStateManager.CurrentLanguage))
+                    return false;
+
+                // Extra word will be handled in Case 3 below
+            }
 
             bool wasOpened = false;
-
-            // For Persian RTL: the user may select letters right-to-left OR left-to-right.
-            // PlaceWord stores the word based on language direction in the grid.
-            // So we must check BOTH the word and its reverse.
-            string reversedWord = PersianLanguageUtility.Reverse(word);
-
-            // Find the word in the placed words list (try both directions)
-            WordPlacement wordPlacement = placedWords?.FirstOrDefault(w =>
-                w.word.Equals(word, StringComparison.Ordinal) ||
-                w.word.Equals(reversedWord, StringComparison.Ordinal));
 
             // Use the canonical (stored) form for openedWords tracking
             string canonicalWord = wordPlacement?.word ?? word;
@@ -591,7 +668,7 @@ namespace WordsToolkit.Scripts.Gameplay.Managers
                 var levelWords = gameStateManager.GetLevelWords();
                 bool isExtraWord = (levelWords == null ||
                     (!levelWords.Contains(word, StringComparer.Ordinal) &&
-                     !levelWords.Contains(reversedWord, StringComparer.Ordinal)));
+                     !levelWords.Contains(wordReversed, StringComparer.Ordinal)));
 
                 if (isExtraWord && letterPositions != null && letterPositions.Count > 0)
                 {

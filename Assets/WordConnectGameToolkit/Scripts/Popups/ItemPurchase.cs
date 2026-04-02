@@ -17,14 +17,14 @@ using WordsToolkit.Scripts.Data;
 using WordsToolkit.Scripts.GUI;
 using WordsToolkit.Scripts.GUI.Buttons;
 using WordsToolkit.Scripts.Services.IAP;
-
+using RTLTMPro;
 namespace WordsToolkit.Scripts.Popups
 {
     public class ItemPurchase : MonoBehaviour
     {
         public CustomButton BuyItemButton;
-        public TextMeshProUGUI price;
-        public TextMeshProUGUI count;
+        public RTLTextMeshPro price;
+        public RTLTextMeshPro count;
         public TextMeshProUGUI discountPercent;
 
         [HideInInspector]

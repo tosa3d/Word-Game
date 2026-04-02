@@ -10,14 +10,15 @@
 // // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // // THE SOFTWARE.
 
-using System.Collections.Generic;
 using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
 using WordsToolkit.Scripts.Enums;
 using WordsToolkit.Scripts.Gameplay;
 using WordsToolkit.Scripts.Gameplay.Managers;
 using WordsToolkit.Scripts.System;
+using WordsToolkit.Scripts.Utilities;
 
 namespace WordsToolkit.Scripts.GUI.Tutorials
 {
@@ -27,6 +28,7 @@ namespace WordsToolkit.Scripts.GUI.Tutorials
         {
             base.AfterShowAnimation();
             var words = levelManager.GetCurrentLevel().GetWords(gameManager.language);
+            
             ReplaceWordForTutorial(words[0]);
             SelectWordAnimation(words[0]);
             var tiles = fieldManager.GetTilesWord(words[0]);

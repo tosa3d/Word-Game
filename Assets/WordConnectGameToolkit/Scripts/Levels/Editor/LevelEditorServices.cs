@@ -448,10 +448,14 @@ namespace WordsToolkit.Scripts.Levels.Editor
                 return;
             }
 
-            // Extract words from placements
+            // Extract words from placements (store as-is; Preview already handles RTL extraction)
             var crosswordWords = placements
                 .Where(p => !string.IsNullOrEmpty(p.word))
-                .Select(p => PersianLanguageUtility.PrepareForComparison(p.word, langCode))
+                .Select(p =>
+                {
+                    Debug.Log($"[Editor->Words] lang={langCode} placementWord='{p.word}' horiz={p.isHorizontal} start={p.startPosition}");
+                    return PersianLanguageUtility.PrepareForComparison(p.word, langCode);
+                })
                 .ToArray();
 
             // Always clear existing words first

@@ -58,8 +58,12 @@ namespace WordsToolkit.Scripts.GUI.Tutorials
         private void AnimateHandToLetters(List<LetterButton> letters)
         {
             var path = new List<Vector3>();
-            foreach (var letter in letters)
+            if (letters == null || letters.Count == 0) return;
+
+            // Build path from last letter to first (reverse order)
+            for (int i = letters.Count - 1; i >= 0; i--)
             {
+                var letter = letters[i];
                 // Skip null letters (in case a word can't be formed with available letters)
                 if (letter != null)
                 {
