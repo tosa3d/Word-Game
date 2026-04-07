@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c45bac7a3df748a6935182751a4577f6, type: 3}
-  m_Name: CoinsProduct2
+  m_Script: {fileID: 11500000, guid: 566ab6ec3d8843e3977f686e450580af, type: 3}
+  m_Name: Resource
   m_EditorClassIdentifier: 
-  productType: 0
-  androidId: Kolookhpacklookh002
-  iosId: com.candysmith.coinspack2
+  sound: {fileID: 0}
+  shopPopup: {fileID: 0}
+  fxSpendPrefab: {fileID: 0}
+  defaultValue: 0

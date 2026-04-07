@@ -35,6 +35,7 @@ namespace WordsToolkit.Scripts.GUI.Buttons
         private new Animator animator;
         public bool noSound;
         public bool isRewarded;
+       
         private RewardedButtonHandler handler;
         private PointerEventData currentEventData;
 
@@ -45,6 +46,7 @@ namespace WordsToolkit.Scripts.GUI.Buttons
         public static CustomButton latestClickedButton;
         private IAudioService audioService;
         private IObjectResolver objectResolver;
+        
         [Inject]
         public void Construct(IAudioService audioService, IObjectResolver objectResolver)
         {

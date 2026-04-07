@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e5006724cbfc047b8c9abdab222df3, type: 3}
+  m_Name: BazaarProducts
+  m_EditorClassIdentifier: 
+  products:
+  - productId: Kolookhpacklookh001
+    coinsReward: 500
+    gemsReward: 0
+    RewardValue: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+  - productId: Goharpacklookh001
+    coinsReward: 0
+    gemsReward: 5
+    RewardValue: {fileID: 11400000, guid: 8e60130d951c04375bc9c472f388491b, type: 2}
+  - productId: Kolookhpacklookh002
+    coinsReward: 1500
+    gemsReward: 0
+    RewardValue: {fileID: 11400000, guid: 8e60130d951c04375bc9c472f388491b, type: 2}
+  - productId: Kolookhpacklookh003
+    coinsReward: 2500
+    gemsReward: 0
+    RewardValue: {fileID: 11400000, guid: 8e60130d951c04375bc9c472f388491b, type: 2}
+  - productId: Goharpacklookh002
+    coinsReward: 0
+    gemsReward: 10
+    RewardValue: {fileID: 11400000, guid: 8e60130d951c04375bc9c472f388491b, type: 2}
+  - productId: Goharpacklookh003
+    coinsReward: 0
+    gemsReward: 20
+    RewardValue: {fileID: 11400000, guid: 8e60130d951c04375bc9c472f388491b, type: 2}

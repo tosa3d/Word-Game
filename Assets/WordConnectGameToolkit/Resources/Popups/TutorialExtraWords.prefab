@@ -433,8 +433,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\uFEB7\uFEE4\uFE8E \uFBFE\uFB8F \uFB90\uFEE0\uFEE4\uFEEA \uFE8D\uFEBF\uFE8E\uFED3\uFEEA
-    \uFB58\uFBFF\uFEAA\uFE8D \uFB90\uFEAE\uFEA9\uFBFE\uFEAA! \uFB90\uFEE0\uFEE4\uFE8E\uFE95
-    \uFE8D\uFEBF\uFE8E\uFED3\uFEEA \uFE8D\uFBFE\uFEE8\uFEA0\uFE8E"
+    \uFB58\uFBFF\uFEAA\uFE8D \uFB90\uFEAE\uFEA9\uFBFE\uFEAA! "
   m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -506,8 +505,7 @@ MonoBehaviour:
   preserveNumbers: 0
   farsi: 1
   originalText: "\u0634\u0645\u0627 \u06CC\u06A9 \u06A9\u0644\u0645\u0647 \u0627\u0636\u0627\u0641\u0647
-    \u067E\u06CC\u062F\u0627 \u06A9\u0631\u062F\u06CC\u062F! \u06A9\u0644\u0645\u0627\u062A
-    \u0627\u0636\u0627\u0641\u0647 \u0627\u06CC\u0646\u062C\u0627"
+    \u067E\u06CC\u062F\u0627 \u06A9\u0631\u062F\u06CC\u062F! "
   fixTags: 1
   forceFix: 0
 --- !u!1001 &5086049128123704088

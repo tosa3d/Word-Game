@@ -7,15 +7,20 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
+using WordsToolkit.Scripts.Data;
 using WordsToolkit.Scripts.GUI.Buttons;
+using WordsToolkit.Scripts.Popups;
 
 public class CafeBazaarManager : MonoBehaviour
 {
     public static CafeBazaarManager Instance { get; private set; }
     [TextArea]
     public string Key;
+    public BazaarProductsData productsData; // Assign BazaarProducts ScriptableObject in Inspector
     private Payment _payment;
-    public CustomButton[] customButtons; 
+    public CustomButton[] customButtons;
+    private string buyIdProduct;
+    public string purchaseToken;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +30,14 @@ public class CafeBazaarManager : MonoBehaviour
         PaymentConfiguration paymentConfiguration = new PaymentConfiguration(securityCheck);
         _payment = new Payment(paymentConfiguration);
         _ = ConnectToPolackyAsync();
-        customButtons[0].onClick.AddListener(BuyProductBazaar);
+        foreach (var item in customButtons)
+        {
+            item.onClick.AddListener(delegate
+            {
+                BuyProductBazaar(item.GetComponent<ItemPurchase>().productID.androidId);
+            });
+        }
+     
     }
 
     private async Task ConnectToPolackyAsync()
@@ -46,28 +58,72 @@ public class CafeBazaarManager : MonoBehaviour
             Debug.LogError($"Failed to connect to Poolakey: {result.message}, {result.stackTrace}");
         }
     }
-    public void BuyProductBazaar()
+    public void BuyProductBazaar(string productid)
     {
-      _=  BuyCoinsAsync();
+      _=  BuyCoinsAsync(productid);
     }
-    public async Task BuyCoinsAsync() {
-        _ = _payment.Purchase("Kolookhpacklookh001", Bazaar.Poolakey.Data.SKUDetails.Type.subscription, OnSubscribeStart, OnSubscribeComplete, "PAYLOAD");
+    public async Task BuyCoinsAsync(string productid) {
+        _ = _payment.Purchase(productid, Bazaar.Poolakey.Data.SKUDetails.Type.subscription, OnSubscribeStart, OnSubscribeComplete, "PAYLOAD");
     }
 
     private void OnSubscribeComplete(Result<PurchaseInfo> result)
     {
-        _ = _payment.Consume(result.data.productId, OnConsumeComleteCoin);
+        buyIdProduct = result.data.productId;
+        purchaseToken = result.data.purchaseToken;
+        _ = _payment.Consume(result.data.purchaseToken, OnConsumeComleteCoin);
 
       
     }
 
     private void OnConsumeComleteCoin(Result<bool> result)
     {
-       if(result.status == Status.Success)
+        if(result.status == Status.Success)
         {
+            // Get product data from assigned ScriptableObject
+            if (productsData == null)
+            {
+                productsData = Resources.Load<BazaarProductsData>("BazaarProducts");
+            }
 
-            Debug.Log("Purchase consumed successfully.");
-            // Here you can add logic to grant the purchased item to the user
+            if (productsData != null)
+            {
+                var product = productsData.GetProduct(buyIdProduct);
+
+                if (product != null)
+                {
+                    // Add coins
+                    if (product.coinsReward > 0)
+                    {
+                        ResourceObject coinsResource = product.RewardValue;
+                        if (coinsResource != null)
+                        {
+                            coinsResource.AddAnimated(product.coinsReward, Vector3.zero);
+                            Debug.Log($"Added {product.coinsReward} coins from product {buyIdProduct}");
+                        }
+                    }
+
+                    // Add gems
+                    if (product.gemsReward > 0)
+                    {
+                        ResourceObject gemsResource = product.RewardValue;
+                        if (gemsResource != null)
+                        {
+                            gemsResource.AddAnimated(product.gemsReward, Vector3.zero);
+                            Debug.Log($"Added {product.gemsReward} gems from product {buyIdProduct}");
+                        }
+                    }
+
+                    Debug.Log($"Purchase consumed successfully. Granted rewards for product: {buyIdProduct}");
+                }
+                else
+                {
+                    Debug.LogWarning($"Product {buyIdProduct} not found in BazaarProductsData");
+                }
+            }
+            else
+            {
+                Debug.LogError("BazaarProductsData not found in Resources folder");
+            }
         }
         else
         {
